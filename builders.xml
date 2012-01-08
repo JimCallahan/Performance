@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Performance.MakeJar" basedir=".">
   <target name ="MakeJar" description="Create a jar for the Performance project.">
-    <jar jarfile="target/Stellar.jar" basedir="bin"/>
+    <jar jarfile="target/Performance.jar" basedir="bin"/>
   </target>
-  <target name="Scaladoc">
-    <exec executable="cmd">
-      <arg value="/c"/>
-      <arg value="scaladoc.bat"/>
-      <arg value="-Djava.library.path=external/lwjgl/native/windows/x86_64"/>
-	  <arg value="-d"/>
-	  <arg value="docs"/>
-      <arg value="src/perf/abs/*.scala"/>
-      <arg value="src/perf/concrete/*.scala"/>
-      <arg value="src/perf/indirect/*.scala"/>
-    </exec>
-  </target>
+	  <target name="Scaladoc">
+	    <exec executable="cmd">
+	      <arg value="/c"/>
+	      <arg value="scaladoc.bat"/>
+	      <arg value="-Djava.library.path=external/lwjgl/native/windows/x86_64"/>
+		  <arg value="-d"/>
+		  <arg value="docs"/>
+	      <arg value="src/perf/abs/*.scala"/>
+	      <arg value="src/perf/concrete/*.scala"/>
+	      <arg value="src/perf/indirect/*.scala"/>
+	    </exec>
+	  </target>
   <target name ="MakeDocsJar" description="Create a jar for the Performance API documentation.">
     <jar jarfile="target/PerformanceDocs.jar" basedir="docs"/>
   </target>
