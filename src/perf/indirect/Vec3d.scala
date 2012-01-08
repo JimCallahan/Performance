@@ -1,6 +1,6 @@
 package perf.indirect
 
-trait Tuple3[Elem, Repr]
+trait Tuple3[@specialized(Double) Elem, Repr]
 {
   val x: Elem
   val y: Elem
@@ -10,7 +10,7 @@ trait Tuple3[Elem, Repr]
   def fromComps(x: Elem, y: Elem, z:Elem): Repr
 }
 
-trait TupleOps3[Elem, Repr]
+trait TupleOps3[@specialized(Double) Elem, Repr]
   extends Tuple3[Elem, Repr]
 {  
   def + (that: Vec3d): Repr
