@@ -1,0 +1,15 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.abs.Tuple3$class {
+  public static java.lang.Object fromScalar(perf.abs.Tuple3, java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_1       
+       3: aload_1       
+       4: invokeinterface #12,  4           // InterfaceMethod perf/abs/Tuple3.fromComps:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       9: areturn       
+
+  public static void $init$(perf.abs.Tuple3);
+    Code:
+       0: return        
+}

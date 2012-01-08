@@ -1,0 +1,24 @@
+Compiled from "Vec3d.scala"
+public interface perf.indirect.Tuple3<Elem, Repr> extends scala.ScalaObject {
+  public abstract Elem x();
+
+  public abstract Elem y();
+
+  public abstract Elem z();
+
+  public abstract Repr fromScalar(Elem);
+
+  public abstract Repr fromComps(Elem, Elem, Elem);
+
+  public abstract double x$mcD$sp();
+
+  public abstract double y$mcD$sp();
+
+  public abstract double z$mcD$sp();
+
+  public abstract Repr fromScalar$mcD$sp(double);
+
+  public abstract Repr fromComps$mcD$sp(double, double, double);
+
+  public abstract boolean specInstance$();
+}

@@ -1,0 +1,75 @@
+Compiled from "Benchmark.scala"
+public final class perf.indirect.Benchmark$$anonfun$4 extends scala.runtime.AbstractFunction0$mcD$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public final perf.indirect.Vec3d[] vecA$1;
+
+  public final perf.indirect.Vec3d[] vecB$1;
+
+  public final perf.indirect.Vec3d[] vecC$1;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final double apply();
+    Code:
+       0: aload_0       
+       1: invokevirtual #23                 // Method apply$mcD$sp:()D
+       4: dreturn       
+
+  public double apply$mcD$sp();
+    Code:
+       0: new           #25                 // class scala/runtime/ObjectRef
+       3: dup           
+       4: getstatic     #31                 // Field perf/indirect/Vec3d$.MODULE$:Lperf/indirect/Vec3d$;
+       7: dconst_1      
+       8: invokevirtual #34                 // Method perf/indirect/Vec3d$.apply:(D)Lperf/indirect/Vec3d;
+      11: invokespecial #38                 // Method scala/runtime/ObjectRef."<init>":(Ljava/lang/Object;)V
+      14: astore_1      
+      15: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      18: iconst_0      
+      19: invokevirtual #47                 // Method scala/Predef$.intWrapper:(I)Lscala/runtime/RichInt;
+      22: aload_0       
+      23: getfield      #49                 // Field size$1:I
+      26: invokevirtual #55                 // Method scala/runtime/RichInt.until:(I)Lscala/collection/immutable/Range;
+      29: new           #57                 // class perf/indirect/Benchmark$$anonfun$4$$anonfun$apply$mcD$sp$5
+      32: dup           
+      33: aload_0       
+      34: aload_1       
+      35: invokespecial #60                 // Method perf/indirect/Benchmark$$anonfun$4$$anonfun$apply$mcD$sp$5."<init>":(Lperf/indirect/Benchmark$$anonfun$4;Lscala/runtime/ObjectRef;)V
+      38: invokevirtual #66                 // Method scala/collection/immutable/Range.foreach$mVc$sp:(Lscala/Function1;)V
+      41: aload_1       
+      42: getfield      #70                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
+      45: checkcast     #72                 // class perf/indirect/Vec3d
+      48: invokeinterface #77,  1           // InterfaceMethod perf/indirect/VecOps3d.magSq:()D
+      53: dreturn       
+
+  public final java.lang.Object apply();
+    Code:
+       0: aload_0       
+       1: invokevirtual #85                 // Method apply:()D
+       4: invokestatic  #91                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public perf.indirect.Benchmark$$anonfun$4(int, perf.indirect.Vec3d[], perf.indirect.Vec3d[], perf.indirect.Vec3d[]);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: putfield      #49                 // Field size$1:I
+       5: aload_0       
+       6: aload_2       
+       7: putfield      #94                 // Field vecA$1:[Lperf/indirect/Vec3d;
+      10: aload_0       
+      11: aload_3       
+      12: putfield      #96                 // Field vecB$1:[Lperf/indirect/Vec3d;
+      15: aload_0       
+      16: aload         4
+      18: putfield      #98                 // Field vecC$1:[Lperf/indirect/Vec3d;
+      21: aload_0       
+      22: invokespecial #102                // Method scala/runtime/AbstractFunction0$mcD$sp."<init>":()V
+      25: return        
+}

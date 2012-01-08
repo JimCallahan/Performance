@@ -1,0 +1,54 @@
+Compiled from "Vec3d.scala"
+public interface perf.indirect.TupleOps3<Elem, Repr> extends perf.indirect.Tuple3<Elem, Repr> {
+  public abstract Repr $plus(perf.indirect.Vec3d);
+
+  public abstract Repr $minus(perf.indirect.Vec3d);
+
+  public abstract Repr $times(perf.indirect.Vec3d);
+
+  public abstract Repr $div(perf.indirect.Vec3d);
+
+  public abstract Repr $plus(Elem);
+
+  public abstract Repr $minus(Elem);
+
+  public abstract Repr $times(Elem);
+
+  public abstract Repr $div(Elem);
+
+  public abstract Elem magSq();
+
+  public abstract Elem mag();
+
+  public abstract Repr normalized();
+
+  public abstract Elem dot(Repr);
+
+  public abstract Repr cross(Repr);
+
+  public abstract Repr map(Repr, scala.Function1<Elem, Elem>);
+
+  public abstract Elem reduce(scala.Function2<Elem, Elem, Elem>);
+
+  public abstract Repr compwise(Repr, scala.Function2<Elem, Elem, Elem>);
+
+  public abstract Repr $plus$mcD$sp(double);
+
+  public abstract Repr $minus$mcD$sp(double);
+
+  public abstract Repr $times$mcD$sp(double);
+
+  public abstract Repr $div$mcD$sp(double);
+
+  public abstract double magSq$mcD$sp();
+
+  public abstract double mag$mcD$sp();
+
+  public abstract double dot$mcD$sp(Repr);
+
+  public abstract Repr map$mcD$sp(Repr, scala.Function1<java.lang.Object, java.lang.Object>);
+
+  public abstract double reduce$mcD$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr compwise$mcD$sp(Repr, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+}

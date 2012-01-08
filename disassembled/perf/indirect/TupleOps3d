@@ -1,0 +1,38 @@
+Compiled from "Vec3d.scala"
+public interface perf.indirect.TupleOps3d<Repr extends perf.indirect.Tuple3<java.lang.Object, Repr>> extends perf.indirect.TupleOps3$mcD$sp<Repr>, scala.ScalaObject {
+  public abstract Repr $plus(Repr);
+
+  public abstract Repr $minus(Repr);
+
+  public abstract Repr $times(Repr);
+
+  public abstract Repr $div(Repr);
+
+  public abstract Repr $plus(double);
+
+  public abstract Repr $minus(double);
+
+  public abstract Repr $times(double);
+
+  public abstract Repr $div(double);
+
+  public abstract Repr map(Repr, scala.Function1<java.lang.Object, java.lang.Object>);
+
+  public abstract double reduce(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr compwise(Repr, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr $plus$mcD$sp(double);
+
+  public abstract Repr $minus$mcD$sp(double);
+
+  public abstract Repr $times$mcD$sp(double);
+
+  public abstract Repr $div$mcD$sp(double);
+
+  public abstract Repr map$mcD$sp(Repr, scala.Function1<java.lang.Object, java.lang.Object>);
+
+  public abstract double reduce$mcD$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr compwise$mcD$sp(Repr, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+}

@@ -1,0 +1,18 @@
+Compiled from "Vec3d.scala"
+public interface perf.indirect.VecOps3d<Repr extends perf.indirect.Tuple3<java.lang.Object, Repr>> extends perf.indirect.TupleOps3d<Repr>, scala.ScalaObject {
+  public abstract double magSq();
+
+  public abstract double mag();
+
+  public abstract Repr normalized();
+
+  public abstract double dot(Repr);
+
+  public abstract Repr cross(Repr);
+
+  public abstract double magSq$mcD$sp();
+
+  public abstract double mag$mcD$sp();
+
+  public abstract double dot$mcD$sp(Repr);
+}

@@ -1,0 +1,72 @@
+Compiled from "Vec3d.scala"
+public final class perf.indirect.Vec3d$ implements scala.ScalaObject {
+  public static final perf.indirect.Vec3d$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #9                  // class perf/indirect/Vec3d$
+       3: invokespecial #12                 // Method "<init>":()V
+       6: return        
+
+  public perf.indirect.Vec3d apply(double);
+    Code:
+       0: new           #16                 // class perf/indirect/Vec3d
+       3: dup           
+       4: dload_1       
+       5: dload_1       
+       6: dload_1       
+       7: invokespecial #20                 // Method perf/indirect/Vec3d."<init>":(DDD)V
+      10: areturn       
+
+  public perf.indirect.Vec3d apply(double, double, double);
+    Code:
+       0: new           #16                 // class perf/indirect/Vec3d
+       3: dup           
+       4: dload_1       
+       5: dload_3       
+       6: dload         5
+       8: invokespecial #20                 // Method perf/indirect/Vec3d."<init>":(DDD)V
+      11: areturn       
+
+  public perf.indirect.Vec3d random();
+    Code:
+       0: new           #16                 // class perf/indirect/Vec3d
+       3: dup           
+       4: getstatic     #35                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
+       7: invokevirtual #38                 // Method scala/math/package$.random:()D
+      10: getstatic     #35                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
+      13: invokevirtual #38                 // Method scala/math/package$.random:()D
+      16: getstatic     #35                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
+      19: invokevirtual #38                 // Method scala/math/package$.random:()D
+      22: invokespecial #20                 // Method perf/indirect/Vec3d."<init>":(DDD)V
+      25: areturn       
+
+  public perf.indirect.Vec3d randomUnit();
+    Code:
+       0: aload_0       
+       1: invokevirtual #41                 // Method random:()Lperf/indirect/Vec3d;
+       4: aload_0       
+       5: ldc2_w        #42                 // double 0.5d
+       8: invokevirtual #45                 // Method apply:(D)Lperf/indirect/Vec3d;
+      11: invokeinterface #51,  2           // InterfaceMethod perf/indirect/TupleOps3d.$minus:(Lperf/indirect/Tuple3;)Lperf/indirect/Tuple3;
+      16: checkcast     #16                 // class perf/indirect/Vec3d
+      19: astore_2      
+      20: aload_2       
+      21: invokeinterface #56,  1           // InterfaceMethod perf/indirect/VecOps3d.magSq$mcD$sp:()D
+      26: dstore_3      
+      27: dload_3       
+      28: ldc2_w        #57                 // double 0.25d
+      31: dcmpg         
+      32: ifge          0
+      35: dload_3       
+      36: ldc2_w        #59                 // double 0.05d
+      39: dcmpl         
+      40: ifle          0
+      43: aload_2       
+      44: getstatic     #35                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
+      47: dload_3       
+      48: invokevirtual #64                 // Method scala/math/package$.sqrt:(D)D
+      51: invokeinterface #68,  3           // InterfaceMethod perf/indirect/TupleOps3d.$div$mcD$sp:(D)Lperf/indirect/Tuple3;
+      56: checkcast     #16                 // class perf/indirect/Vec3d
+      59: areturn       
+}

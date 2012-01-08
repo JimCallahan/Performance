@@ -1,0 +1,77 @@
+Compiled from "Benchmark.scala"
+public final class perf.indirect.Benchmark$$anonfun$6$$anonfun$apply$mcD$sp$7 extends scala.runtime.AbstractFunction1$mcVI$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final void apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #21                 // Method apply$mcVI$sp:(I)V
+       5: return        
+
+  public void apply$mcVI$sp(int);
+    Code:
+       0: aload_0       
+       1: getfield      #28                 // Field result$8:Lscala/runtime/ObjectRef;
+       4: aload_0       
+       5: getfield      #28                 // Field result$8:Lscala/runtime/ObjectRef;
+       8: getfield      #34                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
+      11: checkcast     #36                 // class perf/indirect/Vec3d
+      14: aload_0       
+      15: getfield      #38                 // Field $outer:Lperf/indirect/Benchmark$$anonfun$6;
+      18: getfield      #44                 // Field perf/indirect/Benchmark$$anonfun$6.vecA$1:[Lperf/indirect/Vec3d;
+      21: iload_1       
+      22: aaload        
+      23: invokeinterface #50,  2           // InterfaceMethod perf/indirect/VecOps3d.cross:(Lperf/indirect/Tuple3;)Lperf/indirect/Tuple3;
+      28: checkcast     #46                 // class perf/indirect/VecOps3d
+      31: aload_0       
+      32: getfield      #38                 // Field $outer:Lperf/indirect/Benchmark$$anonfun$6;
+      35: getfield      #53                 // Field perf/indirect/Benchmark$$anonfun$6.vecB$1:[Lperf/indirect/Vec3d;
+      38: iload_1       
+      39: aaload        
+      40: invokeinterface #50,  2           // InterfaceMethod perf/indirect/VecOps3d.cross:(Lperf/indirect/Tuple3;)Lperf/indirect/Tuple3;
+      45: checkcast     #46                 // class perf/indirect/VecOps3d
+      48: aload_0       
+      49: getfield      #38                 // Field $outer:Lperf/indirect/Benchmark$$anonfun$6;
+      52: getfield      #56                 // Field perf/indirect/Benchmark$$anonfun$6.vecC$1:[Lperf/indirect/Vec3d;
+      55: iload_1       
+      56: aaload        
+      57: invokeinterface #50,  2           // InterfaceMethod perf/indirect/VecOps3d.cross:(Lperf/indirect/Tuple3;)Lperf/indirect/Tuple3;
+      62: checkcast     #36                 // class perf/indirect/Vec3d
+      65: putfield      #34                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
+      68: return        
+
+  public final java.lang.Object apply(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #64                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #66                 // Method apply:(I)V
+       8: getstatic     #72                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+      11: areturn       
+
+  public perf.indirect.Benchmark$$anonfun$6$$anonfun$apply$mcD$sp$7(perf.indirect.Benchmark$$anonfun$6, scala.runtime.ObjectRef);
+    Code:
+       0: aload_1       
+       1: ifnonnull     12
+       4: new           #76                 // class java/lang/NullPointerException
+       7: dup           
+       8: invokespecial #78                 // Method java/lang/NullPointerException."<init>":()V
+      11: athrow        
+      12: aload_0       
+      13: aload_1       
+      14: putfield      #38                 // Field $outer:Lperf/indirect/Benchmark$$anonfun$6;
+      17: aload_0       
+      18: aload_2       
+      19: putfield      #28                 // Field result$8:Lscala/runtime/ObjectRef;
+      22: aload_0       
+      23: invokespecial #81                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
+      26: return        
+}

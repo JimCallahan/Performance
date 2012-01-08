@@ -1,0 +1,29 @@
+Compiled from "Benchmark.scala"
+public final class perf.abs.Benchmark$$anonfun$9 extends scala.runtime.AbstractFunction0 implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final perf.abs.Vec3d apply();
+    Code:
+       0: getstatic     #19                 // Field perf/abs/Vec3d$.MODULE$:Lperf/abs/Vec3d$;
+       3: invokevirtual #23                 // Method perf/abs/Vec3d$.random:()Lperf/abs/Vec3d;
+       6: areturn       
+
+  public final java.lang.Object apply();
+    Code:
+       0: aload_0       
+       1: invokevirtual #26                 // Method apply:()Lperf/abs/Vec3d;
+       4: areturn       
+
+  public perf.abs.Benchmark$$anonfun$9();
+    Code:
+       0: aload_0       
+       1: invokespecial #31                 // Method scala/runtime/AbstractFunction0."<init>":()V
+       4: return        
+}

@@ -1,0 +1,116 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.indirect.VecOps3d$class {
+  public static double magSq(perf.indirect.VecOps3d);
+    Code:
+       0: aload_0       
+       1: invokeinterface #12,  1           // InterfaceMethod perf/indirect/VecOps3d.magSq$mcD$sp:()D
+       6: dreturn       
+
+  public static double mag(perf.indirect.VecOps3d);
+    Code:
+       0: aload_0       
+       1: invokeinterface #19,  1           // InterfaceMethod perf/indirect/VecOps3d.mag$mcD$sp:()D
+       6: dreturn       
+
+  public static perf.indirect.Tuple3 normalized(perf.indirect.VecOps3d);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: aload_0       
+       3: invokeinterface #19,  1           // InterfaceMethod perf/indirect/VecOps3d.mag$mcD$sp:()D
+       8: aload_0       
+       9: invokeinterface #19,  1           // InterfaceMethod perf/indirect/VecOps3d.mag$mcD$sp:()D
+      14: aload_0       
+      15: invokeinterface #19,  1           // InterfaceMethod perf/indirect/VecOps3d.mag$mcD$sp:()D
+      20: invokeinterface #27,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      25: checkcast     #23                 // class perf/indirect/Tuple3
+      28: invokeinterface #33,  2           // InterfaceMethod perf/indirect/TupleOps3d.$div:(Lperf/indirect/Tuple3;)Lperf/indirect/Tuple3;
+      33: areturn       
+
+  public static double dot(perf.indirect.VecOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #39,  2           // InterfaceMethod perf/indirect/VecOps3d.dot$mcD$sp:(Lperf/indirect/Tuple3;)D
+       7: dreturn       
+
+  public static perf.indirect.Tuple3 cross(perf.indirect.VecOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #46,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+       7: aload_1       
+       8: invokeinterface #49,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      13: dmul          
+      14: aload_0       
+      15: invokeinterface #49,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      20: aload_1       
+      21: invokeinterface #46,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      26: dmul          
+      27: dsub          
+      28: aload_0       
+      29: invokeinterface #49,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      34: aload_1       
+      35: invokeinterface #52,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      40: dmul          
+      41: aload_0       
+      42: invokeinterface #52,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      47: aload_1       
+      48: invokeinterface #49,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      53: dmul          
+      54: dsub          
+      55: aload_0       
+      56: invokeinterface #52,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      61: aload_1       
+      62: invokeinterface #46,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      67: dmul          
+      68: aload_0       
+      69: invokeinterface #46,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      74: aload_1       
+      75: invokeinterface #52,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      80: dmul          
+      81: dsub          
+      82: invokeinterface #27,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      87: checkcast     #23                 // class perf/indirect/Tuple3
+      90: areturn       
+
+  public static double magSq$mcD$sp(perf.indirect.VecOps3d);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #39,  2           // InterfaceMethod perf/indirect/VecOps3d.dot$mcD$sp:(Lperf/indirect/Tuple3;)D
+       7: dreturn       
+
+  public static double mag$mcD$sp(perf.indirect.VecOps3d);
+    Code:
+       0: getstatic     #58                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
+       3: aload_0       
+       4: invokeinterface #12,  1           // InterfaceMethod perf/indirect/VecOps3d.magSq$mcD$sp:()D
+       9: invokevirtual #62                 // Method scala/math/package$.sqrt:(D)D
+      12: dreturn       
+
+  public static double dot$mcD$sp(perf.indirect.VecOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: invokeinterface #52,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       6: aload_1       
+       7: invokeinterface #52,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      12: dmul          
+      13: aload_0       
+      14: invokeinterface #46,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      19: aload_1       
+      20: invokeinterface #46,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      25: dmul          
+      26: dadd          
+      27: aload_0       
+      28: invokeinterface #49,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      33: dadd          
+      34: aload_1       
+      35: invokeinterface #49,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      40: dadd          
+      41: dreturn       
+
+  public static void $init$(perf.indirect.VecOps3d);
+    Code:
+       0: return        
+}

@@ -1,0 +1,76 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.indirect.TupleOps3$mcD$sp$class {
+  public static java.lang.Object $plus(perf.indirect.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #12,  3           // InterfaceMethod perf/indirect/TupleOps3.$plus$mcD$sp:(D)Ljava/lang/Object;
+       7: areturn       
+
+  public static java.lang.Object $minus(perf.indirect.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #21,  3           // InterfaceMethod perf/indirect/TupleOps3.$minus$mcD$sp:(D)Ljava/lang/Object;
+       7: areturn       
+
+  public static java.lang.Object $times(perf.indirect.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #25,  3           // InterfaceMethod perf/indirect/TupleOps3.$times$mcD$sp:(D)Ljava/lang/Object;
+       7: areturn       
+
+  public static java.lang.Object $div(perf.indirect.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #29,  3           // InterfaceMethod perf/indirect/TupleOps3.$div$mcD$sp:(D)Ljava/lang/Object;
+       7: areturn       
+
+  public static double magSq(perf.indirect.TupleOps3$mcD$sp);
+    Code:
+       0: aload_0       
+       1: invokeinterface #35,  1           // InterfaceMethod perf/indirect/TupleOps3.magSq$mcD$sp:()D
+       6: dreturn       
+
+  public static double mag(perf.indirect.TupleOps3$mcD$sp);
+    Code:
+       0: aload_0       
+       1: invokeinterface #39,  1           // InterfaceMethod perf/indirect/TupleOps3.mag$mcD$sp:()D
+       6: dreturn       
+
+  public static double dot(perf.indirect.TupleOps3$mcD$sp, java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #45,  2           // InterfaceMethod perf/indirect/TupleOps3.dot$mcD$sp:(Ljava/lang/Object;)D
+       7: dreturn       
+
+  public static java.lang.Object map(perf.indirect.TupleOps3$mcD$sp, java.lang.Object, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #53,  3           // InterfaceMethod perf/indirect/TupleOps3.map$mcD$sp:(Ljava/lang/Object;Lscala/Function1;)Ljava/lang/Object;
+       8: areturn       
+
+  public static double reduce(perf.indirect.TupleOps3$mcD$sp, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #61,  2           // InterfaceMethod perf/indirect/TupleOps3.reduce$mcD$sp:(Lscala/Function2;)D
+       7: dreturn       
+
+  public static java.lang.Object compwise(perf.indirect.TupleOps3$mcD$sp, java.lang.Object, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #68,  3           // InterfaceMethod perf/indirect/TupleOps3.compwise$mcD$sp:(Ljava/lang/Object;Lscala/Function2;)Ljava/lang/Object;
+       8: areturn       
+
+  public static void $init$(perf.indirect.TupleOps3$mcD$sp);
+    Code:
+       0: return        
+}

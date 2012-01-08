@@ -1,0 +1,34 @@
+Compiled from "Vec3d.scala"
+public interface perf.abs.TupleOps3<Elem, Repr> extends perf.abs.Tuple3<Elem, Repr> {
+  public abstract Repr $plus(perf.abs.Vec3d);
+
+  public abstract Repr $minus(perf.abs.Vec3d);
+
+  public abstract Repr $times(perf.abs.Vec3d);
+
+  public abstract Repr $div(perf.abs.Vec3d);
+
+  public abstract Repr $plus(Elem);
+
+  public abstract Repr $minus(Elem);
+
+  public abstract Repr $times(Elem);
+
+  public abstract Repr $div(Elem);
+
+  public abstract Elem magSq();
+
+  public abstract Elem mag();
+
+  public abstract Repr normalized();
+
+  public abstract Elem dot(Repr);
+
+  public abstract Repr cross(Repr);
+
+  public abstract Repr map(Repr, scala.Function1<Elem, Elem>);
+
+  public abstract Elem reduce(scala.Function2<Elem, Elem, Elem>);
+
+  public abstract Repr compwise(Repr, scala.Function2<Elem, Elem, Elem>);
+}

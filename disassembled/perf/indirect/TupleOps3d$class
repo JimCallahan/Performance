@@ -1,0 +1,279 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.indirect.TupleOps3d$class {
+  public static perf.indirect.Tuple3 $plus(perf.indirect.TupleOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: aload_1       
+       8: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      13: dadd          
+      14: aload_0       
+      15: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      20: aload_1       
+      21: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      26: dadd          
+      27: aload_0       
+      28: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      33: aload_1       
+      34: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      39: dadd          
+      40: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      45: checkcast     #8                  // class perf/indirect/Tuple3
+      48: areturn       
+
+  public static perf.indirect.Tuple3 $minus(perf.indirect.TupleOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: aload_1       
+       8: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      13: dsub          
+      14: aload_0       
+      15: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      20: aload_1       
+      21: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      26: dsub          
+      27: aload_0       
+      28: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      33: aload_1       
+      34: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      39: dsub          
+      40: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      45: checkcast     #8                  // class perf/indirect/Tuple3
+      48: areturn       
+
+  public static perf.indirect.Tuple3 $times(perf.indirect.TupleOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: aload_1       
+       8: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      13: dmul          
+      14: aload_0       
+      15: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      20: aload_1       
+      21: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      26: dmul          
+      27: aload_0       
+      28: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      33: aload_1       
+      34: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      39: dmul          
+      40: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      45: checkcast     #8                  // class perf/indirect/Tuple3
+      48: areturn       
+
+  public static perf.indirect.Tuple3 $div(perf.indirect.TupleOps3d, perf.indirect.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: aload_1       
+       8: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      13: ddiv          
+      14: aload_0       
+      15: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      20: aload_1       
+      21: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      26: ddiv          
+      27: aload_0       
+      28: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      33: aload_1       
+      34: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      39: ddiv          
+      40: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      45: checkcast     #8                  // class perf/indirect/Tuple3
+      48: areturn       
+
+  public static perf.indirect.Tuple3 $plus(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #37,  3           // InterfaceMethod perf/indirect/TupleOps3d.$plus$mcD$sp:(D)Lperf/indirect/Tuple3;
+       7: areturn       
+
+  public static perf.indirect.Tuple3 $minus(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #42,  3           // InterfaceMethod perf/indirect/TupleOps3d.$minus$mcD$sp:(D)Lperf/indirect/Tuple3;
+       7: areturn       
+
+  public static perf.indirect.Tuple3 $times(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #45,  3           // InterfaceMethod perf/indirect/TupleOps3d.$times$mcD$sp:(D)Lperf/indirect/Tuple3;
+       7: areturn       
+
+  public static perf.indirect.Tuple3 $div(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #48,  3           // InterfaceMethod perf/indirect/TupleOps3d.$div$mcD$sp:(D)Lperf/indirect/Tuple3;
+       7: areturn       
+
+  public static perf.indirect.Tuple3 map(perf.indirect.TupleOps3d, perf.indirect.Tuple3, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #54,  3           // InterfaceMethod perf/indirect/TupleOps3d.map$mcD$sp:(Lperf/indirect/Tuple3;Lscala/Function1;)Lperf/indirect/Tuple3;
+       8: areturn       
+
+  public static double reduce(perf.indirect.TupleOps3d, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #62,  2           // InterfaceMethod perf/indirect/TupleOps3d.reduce$mcD$sp:(Lscala/Function2;)D
+       7: dreturn       
+
+  public static perf.indirect.Tuple3 compwise(perf.indirect.TupleOps3d, perf.indirect.Tuple3, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #69,  3           // InterfaceMethod perf/indirect/TupleOps3d.compwise$mcD$sp:(Lperf/indirect/Tuple3;Lscala/Function2;)Lperf/indirect/Tuple3;
+       8: areturn       
+
+  public static perf.indirect.Tuple3 $plus$mcD$sp(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: dload_1       
+       8: dadd          
+       9: aload_0       
+      10: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      15: dload_1       
+      16: dadd          
+      17: aload_0       
+      18: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      23: dload_1       
+      24: dadd          
+      25: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      30: checkcast     #8                  // class perf/indirect/Tuple3
+      33: areturn       
+
+  public static perf.indirect.Tuple3 $minus$mcD$sp(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: dload_1       
+       8: dsub          
+       9: aload_0       
+      10: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      15: dload_1       
+      16: dsub          
+      17: aload_0       
+      18: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      23: dload_1       
+      24: dsub          
+      25: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      30: checkcast     #8                  // class perf/indirect/Tuple3
+      33: areturn       
+
+  public static perf.indirect.Tuple3 $times$mcD$sp(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: dload_1       
+       8: dmul          
+       9: aload_0       
+      10: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      15: dload_1       
+      16: dmul          
+      17: aload_0       
+      18: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      23: dload_1       
+      24: dmul          
+      25: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      30: checkcast     #8                  // class perf/indirect/Tuple3
+      33: areturn       
+
+  public static perf.indirect.Tuple3 $div$mcD$sp(perf.indirect.TupleOps3d, double);
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: dload_1       
+       8: ddiv          
+       9: aload_0       
+      10: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      15: dload_1       
+      16: ddiv          
+      17: aload_0       
+      18: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      23: dload_1       
+      24: ddiv          
+      25: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      30: checkcast     #8                  // class perf/indirect/Tuple3
+      33: areturn       
+
+  public static perf.indirect.Tuple3 map$mcD$sp(perf.indirect.TupleOps3d, perf.indirect.Tuple3, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_2       
+       2: aload_0       
+       3: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       8: invokeinterface #75,  3           // InterfaceMethod scala/Function1.apply$mcDD$sp:(D)D
+      13: aload_2       
+      14: aload_0       
+      15: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      20: invokeinterface #75,  3           // InterfaceMethod scala/Function1.apply$mcDD$sp:(D)D
+      25: aload_2       
+      26: aload_0       
+      27: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      32: invokeinterface #75,  3           // InterfaceMethod scala/Function1.apply$mcDD$sp:(D)D
+      37: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      42: checkcast     #8                  // class perf/indirect/Tuple3
+      45: areturn       
+
+  public static double reduce$mcD$sp(perf.indirect.TupleOps3d, scala.Function2);
+    Code:
+       0: aload_1       
+       1: aload_0       
+       2: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       7: aload_1       
+       8: aload_0       
+       9: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      14: aload_0       
+      15: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      20: invokeinterface #81,  5           // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      25: invokeinterface #81,  5           // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      30: dreturn       
+
+  public static perf.indirect.Tuple3 compwise$mcD$sp(perf.indirect.TupleOps3d, perf.indirect.Tuple3, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_2       
+       2: aload_0       
+       3: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+       8: aload_1       
+       9: invokeinterface #12,  1           // InterfaceMethod perf/indirect/Tuple3.x$mcD$sp:()D
+      14: invokeinterface #81,  5           // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      19: aload_2       
+      20: aload_0       
+      21: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      26: aload_1       
+      27: invokeinterface #15,  1           // InterfaceMethod perf/indirect/Tuple3.y$mcD$sp:()D
+      32: invokeinterface #81,  5           // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      37: aload_2       
+      38: aload_0       
+      39: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      44: aload_1       
+      45: invokeinterface #18,  1           // InterfaceMethod perf/indirect/Tuple3.z$mcD$sp:()D
+      50: invokeinterface #81,  5           // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      55: invokeinterface #22,  7           // InterfaceMethod perf/indirect/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      60: checkcast     #8                  // class perf/indirect/Tuple3
+      63: areturn       
+
+  public static void $init$(perf.indirect.TupleOps3d);
+    Code:
+       0: return        
+}

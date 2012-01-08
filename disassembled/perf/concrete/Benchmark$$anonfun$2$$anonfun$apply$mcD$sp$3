@@ -1,0 +1,74 @@
+Compiled from "Benchmark.scala"
+public final class perf.concrete.Benchmark$$anonfun$2$$anonfun$apply$mcD$sp$3 extends scala.runtime.AbstractFunction1$mcVI$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final void apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #21                 // Method apply$mcVI$sp:(I)V
+       5: return        
+
+  public void apply$mcVI$sp(int);
+    Code:
+       0: aload_0       
+       1: getfield      #28                 // Field result$4:Lscala/runtime/ObjectRef;
+       4: aload_0       
+       5: getfield      #28                 // Field result$4:Lscala/runtime/ObjectRef;
+       8: getfield      #34                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
+      11: checkcast     #36                 // class perf/concrete/Vec3d
+      14: aload_0       
+      15: getfield      #38                 // Field $outer:Lperf/concrete/Benchmark$$anonfun$2;
+      18: getfield      #44                 // Field perf/concrete/Benchmark$$anonfun$2.vecA$1:[Lperf/concrete/Vec3d;
+      21: iload_1       
+      22: aaload        
+      23: invokevirtual #48                 // Method perf/concrete/Vec3d.$minus:(Lperf/concrete/Vec3d;)Lperf/concrete/Vec3d;
+      26: aload_0       
+      27: getfield      #38                 // Field $outer:Lperf/concrete/Benchmark$$anonfun$2;
+      30: getfield      #51                 // Field perf/concrete/Benchmark$$anonfun$2.vecB$1:[Lperf/concrete/Vec3d;
+      33: iload_1       
+      34: aaload        
+      35: invokevirtual #48                 // Method perf/concrete/Vec3d.$minus:(Lperf/concrete/Vec3d;)Lperf/concrete/Vec3d;
+      38: aload_0       
+      39: getfield      #38                 // Field $outer:Lperf/concrete/Benchmark$$anonfun$2;
+      42: getfield      #54                 // Field perf/concrete/Benchmark$$anonfun$2.vecC$1:[Lperf/concrete/Vec3d;
+      45: iload_1       
+      46: aaload        
+      47: invokevirtual #48                 // Method perf/concrete/Vec3d.$minus:(Lperf/concrete/Vec3d;)Lperf/concrete/Vec3d;
+      50: putfield      #34                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
+      53: return        
+
+  public final java.lang.Object apply(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #62                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #64                 // Method apply:(I)V
+       8: getstatic     #70                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+      11: areturn       
+
+  public perf.concrete.Benchmark$$anonfun$2$$anonfun$apply$mcD$sp$3(perf.concrete.Benchmark$$anonfun$2, scala.runtime.ObjectRef);
+    Code:
+       0: aload_1       
+       1: ifnonnull     12
+       4: new           #74                 // class java/lang/NullPointerException
+       7: dup           
+       8: invokespecial #76                 // Method java/lang/NullPointerException."<init>":()V
+      11: athrow        
+      12: aload_0       
+      13: aload_1       
+      14: putfield      #38                 // Field $outer:Lperf/concrete/Benchmark$$anonfun$2;
+      17: aload_0       
+      18: aload_2       
+      19: putfield      #28                 // Field result$4:Lscala/runtime/ObjectRef;
+      22: aload_0       
+      23: invokespecial #79                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
+      26: return        
+}
