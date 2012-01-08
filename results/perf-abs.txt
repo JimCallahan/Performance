@@ -1,0 +1,77 @@
+Benchmark of Abstract Vectors.
+
+Generating Test Data:  Done.
+----------------------------------------------
+Starting Warmup Test:  Done (-4553.24)
+
+Total Time: 37.35 sec
+ Total Ops: 1500000000
+ Time / Op: 0.00002490 ms
+ Ops / Sec: 40160642
+----------------------------------------------
+Starting Add Test:  Done (449863336147024.06)
+
+Total Time: 38.13 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001271 ms
+ Ops / Sec: 78669953
+----------------------------------------------
+Starting Subtract Test:  Done (449857335845637.20)
+
+Total Time: 38.31 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001277 ms
+ Ops / Sec: 78316712
+----------------------------------------------
+Starting Multiply Test:  Done (0.00)
+
+Total Time: 38.27 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001276 ms
+ Ops / Sec: 78384239
+----------------------------------------------
+Starting Divide Test:  Done (Infinity)
+
+Total Time: 41.67 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001389 ms
+ Ops / Sec: 71990785
+----------------------------------------------
+Starting Dot Test:  Done (4499893728.88)
+
+Total Time: 16.55 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00000552 ms
+ Ops / Sec: 181312703
+----------------------------------------------
+Starting Cross Test:  Done (0.00)
+
+Total Time: 48.53 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001618 ms
+ Ops / Sec: 61817432
+----------------------------------------------
+Starting Mag Test:  Done (36401.31)
+
+Total Time: 27.99 sec
+ Total Ops: 2000000000
+ Time / Op: 0.00001400 ms
+ Ops / Sec: 71446433
+----------------------------------------------
+Starting Copy Test:  Done (12576.73)
+
+Total Time: 38.45 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001282 ms
+ Ops / Sec: 78025436
+----------------------------------------------
+     Add (MOps/Sec): 78.67
+ Subract (MOps/Sec): 78.32
+Multiply (MOps/Sec): 78.38
+  Divide (MOps/Sec): 71.99
+     Dot (MOps/Sec): 181.31
+   Cross (MOps/Sec): 61.82
+     Mag (MOps/Sec): 71.45
+    Copy (MOps/Sec): 78.03
+
+   TOTAL (MOps/Sec): 80.18

@@ -1,0 +1,77 @@
+Benchmark of Abstract Vectors.
+
+Generating Test Data:  Done.
+----------------------------------------------
+Starting Warmup Test:  Done (-888.46)
+
+Total Time: 37.20 sec
+ Total Ops: 1500000000
+ Time / Op: 0.00002480 ms
+ Ops / Sec: 40324748
+----------------------------------------------
+Starting Add Test:  Done (450562961926727.94)
+
+Total Time: 41.99 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001400 ms
+ Ops / Sec: 71448985
+----------------------------------------------
+Starting Subtract Test:  Done (450556958706237.80)
+
+Total Time: 39.36 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001312 ms
+ Ops / Sec: 76227258
+----------------------------------------------
+Starting Multiply Test:  Done (0.00)
+
+Total Time: 39.52 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001317 ms
+ Ops / Sec: 75910931
+----------------------------------------------
+Starting Divide Test:  Done (Infinity)
+
+Total Time: 42.08 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001403 ms
+ Ops / Sec: 71294469
+----------------------------------------------
+Starting Dot Test:  Done (4503796735.91)
+
+Total Time: 16.36 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00000545 ms
+ Ops / Sec: 183418928
+----------------------------------------------
+Starting Cross Test:  Done (0.00)
+
+Total Time: 49.09 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001636 ms
+ Ops / Sec: 61115977
+----------------------------------------------
+Starting Mag Test:  Done (32125.51)
+
+Total Time: 27.91 sec
+ Total Ops: 2000000000
+ Time / Op: 0.00001395 ms
+ Ops / Sec: 71666606
+----------------------------------------------
+Starting Copy Test:  Done (13595.60)
+
+Total Time: 38.47 sec
+ Total Ops: 3000000000
+ Time / Op: 0.00001282 ms
+ Ops / Sec: 77980816
+----------------------------------------------
+     Add (MOps/Sec): 71.45
+ Subract (MOps/Sec): 76.23
+Multiply (MOps/Sec): 75.91
+  Divide (MOps/Sec): 71.29
+     Dot (MOps/Sec): 183.42
+   Cross (MOps/Sec): 61.12
+     Mag (MOps/Sec): 71.67
+    Copy (MOps/Sec): 77.98
+
+   TOTAL (MOps/Sec): 78.04
