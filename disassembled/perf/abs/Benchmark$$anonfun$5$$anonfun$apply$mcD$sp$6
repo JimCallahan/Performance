@@ -19,9 +19,9 @@ public final class perf.abs.Benchmark$$anonfun$5$$anonfun$apply$mcD$sp$6 extends
   public void apply$mcVI$sp(int);
     Code:
        0: aload_0       
-       1: getfield      #28                 // Field result$7:Lscala/runtime/DoubleRef;
+       1: getfield      #28                 // Field result$6:Lscala/runtime/DoubleRef;
        4: aload_0       
-       5: getfield      #28                 // Field result$7:Lscala/runtime/DoubleRef;
+       5: getfield      #28                 // Field result$6:Lscala/runtime/DoubleRef;
        8: getfield      #34                 // Field scala/runtime/DoubleRef.elem:D
       11: aload_0       
       12: getfield      #36                 // Field $outer:Lperf/abs/Benchmark$$anonfun$5;
@@ -84,7 +84,7 @@ public final class perf.abs.Benchmark$$anonfun$5$$anonfun$apply$mcD$sp$6 extends
       14: putfield      #36                 // Field $outer:Lperf/abs/Benchmark$$anonfun$5;
       17: aload_0       
       18: aload_2       
-      19: putfield      #28                 // Field result$7:Lscala/runtime/DoubleRef;
+      19: putfield      #28                 // Field result$6:Lscala/runtime/DoubleRef;
       22: aload_0       
       23: invokespecial #80                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
       26: return        

@@ -19,7 +19,7 @@ public final class perf.indirect.Benchmark$$anonfun$main$1$$anonfun$apply$mcD$sp
   public void apply$mcVI$sp(int);
     Code:
        0: aload_0       
-       1: getfield      #28                 // Field result$2:Lscala/runtime/ObjectRef;
+       1: getfield      #28                 // Field result$1:Lscala/runtime/ObjectRef;
        4: aload_0       
        5: getfield      #30                 // Field $outer:Lperf/indirect/Benchmark$$anonfun$main$1;
        8: getfield      #36                 // Field perf/indirect/Benchmark$$anonfun$main$1.vecA$1:[Lperf/indirect/Vec3d;
@@ -83,7 +83,7 @@ public final class perf.indirect.Benchmark$$anonfun$main$1$$anonfun$apply$mcD$sp
       14: putfield      #30                 // Field $outer:Lperf/indirect/Benchmark$$anonfun$main$1;
       17: aload_0       
       18: aload_2       
-      19: putfield      #28                 // Field result$2:Lscala/runtime/ObjectRef;
+      19: putfield      #28                 // Field result$1:Lscala/runtime/ObjectRef;
       22: aload_0       
       23: invokespecial #97                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
       26: return        

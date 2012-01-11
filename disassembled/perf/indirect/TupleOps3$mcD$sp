@@ -1,5 +1,5 @@
 Compiled from "Vec3d.scala"
-public interface perf.indirect.TupleOps3$mcD$sp<Repr> extends perf.indirect.TupleOps3<java.lang.Object, Repr>, perf.indirect.Tuple3$mcD$sp<Repr> {
+public interface perf.indirect.TupleOps3$mcD$sp<Repr extends perf.indirect.Tuple3<java.lang.Object, Repr>> extends perf.indirect.TupleOps3<java.lang.Object, Repr>, perf.indirect.Tuple3$mcD$sp<Repr> {
   public abstract Repr $plus(double);
 
   public abstract Repr $minus(double);

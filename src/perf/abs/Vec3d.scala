@@ -11,13 +11,13 @@ trait Tuple3[Elem, Repr]
   def copy(that: Repr): Repr
 }
 
-trait TupleOps3[Elem, Repr]
+trait TupleOps3[Elem, Repr <: Tuple3[Elem, Repr]]
   extends Tuple3[Elem, Repr]
 {  
-  def + (that: Vec3d): Repr
-  def - (that: Vec3d): Repr
-  def * (that: Vec3d): Repr
-  def / (that: Vec3d): Repr
+  def + (that: Repr): Repr
+  def - (that: Repr): Repr
+  def * (that: Repr): Repr
+  def / (that: Repr): Repr
   
   def + (s: Elem): Repr
   def - (s: Elem): Repr

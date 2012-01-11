@@ -1,12 +1,12 @@
 Compiled from "Vec3d.scala"
-public interface perf.abs.TupleOps3<Elem, Repr> extends perf.abs.Tuple3<Elem, Repr> {
-  public abstract Repr $plus(perf.abs.Vec3d);
+public interface perf.abs.TupleOps3<Elem, Repr extends perf.abs.Tuple3<Elem, Repr>> extends perf.abs.Tuple3<Elem, Repr> {
+  public abstract Repr $plus(Repr);
 
-  public abstract Repr $minus(perf.abs.Vec3d);
+  public abstract Repr $minus(Repr);
 
-  public abstract Repr $times(perf.abs.Vec3d);
+  public abstract Repr $times(Repr);
 
-  public abstract Repr $div(perf.abs.Vec3d);
+  public abstract Repr $div(Repr);
 
   public abstract Repr $plus(Elem);
 

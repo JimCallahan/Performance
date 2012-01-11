@@ -10,13 +10,13 @@ trait Tuple3[@specialized(Double) Elem, Repr]
   def fromComps(x: Elem, y: Elem, z:Elem): Repr
 }
 
-trait TupleOps3[@specialized(Double) Elem, Repr]
+trait TupleOps3[@specialized(Double) Elem, Repr <: Tuple3[Elem, Repr]]
   extends Tuple3[Elem, Repr]
 {  
-  def + (that: Vec3d): Repr
-  def - (that: Vec3d): Repr
-  def * (that: Vec3d): Repr
-  def / (that: Vec3d): Repr
+  def + (that: Repr): Repr
+  def - (that: Repr): Repr
+  def * (that: Repr): Repr
+  def / (that: Repr): Repr
   
   def + (s: Elem): Repr
   def - (s: Elem): Repr
@@ -60,7 +60,7 @@ trait VecOps3d[Repr <: Tuple3[Double, Repr]]
   this: Repr =>    
   def magSq: Double = dot(this)
   def mag: Double = scala.math.sqrt(magSq)
-  def normalized: Repr = this / fromComps(mag, mag, mag)
+  def normalized: Repr = this / mag
   
   def dot (that: Repr): Double = x*that.x + y*that.y + z+that.z
   def cross(that: Repr): Repr = 

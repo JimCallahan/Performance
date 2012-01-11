@@ -19,9 +19,9 @@ public final class perf.abs.Benchmark$$anonfun$4$$anonfun$apply$mcD$sp$5 extends
   public void apply$mcVI$sp(int);
     Code:
        0: aload_0       
-       1: getfield      #28                 // Field result$6:Lscala/runtime/ObjectRef;
+       1: getfield      #28                 // Field result$5:Lscala/runtime/ObjectRef;
        4: aload_0       
-       5: getfield      #28                 // Field result$6:Lscala/runtime/ObjectRef;
+       5: getfield      #28                 // Field result$5:Lscala/runtime/ObjectRef;
        8: getfield      #34                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
       11: checkcast     #36                 // class perf/abs/Vec3d
       14: aload_0       
@@ -67,7 +67,7 @@ public final class perf.abs.Benchmark$$anonfun$4$$anonfun$apply$mcD$sp$5 extends
       14: putfield      #38                 // Field $outer:Lperf/abs/Benchmark$$anonfun$4;
       17: aload_0       
       18: aload_2       
-      19: putfield      #28                 // Field result$6:Lscala/runtime/ObjectRef;
+      19: putfield      #28                 // Field result$5:Lscala/runtime/ObjectRef;
       22: aload_0       
       23: invokespecial #79                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
       26: return        

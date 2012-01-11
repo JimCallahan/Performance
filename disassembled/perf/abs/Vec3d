@@ -414,7 +414,7 @@ public class perf.abs.Vec3d implements perf.abs.TupleOps3<java.lang.Object, perf
       48: invokeinterface #147,  2          // InterfaceMethod scala/collection/immutable/StringLike.format:(Lscala/collection/Seq;)Ljava/lang/String;
       53: areturn       
 
-  public java.lang.Object compwise(java.lang.Object, scala.Function2);
+  public perf.abs.Tuple3 compwise(perf.abs.Tuple3, scala.Function2);
     Code:
        0: aload_0       
        1: aload_1       
@@ -427,88 +427,92 @@ public class perf.abs.Vec3d implements perf.abs.TupleOps3<java.lang.Object, perf
     Code:
        0: aload_0       
        1: aload_1       
-       2: invokevirtual #153                // Method reduce:(Lscala/Function2;)D
+       2: invokevirtual #154                // Method reduce:(Lscala/Function2;)D
        5: invokestatic  #137                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
        8: areturn       
 
-  public java.lang.Object map(java.lang.Object, scala.Function1);
+  public perf.abs.Tuple3 map(perf.abs.Tuple3, scala.Function1);
     Code:
        0: aload_0       
        1: aload_1       
        2: checkcast     #43                 // class perf/abs/Vec3d
        5: aload_2       
-       6: invokevirtual #156                // Method map:(Lperf/abs/Vec3d;Lscala/Function1;)Lperf/abs/Vec3d;
+       6: invokevirtual #157                // Method map:(Lperf/abs/Vec3d;Lscala/Function1;)Lperf/abs/Vec3d;
        9: areturn       
 
-  public java.lang.Object $div(java.lang.Object);
+  public perf.abs.Tuple3 $div(java.lang.Object);
     Code:
        0: aload_0       
        1: aload_1       
-       2: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       2: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
        5: invokevirtual #86                 // Method $div:(D)Lperf/abs/Vec3d;
        8: areturn       
 
-  public java.lang.Object $times(java.lang.Object);
+  public perf.abs.Tuple3 $times(java.lang.Object);
     Code:
        0: aload_0       
        1: aload_1       
-       2: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
-       5: invokevirtual #162                // Method $times:(D)Lperf/abs/Vec3d;
+       2: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #164                // Method $times:(D)Lperf/abs/Vec3d;
        8: areturn       
 
-  public java.lang.Object $minus(java.lang.Object);
+  public perf.abs.Tuple3 $minus(java.lang.Object);
     Code:
        0: aload_0       
        1: aload_1       
-       2: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
-       5: invokevirtual #164                // Method $minus:(D)Lperf/abs/Vec3d;
+       2: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #166                // Method $minus:(D)Lperf/abs/Vec3d;
        8: areturn       
 
-  public java.lang.Object $plus(java.lang.Object);
+  public perf.abs.Tuple3 $plus(java.lang.Object);
     Code:
        0: aload_0       
        1: aload_1       
-       2: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
-       5: invokevirtual #166                // Method $plus:(D)Lperf/abs/Vec3d;
+       2: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #168                // Method $plus:(D)Lperf/abs/Vec3d;
        8: areturn       
 
-  public java.lang.Object $div(perf.abs.Vec3d);
-    Code:
-       0: aload_0       
-       1: aload_1       
-       2: invokevirtual #169                // Method $div:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
-       5: areturn       
-
-  public java.lang.Object $times(perf.abs.Vec3d);
-    Code:
-       0: aload_0       
-       1: aload_1       
-       2: invokevirtual #171                // Method $times:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
-       5: areturn       
-
-  public java.lang.Object $minus(perf.abs.Vec3d);
-    Code:
-       0: aload_0       
-       1: aload_1       
-       2: invokevirtual #173                // Method $minus:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
-       5: areturn       
-
-  public java.lang.Object $plus(perf.abs.Vec3d);
-    Code:
-       0: aload_0       
-       1: aload_1       
-       2: invokevirtual #175                // Method $plus:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
-       5: areturn       
-
-  public java.lang.Object cross(java.lang.Object);
+  public perf.abs.Tuple3 $div(perf.abs.Tuple3);
     Code:
        0: aload_0       
        1: aload_1       
        2: checkcast     #43                 // class perf/abs/Vec3d
-       5: invokevirtual #177                // Method cross:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
+       5: invokevirtual #171                // Method $div:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
        8: areturn       
 
-  public java.lang.Object dot(java.lang.Object);
+  public perf.abs.Tuple3 $times(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #43                 // class perf/abs/Vec3d
+       5: invokevirtual #173                // Method $times:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
+       8: areturn       
+
+  public perf.abs.Tuple3 $minus(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #43                 // class perf/abs/Vec3d
+       5: invokevirtual #175                // Method $minus:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
+       8: areturn       
+
+  public perf.abs.Tuple3 $plus(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #43                 // class perf/abs/Vec3d
+       5: invokevirtual #177                // Method $plus:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
+       8: areturn       
+
+  public perf.abs.Tuple3 cross(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #43                 // class perf/abs/Vec3d
+       5: invokevirtual #179                // Method cross:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
+       8: areturn       
+
+  public java.lang.Object dot(perf.abs.Tuple3);
     Code:
        0: aload_0       
        1: aload_1       
@@ -517,10 +521,10 @@ public class perf.abs.Vec3d implements perf.abs.TupleOps3<java.lang.Object, perf
        8: invokestatic  #137                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
       11: areturn       
 
-  public java.lang.Object normalized();
+  public perf.abs.Tuple3 normalized();
     Code:
        0: aload_0       
-       1: invokevirtual #180                // Method normalized:()Lperf/abs/Vec3d;
+       1: invokevirtual #183                // Method normalized:()Lperf/abs/Vec3d;
        4: areturn       
 
   public java.lang.Object mag();
@@ -542,18 +546,18 @@ public class perf.abs.Vec3d implements perf.abs.TupleOps3<java.lang.Object, perf
        0: aload_0       
        1: aload_1       
        2: checkcast     #43                 // class perf/abs/Vec3d
-       5: invokevirtual #182                // Method copy:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
+       5: invokevirtual #186                // Method copy:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
        8: areturn       
 
   public java.lang.Object fromComps(java.lang.Object, java.lang.Object, java.lang.Object);
     Code:
        0: aload_0       
        1: aload_1       
-       2: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       2: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
        5: aload_2       
-       6: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       6: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
        9: aload_3       
-      10: invokestatic  #160                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+      10: invokestatic  #162                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
       13: invokevirtual #89                 // Method fromComps:(DDD)Lperf/abs/Vec3d;
       16: areturn       
 
@@ -590,8 +594,8 @@ public class perf.abs.Vec3d implements perf.abs.TupleOps3<java.lang.Object, perf
       11: dload         5
       13: putfield      #49                 // Field z:D
       16: aload_0       
-      17: invokespecial #186                // Method java/lang/Object."<init>":()V
+      17: invokespecial #190                // Method java/lang/Object."<init>":()V
       20: aload_0       
-      21: invokestatic  #190                // Method perf/abs/Tuple3$class.$init$:(Lperf/abs/Tuple3;)V
+      21: invokestatic  #194                // Method perf/abs/Tuple3$class.$init$:(Lperf/abs/Tuple3;)V
       24: return        
 }

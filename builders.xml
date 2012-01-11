@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Performance.MakeJar" basedir=".">
-  <target name ="MakeJar" description="Create a jar for the Performance project.">
-    <jar jarfile="target/Performance.jar" basedir="bin"/>
-  </target>
-	  <target name="Scaladoc">
-	    <exec executable="cmd">
-	      <arg value="/c"/>
-	      <arg value="scaladoc.bat"/>
-	      <arg value="-Djava.library.path=external/lwjgl/native/windows/x86_64"/>
-		  <arg value="-d"/>
-		  <arg value="docs"/>
-	      <arg value="src/perf/abs/*.scala"/>
-	      <arg value="src/perf/concrete/*.scala"/>
-	      <arg value="src/perf/indirect/*.scala"/>
-	    </exec>
-	  </target>
-  <target name ="MakeDocsJar" description="Create a jar for the Performance API documentation.">
-    <jar jarfile="target/PerformanceDocs.jar" basedir="docs"/>
-  </target>
-  <target name="SuperClean">
-    <delete>
-      <fileset dir="target"></fileset>
-      <fileset dir="docs"></fileset>
-    </delete>
-  </target>
+	<target name="MakeJar" description="Create a jar for the Performance project.">
+		<jar jarfile="target/Performance.jar" basedir="bin" />
+	</target>
+	<target name="Scaladoc">
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="scaladoc.bat" />
+			<arg value="-Djava.library.path=external/lwjgl/native/windows/x86_64" />
+			<arg value="-d" />
+			<arg value="docs" />
+			<arg value="src/perf/*.scala" />
+			<arg value="src/perf/abs/*.scala" />
+			<arg value="src/perf/concrete/*.scala" />
+			<arg value="src/perf/indirect/*.scala" />
+		</exec>
+	</target>
+	<target name="MakeDocsJar" description="Create a jar for the Performance API documentation.">
+		<jar jarfile="target/PerformanceDocs.jar" basedir="docs" />
+	</target>
+	<target name="ConcreteBenchmark">
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="scala" />
+			<arg value="-J-Xmx1024M" />
+			<arg value="-classpath" />
+			<arg value="target/Performance.jar" />
+			<arg value="perf.concrete.Benchmark" />
+			<arg value="results/perf-concrete.txt" />
+		</exec>
+	</target>
+	<target name="AbsBenchmark">
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="scala" />
+			<arg value="-J-Xmx1024M" />
+			<arg value="-classpath" />
+			<arg value="target/Performance.jar" />
+			<arg value="perf.abs.Benchmark" />
+			<arg value="results/perf-abs.txt" />
+		</exec>
+	</target>
+	<target name="IndirectBenchmark">
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="scala" />
+			<arg value="-J-Xmx1024M" />
+			<arg value="-classpath" />
+			<arg value="target/Performance.jar" />
+			<arg value="perf.indirect.Benchmark" />
+			<arg value="results/perf-indirect.txt" />
+		</exec>
+	</target>
+	<target name="SuperClean">
+		<delete>
+			<fileset dir="target">
+			</fileset>
+			<fileset dir="docs">
+			</fileset>
+		</delete>
+	</target>
 </project>

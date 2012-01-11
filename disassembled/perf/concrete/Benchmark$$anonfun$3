@@ -18,58 +18,55 @@ public final class perf.concrete.Benchmark$$anonfun$3 extends scala.runtime.Abst
   public final double apply();
     Code:
        0: aload_0       
-       1: invokevirtual #23                 // Method apply$mcD$sp:()D
+       1: invokevirtual #21                 // Method apply$mcD$sp:()D
        4: dreturn       
 
   public double apply$mcD$sp();
     Code:
-       0: new           #25                 // class scala/runtime/ObjectRef
+       0: new           #23                 // class scala/runtime/ObjectRef
        3: dup           
-       4: getstatic     #31                 // Field perf/concrete/Vec3d$.MODULE$:Lperf/concrete/Vec3d$;
+       4: getstatic     #29                 // Field perf/concrete/Vec3d$.MODULE$:Lperf/concrete/Vec3d$;
        7: dconst_1      
-       8: invokevirtual #34                 // Method perf/concrete/Vec3d$.apply:(D)Lperf/concrete/Vec3d;
-      11: invokespecial #38                 // Method scala/runtime/ObjectRef."<init>":(Ljava/lang/Object;)V
+       8: invokevirtual #32                 // Method perf/concrete/Vec3d$.apply:(D)Lperf/concrete/Vec3d;
+      11: invokespecial #36                 // Method scala/runtime/ObjectRef."<init>":(Ljava/lang/Object;)V
       14: astore_1      
-      15: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      15: getstatic     #41                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
       18: iconst_0      
-      19: invokevirtual #47                 // Method scala/Predef$.intWrapper:(I)Lscala/runtime/RichInt;
-      22: aload_0       
-      23: getfield      #49                 // Field size$1:I
-      26: invokevirtual #55                 // Method scala/runtime/RichInt.until:(I)Lscala/collection/immutable/Range;
-      29: new           #57                 // class perf/concrete/Benchmark$$anonfun$3$$anonfun$apply$mcD$sp$4
-      32: dup           
-      33: aload_0       
-      34: aload_1       
-      35: invokespecial #60                 // Method perf/concrete/Benchmark$$anonfun$3$$anonfun$apply$mcD$sp$4."<init>":(Lperf/concrete/Benchmark$$anonfun$3;Lscala/runtime/ObjectRef;)V
-      38: invokevirtual #66                 // Method scala/collection/immutable/Range.foreach$mVc$sp:(Lscala/Function1;)V
-      41: aload_1       
-      42: getfield      #70                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
-      45: checkcast     #72                 // class perf/concrete/Vec3d
-      48: invokevirtual #75                 // Method perf/concrete/Vec3d.magSq:()D
-      51: dreturn       
+      19: invokevirtual #45                 // Method scala/Predef$.intWrapper:(I)Lscala/runtime/RichInt;
+      22: getstatic     #50                 // Field perf/concrete/Benchmark$.MODULE$:Lperf/concrete/Benchmark$;
+      25: invokeinterface #56,  1           // InterfaceMethod perf/BenchUtil.size:()I
+      30: invokevirtual #62                 // Method scala/runtime/RichInt.until:(I)Lscala/collection/immutable/Range;
+      33: new           #64                 // class perf/concrete/Benchmark$$anonfun$3$$anonfun$apply$mcD$sp$4
+      36: dup           
+      37: aload_0       
+      38: aload_1       
+      39: invokespecial #67                 // Method perf/concrete/Benchmark$$anonfun$3$$anonfun$apply$mcD$sp$4."<init>":(Lperf/concrete/Benchmark$$anonfun$3;Lscala/runtime/ObjectRef;)V
+      42: invokevirtual #73                 // Method scala/collection/immutable/Range.foreach$mVc$sp:(Lscala/Function1;)V
+      45: aload_1       
+      46: getfield      #77                 // Field scala/runtime/ObjectRef.elem:Ljava/lang/Object;
+      49: checkcast     #79                 // class perf/concrete/Vec3d
+      52: invokevirtual #82                 // Method perf/concrete/Vec3d.magSq:()D
+      55: dreturn       
 
   public final java.lang.Object apply();
     Code:
        0: aload_0       
-       1: invokevirtual #83                 // Method apply:()D
-       4: invokestatic  #89                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       1: invokevirtual #90                 // Method apply:()D
+       4: invokestatic  #96                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
        7: areturn       
 
-  public perf.concrete.Benchmark$$anonfun$3(int, perf.concrete.Vec3d[], perf.concrete.Vec3d[], perf.concrete.Vec3d[]);
+  public perf.concrete.Benchmark$$anonfun$3(perf.concrete.Vec3d[], perf.concrete.Vec3d[], perf.concrete.Vec3d[]);
     Code:
        0: aload_0       
-       1: iload_1       
-       2: putfield      #49                 // Field size$1:I
+       1: aload_1       
+       2: putfield      #99                 // Field vecA$1:[Lperf/concrete/Vec3d;
        5: aload_0       
        6: aload_2       
-       7: putfield      #92                 // Field vecA$1:[Lperf/concrete/Vec3d;
+       7: putfield      #101                // Field vecB$1:[Lperf/concrete/Vec3d;
       10: aload_0       
       11: aload_3       
-      12: putfield      #94                 // Field vecB$1:[Lperf/concrete/Vec3d;
+      12: putfield      #103                // Field vecC$1:[Lperf/concrete/Vec3d;
       15: aload_0       
-      16: aload         4
-      18: putfield      #96                 // Field vecC$1:[Lperf/concrete/Vec3d;
-      21: aload_0       
-      22: invokespecial #100                // Method scala/runtime/AbstractFunction0$mcD$sp."<init>":()V
-      25: return        
+      16: invokespecial #107                // Method scala/runtime/AbstractFunction0$mcD$sp."<init>":()V
+      19: return        
 }
