@@ -1,0 +1,44 @@
+Compiled from "VecNd.scala"
+public final class perf.abs2.VecNd$$anonfun$$div$mcD$sp$1 extends scala.runtime.AbstractFunction1$mcDD$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final double apply(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #19                 // Method apply$mcDD$sp:(D)D
+       5: dreturn       
+
+  public double apply$mcDD$sp(double);
+    Code:
+       0: dload_1       
+       1: aload_0       
+       2: getfield      #21                 // Field s$5:D
+       5: ddiv          
+       6: dreturn       
+
+  public final java.lang.Object apply(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #32                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #34                 // Method apply:(D)D
+       8: invokestatic  #38                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+      11: areturn       
+
+  public perf.abs2.VecNd$$anonfun$$div$mcD$sp$1(perf.abs2.VecNd, double);
+    Code:
+       0: aload_0       
+       1: dload_2       
+       2: putfield      #21                 // Field s$5:D
+       5: aload_0       
+       6: invokespecial #45                 // Method scala/runtime/AbstractFunction1$mcDD$sp."<init>":()V
+       9: return        
+}

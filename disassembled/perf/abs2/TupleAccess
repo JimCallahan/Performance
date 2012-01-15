@@ -1,0 +1,14 @@
+Compiled from "Tuple.scala"
+public interface perf.abs2.TupleAccess<Elem, Repr> extends perf.abs2.Tuple {
+  public abstract Elem apply(int);
+
+  public abstract Repr update(int, Elem);
+
+  public abstract double apply$mcD$sp(int);
+
+  public abstract int apply$mcI$sp(int);
+
+  public abstract Repr update$mcD$sp(int, double);
+
+  public abstract Repr update$mcI$sp(int, int);
+}

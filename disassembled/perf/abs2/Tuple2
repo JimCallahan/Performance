@@ -1,0 +1,28 @@
+Compiled from "Tuple.scala"
+public interface perf.abs2.Tuple2<Elem, Repr> extends perf.abs2.TupleAccess<Elem, Repr> {
+  public abstract Elem x();
+
+  public abstract Elem y();
+
+  public abstract Repr updateX(Elem);
+
+  public abstract Repr updateY(Elem);
+
+  public abstract double x$mcD$sp();
+
+  public abstract int x$mcI$sp();
+
+  public abstract double y$mcD$sp();
+
+  public abstract int y$mcI$sp();
+
+  public abstract Repr updateX$mcD$sp(double);
+
+  public abstract Repr updateX$mcI$sp(int);
+
+  public abstract Repr updateY$mcD$sp(double);
+
+  public abstract Repr updateY$mcI$sp(int);
+
+  public abstract boolean specInstance$();
+}

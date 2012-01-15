@@ -1,0 +1,14 @@
+Compiled from "Vec3d.scala"
+public interface perf.abs.Tuple3$mcD$sp<Repr> extends perf.abs.Tuple3<java.lang.Object, Repr> {
+  public abstract double x();
+
+  public abstract double y();
+
+  public abstract double z();
+
+  public abstract Repr fromScalar(double);
+
+  public abstract Repr fromScalar$mcD$sp(double);
+
+  public abstract Repr fromComps(double, double, double);
+}

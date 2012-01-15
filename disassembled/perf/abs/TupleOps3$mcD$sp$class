@@ -1,0 +1,76 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.abs.TupleOps3$mcD$sp$class {
+  public static perf.abs.Tuple3 $plus(perf.abs.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #12,  3           // InterfaceMethod perf/abs/TupleOps3.$plus$mcD$sp:(D)Lperf/abs/Tuple3;
+       7: areturn       
+
+  public static perf.abs.Tuple3 $minus(perf.abs.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #21,  3           // InterfaceMethod perf/abs/TupleOps3.$minus$mcD$sp:(D)Lperf/abs/Tuple3;
+       7: areturn       
+
+  public static perf.abs.Tuple3 $times(perf.abs.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #25,  3           // InterfaceMethod perf/abs/TupleOps3.$times$mcD$sp:(D)Lperf/abs/Tuple3;
+       7: areturn       
+
+  public static perf.abs.Tuple3 $div(perf.abs.TupleOps3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #29,  3           // InterfaceMethod perf/abs/TupleOps3.$div$mcD$sp:(D)Lperf/abs/Tuple3;
+       7: areturn       
+
+  public static double magSq(perf.abs.TupleOps3$mcD$sp);
+    Code:
+       0: aload_0       
+       1: invokeinterface #35,  1           // InterfaceMethod perf/abs/TupleOps3.magSq$mcD$sp:()D
+       6: dreturn       
+
+  public static double mag(perf.abs.TupleOps3$mcD$sp);
+    Code:
+       0: aload_0       
+       1: invokeinterface #39,  1           // InterfaceMethod perf/abs/TupleOps3.mag$mcD$sp:()D
+       6: dreturn       
+
+  public static double dot(perf.abs.TupleOps3$mcD$sp, perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #45,  2           // InterfaceMethod perf/abs/TupleOps3.dot$mcD$sp:(Lperf/abs/Tuple3;)D
+       7: dreturn       
+
+  public static perf.abs.Tuple3 map(perf.abs.TupleOps3$mcD$sp, perf.abs.Tuple3, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #53,  3           // InterfaceMethod perf/abs/TupleOps3.map$mcD$sp:(Lperf/abs/Tuple3;Lscala/Function1;)Lperf/abs/Tuple3;
+       8: areturn       
+
+  public static double reduce(perf.abs.TupleOps3$mcD$sp, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #61,  2           // InterfaceMethod perf/abs/TupleOps3.reduce$mcD$sp:(Lscala/Function2;)D
+       7: dreturn       
+
+  public static perf.abs.Tuple3 compwise(perf.abs.TupleOps3$mcD$sp, perf.abs.Tuple3, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #68,  3           // InterfaceMethod perf/abs/TupleOps3.compwise$mcD$sp:(Lperf/abs/Tuple3;Lscala/Function2;)Lperf/abs/Tuple3;
+       8: areturn       
+
+  public static void $init$(perf.abs.TupleOps3$mcD$sp);
+    Code:
+       0: return        
+}

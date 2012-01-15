@@ -1,0 +1,45 @@
+Compiled from "Benchmark.scala"
+public final class perf.abs2.Benchmark {
+  public static final perf.BenchUtil$Stats timeTest(java.lang.String, int, long, scala.Function0<java.lang.Object>);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+       3: aload_0       
+       4: iload_1       
+       5: lload_2       
+       6: aload         4
+       8: invokevirtual #13                 // Method perf/abs2/Benchmark$.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+      11: areturn       
+
+  public static final void perf$BenchUtil$_setter_$iters_$eq(int);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+       3: iload_0       
+       4: invokevirtual #19                 // Method perf/abs2/Benchmark$.perf$BenchUtil$_setter_$iters_$eq:(I)V
+       7: return        
+
+  public static final void perf$BenchUtil$_setter_$size_$eq(int);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+       3: iload_0       
+       4: invokevirtual #22                 // Method perf/abs2/Benchmark$.perf$BenchUtil$_setter_$size_$eq:(I)V
+       7: return        
+
+  public static final int iters();
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+       3: invokevirtual #26                 // Method perf/abs2/Benchmark$.iters:()I
+       6: ireturn       
+
+  public static final int size();
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+       3: invokevirtual #29                 // Method perf/abs2/Benchmark$.size:()I
+       6: ireturn       
+
+  public static final void main(java.lang.String[]);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+       3: aload_0       
+       4: invokevirtual #33                 // Method perf/abs2/Benchmark$.main:([Ljava/lang/String;)V
+       7: return        
+}

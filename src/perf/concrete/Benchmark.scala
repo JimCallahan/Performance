@@ -2,6 +2,7 @@ package perf.concrete
 
 import perf.BenchUtil
 import java.io.FileOutputStream
+import java.util.Date
 
 object Benchmark
   extends BenchUtil {
@@ -15,6 +16,7 @@ object Benchmark
       }
 
       println("Benchmark of Concrete Vectors.")
+      println(new Date())
       println
 
       print("Generating Test Data: ")

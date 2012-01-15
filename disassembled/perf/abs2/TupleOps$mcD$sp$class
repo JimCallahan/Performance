@@ -1,0 +1,56 @@
+Compiled from "TupleOps.scala"
+public abstract class perf.abs2.TupleOps$mcD$sp$class {
+  public static perf.abs2.Tuple $plus(perf.abs2.TupleOps$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #12,  3           // InterfaceMethod perf/abs2/TupleOps.$plus$mcD$sp:(D)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static perf.abs2.Tuple $minus(perf.abs2.TupleOps$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #21,  3           // InterfaceMethod perf/abs2/TupleOps.$minus$mcD$sp:(D)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static perf.abs2.Tuple $times(perf.abs2.TupleOps$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #25,  3           // InterfaceMethod perf/abs2/TupleOps.$times$mcD$sp:(D)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static perf.abs2.Tuple $div(perf.abs2.TupleOps$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #29,  3           // InterfaceMethod perf/abs2/TupleOps.$div$mcD$sp:(D)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static perf.abs2.Tuple map(perf.abs2.TupleOps$mcD$sp, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #35,  2           // InterfaceMethod perf/abs2/TupleOps.map$mcD$sp:(Lscala/Function1;)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static double reduce(perf.abs2.TupleOps$mcD$sp, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #43,  2           // InterfaceMethod perf/abs2/TupleOps.reduce$mcD$sp:(Lscala/Function2;)D
+       7: dreturn       
+
+  public static perf.abs2.Tuple compwise(perf.abs2.TupleOps$mcD$sp, perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #50,  3           // InterfaceMethod perf/abs2/TupleOps.compwise$mcD$sp:(Lperf/abs2/Tuple;Lscala/Function2;)Lperf/abs2/Tuple;
+       8: areturn       
+
+  public static void $init$(perf.abs2.TupleOps$mcD$sp);
+    Code:
+       0: return        
+}

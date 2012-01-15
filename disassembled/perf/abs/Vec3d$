@@ -51,7 +51,7 @@ public final class perf.abs.Vec3d$ implements scala.ScalaObject {
       11: invokevirtual #49                 // Method perf/abs/Vec3d.$minus:(Lperf/abs/Vec3d;)Lperf/abs/Vec3d;
       14: astore_2      
       15: aload_2       
-      16: invokevirtual #52                 // Method perf/abs/Vec3d.magSq:()D
+      16: invokevirtual #52                 // Method perf/abs/Vec3d.magSq$mcD$sp:()D
       19: dstore_3      
       20: dload_3       
       21: ldc2_w        #53                 // double 0.25d
@@ -65,6 +65,6 @@ public final class perf.abs.Vec3d$ implements scala.ScalaObject {
       37: getstatic     #35                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
       40: dload_3       
       41: invokevirtual #60                 // Method scala/math/package$.sqrt:(D)D
-      44: invokevirtual #63                 // Method perf/abs/Vec3d.$div:(D)Lperf/abs/Vec3d;
+      44: invokevirtual #63                 // Method perf/abs/Vec3d.$div$mcD$sp:(D)Lperf/abs/Vec3d;
       47: areturn       
 }

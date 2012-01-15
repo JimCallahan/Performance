@@ -1,0 +1,25 @@
+Compiled from "VecOps.scala"
+public abstract class perf.abs2.VecOps$mcI$sp$class {
+  public static int dot(perf.abs2.VecOps$mcI$sp, perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #12,  2           // InterfaceMethod perf/abs2/VecOps.dot$mcI$sp:(Lperf/abs2/Tuple;)I
+       7: ireturn       
+
+  public static int magSq(perf.abs2.VecOps$mcI$sp);
+    Code:
+       0: aload_0       
+       1: invokeinterface #23,  1           // InterfaceMethod perf/abs2/VecOps.magSq$mcI$sp:()I
+       6: ireturn       
+
+  public static int mag(perf.abs2.VecOps$mcI$sp);
+    Code:
+       0: aload_0       
+       1: invokeinterface #27,  1           // InterfaceMethod perf/abs2/VecOps.mag$mcI$sp:()I
+       6: ireturn       
+
+  public static void $init$(perf.abs2.VecOps$mcI$sp);
+    Code:
+       0: return        
+}

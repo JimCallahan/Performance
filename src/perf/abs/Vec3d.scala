@@ -1,6 +1,6 @@
 package perf.abs
 
-trait Tuple3[Elem, Repr]
+trait Tuple3[@specialized(Double) Elem, Repr]
 {
   val x: Elem
   val y: Elem
@@ -11,7 +11,7 @@ trait Tuple3[Elem, Repr]
   def copy(that: Repr): Repr
 }
 
-trait TupleOps3[Elem, Repr <: Tuple3[Elem, Repr]]
+trait TupleOps3[@specialized(Double) Elem, Repr <: Tuple3[Elem, Repr]]
   extends Tuple3[Elem, Repr]
 {  
   def + (that: Repr): Repr

@@ -1,0 +1,50 @@
+Compiled from "VecOps.scala"
+public abstract class perf.abs2.VecOps$class {
+  public static double dot$mcD$sp(perf.abs2.VecOps, perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #12,  2           // InterfaceMethod perf/abs2/VecOps.dot:(Lperf/abs2/Tuple;)Ljava/lang/Object;
+       7: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+      10: dreturn       
+
+  public static int dot$mcI$sp(perf.abs2.VecOps, perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #12,  2           // InterfaceMethod perf/abs2/VecOps.dot:(Lperf/abs2/Tuple;)Ljava/lang/Object;
+       7: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      10: ireturn       
+
+  public static double magSq$mcD$sp(perf.abs2.VecOps);
+    Code:
+       0: aload_0       
+       1: invokeinterface #35,  1           // InterfaceMethod perf/abs2/VecOps.magSq:()Ljava/lang/Object;
+       6: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static int magSq$mcI$sp(perf.abs2.VecOps);
+    Code:
+       0: aload_0       
+       1: invokeinterface #35,  1           // InterfaceMethod perf/abs2/VecOps.magSq:()Ljava/lang/Object;
+       6: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       9: ireturn       
+
+  public static double mag$mcD$sp(perf.abs2.VecOps);
+    Code:
+       0: aload_0       
+       1: invokeinterface #41,  1           // InterfaceMethod perf/abs2/VecOps.mag:()Ljava/lang/Object;
+       6: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static int mag$mcI$sp(perf.abs2.VecOps);
+    Code:
+       0: aload_0       
+       1: invokeinterface #41,  1           // InterfaceMethod perf/abs2/VecOps.mag:()Ljava/lang/Object;
+       6: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       9: ireturn       
+
+  public static void $init$(perf.abs2.VecOps);
+    Code:
+       0: return        
+}

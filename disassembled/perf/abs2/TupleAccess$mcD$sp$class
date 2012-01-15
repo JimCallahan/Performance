@@ -1,0 +1,21 @@
+Compiled from "Tuple.scala"
+public abstract class perf.abs2.TupleAccess$mcD$sp$class {
+  public static double apply(perf.abs2.TupleAccess$mcD$sp, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokeinterface #12,  2           // InterfaceMethod perf/abs2/TupleAccess.apply$mcD$sp:(I)D
+       7: dreturn       
+
+  public static java.lang.Object update(perf.abs2.TupleAccess$mcD$sp, int, double);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: dload_2       
+       3: invokeinterface #23,  4           // InterfaceMethod perf/abs2/TupleAccess.update$mcD$sp:(ID)Ljava/lang/Object;
+       8: areturn       
+
+  public static void $init$(perf.abs2.TupleAccess$mcD$sp);
+    Code:
+       0: return        
+}

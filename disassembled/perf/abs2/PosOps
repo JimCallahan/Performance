@@ -1,0 +1,4 @@
+Compiled from "PosOps.scala"
+public interface perf.abs2.PosOps<Elem, Pos extends perf.abs2.Position, Vec extends perf.abs2.Vector> extends perf.abs2.TupleOps<Elem, Pos, Vec> {
+  public abstract Vec $minus(Pos);
+}

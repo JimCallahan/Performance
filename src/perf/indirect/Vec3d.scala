@@ -57,10 +57,17 @@ trait TupleOps3d[Repr <: Tuple3[Double, Repr]]
 trait VecOps3d[Repr <: Tuple3[Double, Repr]] 
   extends TupleOps3d[Repr]
 { 
-  this: Repr =>    
-  def magSq: Double = dot(this)
+  //this: Repr =>    
+  //def magSq: Double = dot(this)
+  //def mag: Double = scala.math.sqrt(magSq)
+  //def normalized: Repr = this / mag
+  
+  def magSq: Double = x*x + y*y + z*z
   def mag: Double = scala.math.sqrt(magSq)
-  def normalized: Repr = this / mag
+  def normalized: Repr = {
+    val m = mag
+    fromComps(x/m, y/m, z/m)
+  }
   
   def dot (that: Repr): Double = x*that.x + y*that.y + z+that.z
   def cross(that: Repr): Repr = 

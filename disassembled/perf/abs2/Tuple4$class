@@ -1,0 +1,131 @@
+Compiled from "Tuple.scala"
+public abstract class perf.abs2.Tuple4$class {
+  public static double x$mcD$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #12,  1           // InterfaceMethod perf/abs2/Tuple4.x:()Ljava/lang/Object;
+       6: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static int x$mcI$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #12,  1           // InterfaceMethod perf/abs2/Tuple4.x:()Ljava/lang/Object;
+       6: invokestatic  #27                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       9: ireturn       
+
+  public static double y$mcD$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #31,  1           // InterfaceMethod perf/abs2/Tuple4.y:()Ljava/lang/Object;
+       6: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static int y$mcI$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #31,  1           // InterfaceMethod perf/abs2/Tuple4.y:()Ljava/lang/Object;
+       6: invokestatic  #27                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       9: ireturn       
+
+  public static double z$mcD$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #36,  1           // InterfaceMethod perf/abs2/Tuple4.z:()Ljava/lang/Object;
+       6: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static int z$mcI$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #36,  1           // InterfaceMethod perf/abs2/Tuple4.z:()Ljava/lang/Object;
+       6: invokestatic  #27                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       9: ireturn       
+
+  public static double w$mcD$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #41,  1           // InterfaceMethod perf/abs2/Tuple4.w:()Ljava/lang/Object;
+       6: invokestatic  #18                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static int w$mcI$sp(perf.abs2.Tuple4);
+    Code:
+       0: aload_0       
+       1: invokeinterface #41,  1           // InterfaceMethod perf/abs2/Tuple4.w:()Ljava/lang/Object;
+       6: invokestatic  #27                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       9: ireturn       
+
+  public static java.lang.Object updateX$mcD$sp(perf.abs2.Tuple4, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #48                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #52,  2           // InterfaceMethod perf/abs2/Tuple4.updateX:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateX$mcI$sp(perf.abs2.Tuple4, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #60                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #52,  2           // InterfaceMethod perf/abs2/Tuple4.updateX:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateY$mcD$sp(perf.abs2.Tuple4, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #48                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #65,  2           // InterfaceMethod perf/abs2/Tuple4.updateY:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateY$mcI$sp(perf.abs2.Tuple4, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #60                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #65,  2           // InterfaceMethod perf/abs2/Tuple4.updateY:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateZ$mcD$sp(perf.abs2.Tuple4, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #48                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #70,  2           // InterfaceMethod perf/abs2/Tuple4.updateZ:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateZ$mcI$sp(perf.abs2.Tuple4, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #60                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #70,  2           // InterfaceMethod perf/abs2/Tuple4.updateZ:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateW$mcD$sp(perf.abs2.Tuple4, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #48                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #75,  2           // InterfaceMethod perf/abs2/Tuple4.updateW:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object updateW$mcI$sp(perf.abs2.Tuple4, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #60                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #75,  2           // InterfaceMethod perf/abs2/Tuple4.updateW:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static boolean specInstance$(perf.abs2.Tuple4);
+    Code:
+       0: iconst_0      
+       1: ireturn       
+
+  public static void $init$(perf.abs2.Tuple4);
+    Code:
+       0: return        
+}

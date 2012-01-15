@@ -1,69 +1,70 @@
 Benchmark of Indirect Vectors.
+Sat Jan 14 15:46:02 EET 2012
 
 Generating Test Data:  Done.
 ----------------------------------------------
-Starting Warmup Test:  Done (-8192.57)
+Starting Warmup Test:  Done (29599.04)
 
-Total Time: 53.62 sec
+Total Time: 47.87 sec
  Total Ops: 1500000000
- Time / Op: 0.00003575 ms
- Ops / Sec: 27975158
+ Time / Op: 0.00003191 ms
+ Ops / Sec: 31338138
 ----------------------------------------------
-Starting Add Test:  Done (449767694555810.80)
+Starting Add Test:  Done (675375471140488.50)
 
-Total Time: 28.96 sec
+Total Time: 31.36 sec
  Total Ops: 3000000000
- Time / Op: 0.00000965 ms
- Ops / Sec: 103584006
+ Time / Op: 0.00001045 ms
+ Ops / Sec: 95660214
 ----------------------------------------------
-Starting Subtract Test:  Done (449761695124218.56)
+Starting Subtract Test:  Done (675375471140488.50)
 
-Total Time: 29.61 sec
+Total Time: 48.71 sec
  Total Ops: 3000000000
- Time / Op: 0.00000987 ms
- Ops / Sec: 101313700
+ Time / Op: 0.00001624 ms
+ Ops / Sec: 61592789
 ----------------------------------------------
 Starting Multiply Test:  Done (0.00)
 
-Total Time: 29.74 sec
+Total Time: 27.82 sec
  Total Ops: 3000000000
- Time / Op: 0.00000991 ms
- Ops / Sec: 100867460
+ Time / Op: 0.00000927 ms
+ Ops / Sec: 107828337
 ----------------------------------------------
 Starting Divide Test:  Done (Infinity)
 
-Total Time: 45.23 sec
+Total Time: 38.63 sec
  Total Ops: 3000000000
- Time / Op: 0.00001508 ms
- Ops / Sec: 66334991
+ Time / Op: 0.00001288 ms
+ Ops / Sec: 77655829
 ----------------------------------------------
-Starting Dot Test:  Done (4498061164.12)
+Starting Dot Test:  Done (4501899347.31)
 
-Total Time: 202.96 sec
+Total Time: 158.10 sec
  Total Ops: 3000000000
- Time / Op: 0.00006765 ms
- Ops / Sec: 14781092
+ Time / Op: 0.00005270 ms
+ Ops / Sec: 18975812
 ----------------------------------------------
 Starting Cross Test:  Done (0.00)
 
-Total Time: 37.65 sec
+Total Time: 31.20 sec
  Total Ops: 3000000000
- Time / Op: 0.00001255 ms
- Ops / Sec: 79681274
+ Time / Op: 0.00001040 ms
+ Ops / Sec: 96166175
 ----------------------------------------------
-Starting Mag Test:  Done (41389.96)
+Starting Mag Test:  Done (37435.92)
 
-Total Time: 199.96 sec
+Total Time: 156.78 sec
  Total Ops: 2000000000
- Time / Op: 0.00009998 ms
- Ops / Sec: 10001950
+ Time / Op: 0.00007839 ms
+ Ops / Sec: 12756973
 ----------------------------------------------
-     Add (MOps/Sec): 103.58
- Subract (MOps/Sec): 101.31
-Multiply (MOps/Sec): 100.87
-  Divide (MOps/Sec): 66.33
-     Dot (MOps/Sec): 14.78
-   Cross (MOps/Sec): 79.68
-     Mag (MOps/Sec): 10.00
+     Add (MOps/Sec): 95.66
+ Subract (MOps/Sec): 61.59
+Multiply (MOps/Sec): 107.83
+  Divide (MOps/Sec): 77.66
+     Dot (MOps/Sec): 18.98
+   Cross (MOps/Sec): 96.17
+     Mag (MOps/Sec): 12.76
 
-   TOTAL (MOps/Sec): 34.84
+   TOTAL (MOps/Sec): 40.60

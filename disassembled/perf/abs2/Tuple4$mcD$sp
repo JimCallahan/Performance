@@ -1,0 +1,18 @@
+Compiled from "Tuple.scala"
+public interface perf.abs2.Tuple4$mcD$sp<Repr> extends perf.abs2.Tuple4<java.lang.Object, Repr>, perf.abs2.TupleAccess$mcD$sp<Repr> {
+  public abstract double x();
+
+  public abstract double y();
+
+  public abstract double z();
+
+  public abstract double w();
+
+  public abstract Repr updateX(double);
+
+  public abstract Repr updateY(double);
+
+  public abstract Repr updateZ(double);
+
+  public abstract Repr updateW(double);
+}

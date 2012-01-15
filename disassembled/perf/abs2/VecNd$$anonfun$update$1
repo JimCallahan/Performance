@@ -1,0 +1,71 @@
+Compiled from "VecNd.scala"
+public final class perf.abs2.VecNd$$anonfun$update$1 extends scala.runtime.AbstractFunction1$mcVI$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final void apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #25                 // Method apply$mcVI$sp:(I)V
+       5: return        
+
+  public void apply$mcVI$sp(int);
+    Code:
+       0: aload_0       
+       1: getfield      #31                 // Field nelems$1:[D
+       4: iload_1       
+       5: iload_1       
+       6: aload_0       
+       7: getfield      #33                 // Field idx$1:I
+      10: if_icmpne     20
+      13: aload_0       
+      14: getfield      #35                 // Field e$1:D
+      17: goto          29
+      20: aload_0       
+      21: getfield      #37                 // Field $outer:Lperf/abs2/VecNd;
+      24: invokevirtual #43                 // Method perf/abs2/VecNd.elems:()[D
+      27: iload_1       
+      28: daload        
+      29: dastore       
+      30: return        
+
+  public final java.lang.Object apply(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #51                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #53                 // Method apply:(I)V
+       8: getstatic     #59                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+      11: areturn       
+
+  public perf.abs2.VecNd$$anonfun$update$1(perf.abs2.VecNd, int, double, double[]);
+    Code:
+       0: aload_1       
+       1: ifnonnull     12
+       4: new           #64                 // class java/lang/NullPointerException
+       7: dup           
+       8: invokespecial #66                 // Method java/lang/NullPointerException."<init>":()V
+      11: athrow        
+      12: aload_0       
+      13: aload_1       
+      14: putfield      #37                 // Field $outer:Lperf/abs2/VecNd;
+      17: aload_0       
+      18: iload_2       
+      19: putfield      #33                 // Field idx$1:I
+      22: aload_0       
+      23: dload_3       
+      24: putfield      #35                 // Field e$1:D
+      27: aload_0       
+      28: aload         5
+      30: putfield      #31                 // Field nelems$1:[D
+      33: aload_0       
+      34: invokespecial #69                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
+      37: return        
+}

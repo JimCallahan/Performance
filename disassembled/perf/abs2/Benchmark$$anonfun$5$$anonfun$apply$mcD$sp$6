@@ -1,0 +1,91 @@
+Compiled from "Benchmark.scala"
+public final class perf.abs2.Benchmark$$anonfun$5$$anonfun$apply$mcD$sp$6 extends scala.runtime.AbstractFunction1$mcVI$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final void apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #21                 // Method apply$mcVI$sp:(I)V
+       5: return        
+
+  public void apply$mcVI$sp(int);
+    Code:
+       0: aload_0       
+       1: getfield      #28                 // Field result$6:Lscala/runtime/DoubleRef;
+       4: aload_0       
+       5: getfield      #28                 // Field result$6:Lscala/runtime/DoubleRef;
+       8: getfield      #34                 // Field scala/runtime/DoubleRef.elem:D
+      11: aload_0       
+      12: getfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      15: getfield      #42                 // Field perf/abs2/Benchmark$$anonfun$5.vecA$1:[Lperf/abs2/Vec3d;
+      18: iload_1       
+      19: aaload        
+      20: aload_0       
+      21: getfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      24: getfield      #45                 // Field perf/abs2/Benchmark$$anonfun$5.vecB$1:[Lperf/abs2/Vec3d;
+      27: iload_1       
+      28: aaload        
+      29: invokevirtual #51                 // Method perf/abs2/Vec3d.dot:(Lperf/abs2/Vec3d;)D
+      32: dadd          
+      33: aload_0       
+      34: getfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      37: getfield      #45                 // Field perf/abs2/Benchmark$$anonfun$5.vecB$1:[Lperf/abs2/Vec3d;
+      40: iload_1       
+      41: aaload        
+      42: aload_0       
+      43: getfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      46: getfield      #54                 // Field perf/abs2/Benchmark$$anonfun$5.vecC$1:[Lperf/abs2/Vec3d;
+      49: iload_1       
+      50: aaload        
+      51: invokevirtual #51                 // Method perf/abs2/Vec3d.dot:(Lperf/abs2/Vec3d;)D
+      54: dadd          
+      55: aload_0       
+      56: getfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      59: getfield      #54                 // Field perf/abs2/Benchmark$$anonfun$5.vecC$1:[Lperf/abs2/Vec3d;
+      62: iload_1       
+      63: aaload        
+      64: aload_0       
+      65: getfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      68: getfield      #42                 // Field perf/abs2/Benchmark$$anonfun$5.vecA$1:[Lperf/abs2/Vec3d;
+      71: iload_1       
+      72: aaload        
+      73: invokevirtual #51                 // Method perf/abs2/Vec3d.dot:(Lperf/abs2/Vec3d;)D
+      76: dadd          
+      77: putfield      #34                 // Field scala/runtime/DoubleRef.elem:D
+      80: return        
+
+  public final java.lang.Object apply(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #62                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #64                 // Method apply:(I)V
+       8: getstatic     #70                 // Field scala/runtime/BoxedUnit.UNIT:Lscala/runtime/BoxedUnit;
+      11: areturn       
+
+  public perf.abs2.Benchmark$$anonfun$5$$anonfun$apply$mcD$sp$6(perf.abs2.Benchmark$$anonfun$5, scala.runtime.DoubleRef);
+    Code:
+       0: aload_1       
+       1: ifnonnull     12
+       4: new           #75                 // class java/lang/NullPointerException
+       7: dup           
+       8: invokespecial #77                 // Method java/lang/NullPointerException."<init>":()V
+      11: athrow        
+      12: aload_0       
+      13: aload_1       
+      14: putfield      #36                 // Field $outer:Lperf/abs2/Benchmark$$anonfun$5;
+      17: aload_0       
+      18: aload_2       
+      19: putfield      #28                 // Field result$6:Lscala/runtime/DoubleRef;
+      22: aload_0       
+      23: invokespecial #80                 // Method scala/runtime/AbstractFunction1$mcVI$sp."<init>":()V
+      26: return        
+}

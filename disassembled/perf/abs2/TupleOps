@@ -1,0 +1,52 @@
+Compiled from "TupleOps.scala"
+public interface perf.abs2.TupleOps<Elem, Repr extends perf.abs2.Tuple, Alt extends perf.abs2.Tuple> {
+  public abstract Repr $plus(Alt);
+
+  public abstract Repr $minus(Alt);
+
+  public abstract Repr $times(Alt);
+
+  public abstract Repr $div(Alt);
+
+  public abstract Repr $plus(Elem);
+
+  public abstract Repr $minus(Elem);
+
+  public abstract Repr $times(Elem);
+
+  public abstract Repr $div(Elem);
+
+  public abstract Repr map(scala.Function1<Elem, Elem>);
+
+  public abstract Elem reduce(scala.Function2<Elem, Elem, Elem>);
+
+  public abstract Repr compwise(Repr, scala.Function2<Elem, Elem, Elem>);
+
+  public abstract Repr $plus$mcD$sp(double);
+
+  public abstract Repr $plus$mcI$sp(int);
+
+  public abstract Repr $minus$mcD$sp(double);
+
+  public abstract Repr $minus$mcI$sp(int);
+
+  public abstract Repr $times$mcD$sp(double);
+
+  public abstract Repr $times$mcI$sp(int);
+
+  public abstract Repr $div$mcD$sp(double);
+
+  public abstract Repr $div$mcI$sp(int);
+
+  public abstract Repr map$mcD$sp(scala.Function1<java.lang.Object, java.lang.Object>);
+
+  public abstract Repr map$mcI$sp(scala.Function1<java.lang.Object, java.lang.Object>);
+
+  public abstract double reduce$mcD$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract int reduce$mcI$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr compwise$mcD$sp(Repr, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr compwise$mcI$sp(Repr, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+}

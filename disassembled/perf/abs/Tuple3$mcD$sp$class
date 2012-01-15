@@ -1,0 +1,31 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.abs.Tuple3$mcD$sp$class {
+  public static java.lang.Object fromScalar(perf.abs.Tuple3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokeinterface #12,  3           // InterfaceMethod perf/abs/Tuple3$mcD$sp.fromScalar$mcD$sp:(D)Ljava/lang/Object;
+       7: areturn       
+
+  public static java.lang.Object fromScalar$mcD$sp(perf.abs.Tuple3$mcD$sp, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: dload_1       
+       3: dload_1       
+       4: invokeinterface #21,  7           // InterfaceMethod perf/abs/Tuple3$mcD$sp.fromComps:(DDD)Ljava/lang/Object;
+       9: areturn       
+
+  public static java.lang.Object fromComps(perf.abs.Tuple3$mcD$sp, double, double, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: dload_3       
+       3: dload         5
+       5: invokeinterface #27,  7           // InterfaceMethod perf/abs/Tuple3.fromComps$mcD$sp:(DDD)Ljava/lang/Object;
+      10: areturn       
+
+  public static void $init$(perf.abs.Tuple3$mcD$sp);
+    Code:
+       0: return        
+}

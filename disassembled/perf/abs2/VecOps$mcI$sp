@@ -1,0 +1,8 @@
+Compiled from "VecOps.scala"
+public interface perf.abs2.VecOps$mcI$sp<Repr extends perf.abs2.Tuple> extends perf.abs2.VecOps<java.lang.Object, Repr>, perf.abs2.TupleOps$mcI$sp<Repr, Repr> {
+  public abstract int dot(Repr);
+
+  public abstract int magSq();
+
+  public abstract int mag();
+}

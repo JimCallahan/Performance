@@ -1,0 +1,16 @@
+Compiled from "TupleOps.scala"
+public interface perf.abs2.TupleOps$mcD$sp<Repr extends perf.abs2.Tuple, Alt extends perf.abs2.Tuple> extends perf.abs2.TupleOps<java.lang.Object, Repr, Alt> {
+  public abstract Repr $plus(double);
+
+  public abstract Repr $minus(double);
+
+  public abstract Repr $times(double);
+
+  public abstract Repr $div(double);
+
+  public abstract Repr map(scala.Function1<java.lang.Object, java.lang.Object>);
+
+  public abstract double reduce(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+
+  public abstract Repr compwise(Repr, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+}

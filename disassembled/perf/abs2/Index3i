@@ -1,0 +1,924 @@
+Compiled from "Index3i.scala"
+public class perf.abs2.Index3i implements perf.abs2.Tuple3$mcI$sp<perf.abs2.Index3i>, perf.abs2.TupleOps$mcI$sp<perf.abs2.Index3i, perf.abs2.Index3i>, scala.ScalaObject {
+  public perf.abs2.Tuple $plus$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #15                 // Method perf/abs2/TupleOps$class.$plus$mcD$sp:(Lperf/abs2/TupleOps;D)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Tuple $minus$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #23                 // Method perf/abs2/TupleOps$class.$minus$mcD$sp:(Lperf/abs2/TupleOps;D)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Tuple $times$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #26                 // Method perf/abs2/TupleOps$class.$times$mcD$sp:(Lperf/abs2/TupleOps;D)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Tuple $div$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #29                 // Method perf/abs2/TupleOps$class.$div$mcD$sp:(Lperf/abs2/TupleOps;D)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Index3i map$mcD$sp(scala.Function1<java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #34                 // Method perf/abs2/TupleOps$class.map$mcD$sp:(Lperf/abs2/TupleOps;Lscala/Function1;)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public double reduce$mcD$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #43                 // Method perf/abs2/TupleOps$class.reduce$mcD$sp:(Lperf/abs2/TupleOps;Lscala/Function2;)D
+       5: dreturn       
+
+  public perf.abs2.Index3i compwise$mcD$sp(perf.abs2.Index3i, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokestatic  #50                 // Method perf/abs2/TupleOps$class.compwise$mcD$sp:(Lperf/abs2/TupleOps;Lperf/abs2/Tuple;Lscala/Function2;)Lperf/abs2/Tuple;
+       6: areturn       
+
+  public double x$mcD$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #60                 // Method perf/abs2/Tuple3$class.x$mcD$sp:(Lperf/abs2/Tuple3;)D
+       4: dreturn       
+
+  public int x$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #65                 // Method perf/abs2/Tuple3$class.x$mcI$sp:(Lperf/abs2/Tuple3;)I
+       4: ireturn       
+
+  public double y$mcD$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #68                 // Method perf/abs2/Tuple3$class.y$mcD$sp:(Lperf/abs2/Tuple3;)D
+       4: dreturn       
+
+  public int y$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #71                 // Method perf/abs2/Tuple3$class.y$mcI$sp:(Lperf/abs2/Tuple3;)I
+       4: ireturn       
+
+  public double z$mcD$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #74                 // Method perf/abs2/Tuple3$class.z$mcD$sp:(Lperf/abs2/Tuple3;)D
+       4: dreturn       
+
+  public int z$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #77                 // Method perf/abs2/Tuple3$class.z$mcI$sp:(Lperf/abs2/Tuple3;)I
+       4: ireturn       
+
+  public java.lang.Object updateX$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #82                 // Method perf/abs2/Tuple3$class.updateX$mcD$sp:(Lperf/abs2/Tuple3;D)Ljava/lang/Object;
+       5: areturn       
+
+  public java.lang.Object updateY$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #86                 // Method perf/abs2/Tuple3$class.updateY$mcD$sp:(Lperf/abs2/Tuple3;D)Ljava/lang/Object;
+       5: areturn       
+
+  public java.lang.Object updateZ$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #89                 // Method perf/abs2/Tuple3$class.updateZ$mcD$sp:(Lperf/abs2/Tuple3;D)Ljava/lang/Object;
+       5: areturn       
+
+  public boolean specInstance$();
+    Code:
+       0: aload_0       
+       1: invokestatic  #94                 // Method perf/abs2/Tuple3$class.specInstance$:(Lperf/abs2/Tuple3;)Z
+       4: ireturn       
+
+  public double apply$mcD$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #101                // Method perf/abs2/TupleAccess$class.apply$mcD$sp:(Lperf/abs2/TupleAccess;I)D
+       5: dreturn       
+
+  public java.lang.Object update$mcD$sp(int, double);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: dload_2       
+       3: invokestatic  #107                // Method perf/abs2/TupleAccess$class.update$mcD$sp:(Lperf/abs2/TupleAccess;ID)Ljava/lang/Object;
+       6: areturn       
+
+  public int x();
+    Code:
+       0: aload_0       
+       1: getfield      #111                // Field x:I
+       4: ireturn       
+
+  public int y();
+    Code:
+       0: aload_0       
+       1: getfield      #113                // Field y:I
+       4: ireturn       
+
+  public int z();
+    Code:
+       0: aload_0       
+       1: getfield      #115                // Field z:I
+       4: ireturn       
+
+  public int apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #120                // Method apply$mcI$sp:(I)I
+       5: ireturn       
+
+  public perf.abs2.Index3i update(int, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: iload_2       
+       3: invokevirtual #125                // Method update$mcI$sp:(II)Lperf/abs2/Index3i;
+       6: areturn       
+
+  public perf.abs2.Index3i updateX(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #130                // Method updateX$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Index3i updateY(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #134                // Method updateY$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Index3i updateZ(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #138                // Method updateZ$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public int dot(perf.abs2.Index3i);
+    Code:
+       0: aload_0       
+       1: invokevirtual #142                // Method x:()I
+       4: aload_1       
+       5: invokevirtual #142                // Method x:()I
+       8: imul          
+       9: aload_0       
+      10: invokevirtual #144                // Method y:()I
+      13: aload_1       
+      14: invokevirtual #144                // Method y:()I
+      17: imul          
+      18: iadd          
+      19: aload_0       
+      20: invokevirtual #146                // Method z:()I
+      23: iadd          
+      24: aload_1       
+      25: invokevirtual #146                // Method z:()I
+      28: iadd          
+      29: ireturn       
+
+  public perf.abs2.Index3i $plus(perf.abs2.Index3i);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: aload_1       
+       8: invokevirtual #142                // Method x:()I
+      11: iadd          
+      12: aload_0       
+      13: invokevirtual #144                // Method y:()I
+      16: aload_1       
+      17: invokevirtual #144                // Method y:()I
+      20: iadd          
+      21: aload_0       
+      22: invokevirtual #146                // Method z:()I
+      25: aload_1       
+      26: invokevirtual #146                // Method z:()I
+      29: iadd          
+      30: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      33: areturn       
+
+  public perf.abs2.Index3i $minus(perf.abs2.Index3i);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: aload_1       
+       8: invokevirtual #142                // Method x:()I
+      11: isub          
+      12: aload_0       
+      13: invokevirtual #144                // Method y:()I
+      16: aload_1       
+      17: invokevirtual #144                // Method y:()I
+      20: isub          
+      21: aload_0       
+      22: invokevirtual #146                // Method z:()I
+      25: aload_1       
+      26: invokevirtual #146                // Method z:()I
+      29: isub          
+      30: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      33: areturn       
+
+  public perf.abs2.Index3i $times(perf.abs2.Index3i);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: aload_1       
+       8: invokevirtual #142                // Method x:()I
+      11: imul          
+      12: aload_0       
+      13: invokevirtual #144                // Method y:()I
+      16: aload_1       
+      17: invokevirtual #144                // Method y:()I
+      20: imul          
+      21: aload_0       
+      22: invokevirtual #146                // Method z:()I
+      25: aload_1       
+      26: invokevirtual #146                // Method z:()I
+      29: imul          
+      30: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      33: areturn       
+
+  public perf.abs2.Index3i $div(perf.abs2.Index3i);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: aload_1       
+       8: invokevirtual #142                // Method x:()I
+      11: idiv          
+      12: aload_0       
+      13: invokevirtual #144                // Method y:()I
+      16: aload_1       
+      17: invokevirtual #144                // Method y:()I
+      20: idiv          
+      21: aload_0       
+      22: invokevirtual #146                // Method z:()I
+      25: aload_1       
+      26: invokevirtual #146                // Method z:()I
+      29: idiv          
+      30: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      33: areturn       
+
+  public perf.abs2.Index3i $plus(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #163                // Method $plus$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Index3i $minus(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #166                // Method $minus$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Index3i $times(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #169                // Method $times$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Index3i $div(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #172                // Method $div$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Index3i map(scala.Function1<java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #177                // Method map$mcI$sp:(Lscala/Function1;)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public int reduce(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #182                // Method reduce$mcI$sp:(Lscala/Function2;)I
+       5: ireturn       
+
+  public perf.abs2.Index3i compwise(perf.abs2.Index3i, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokevirtual #188                // Method compwise$mcI$sp:(Lperf/abs2/Index3i;Lscala/Function2;)Lperf/abs2/Index3i;
+       6: areturn       
+
+  public java.lang.String toString();
+    Code:
+       0: getstatic     #195                // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: ldc           #197                // String Index3i(%d, %d, %d)
+       5: invokevirtual #201                // Method scala/Predef$.augmentString:(Ljava/lang/String;)Lscala/collection/immutable/StringOps;
+       8: getstatic     #195                // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      11: iconst_3      
+      12: anewarray     #203                // class java/lang/Object
+      15: dup           
+      16: iconst_0      
+      17: aload_0       
+      18: invokevirtual #142                // Method x:()I
+      21: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      24: aastore       
+      25: dup           
+      26: iconst_1      
+      27: aload_0       
+      28: invokevirtual #144                // Method y:()I
+      31: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      34: aastore       
+      35: dup           
+      36: iconst_2      
+      37: aload_0       
+      38: invokevirtual #146                // Method z:()I
+      41: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      44: aastore       
+      45: invokevirtual #213                // Method scala/Predef$.genericWrapArray:(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;
+      48: invokeinterface #219,  2          // InterfaceMethod scala/collection/immutable/StringLike.format:(Lscala/collection/Seq;)Ljava/lang/String;
+      53: areturn       
+
+  public int apply$mcI$sp(int);
+    Code:
+       0: iload_1       
+       1: istore_2      
+       2: iload_2       
+       3: tableswitch   { // 0 to 2
+                     0: 63
+                     1: 77
+                     2: 70
+               default: 28
+          }
+      28: new           #221                // class java/lang/IllegalArgumentException
+      31: dup           
+      32: new           #223                // class scala/collection/mutable/StringBuilder
+      35: dup           
+      36: invokespecial #227                // Method scala/collection/mutable/StringBuilder."<init>":()V
+      39: ldc           #229                // String Invalid index (
+      41: invokevirtual #233                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      44: iload_1       
+      45: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      48: invokevirtual #233                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      51: ldc           #235                // String )!
+      53: invokevirtual #233                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      56: invokevirtual #237                // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+      59: invokespecial #240                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      62: athrow        
+      63: aload_0       
+      64: invokevirtual #142                // Method x:()I
+      67: goto          81
+      70: aload_0       
+      71: invokevirtual #146                // Method z:()I
+      74: goto          81
+      77: aload_0       
+      78: invokevirtual #144                // Method y:()I
+      81: ireturn       
+
+  public perf.abs2.Index3i update$mcI$sp(int, int);
+    Code:
+       0: iload_1       
+       1: istore_3      
+       2: iload_3       
+       3: tableswitch   { // 0 to 2
+                     0: 63
+                     1: 99
+                     2: 81
+               default: 28
+          }
+      28: new           #221                // class java/lang/IllegalArgumentException
+      31: dup           
+      32: new           #223                // class scala/collection/mutable/StringBuilder
+      35: dup           
+      36: invokespecial #227                // Method scala/collection/mutable/StringBuilder."<init>":()V
+      39: ldc           #229                // String Invalid index (
+      41: invokevirtual #233                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      44: iload_1       
+      45: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      48: invokevirtual #233                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      51: ldc           #235                // String )!
+      53: invokevirtual #233                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      56: invokevirtual #237                // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+      59: invokespecial #240                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      62: athrow        
+      63: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+      66: iload_2       
+      67: aload_0       
+      68: invokevirtual #144                // Method y:()I
+      71: aload_0       
+      72: invokevirtual #146                // Method z:()I
+      75: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      78: goto          114
+      81: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+      84: aload_0       
+      85: invokevirtual #142                // Method x:()I
+      88: aload_0       
+      89: invokevirtual #144                // Method y:()I
+      92: iload_2       
+      93: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      96: goto          114
+      99: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+     102: aload_0       
+     103: invokevirtual #142                // Method x:()I
+     106: iload_2       
+     107: aload_0       
+     108: invokevirtual #146                // Method z:()I
+     111: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+     114: areturn       
+
+  public perf.abs2.Index3i updateX$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: iload_1       
+       4: aload_0       
+       5: invokevirtual #144                // Method y:()I
+       8: aload_0       
+       9: invokevirtual #146                // Method z:()I
+      12: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      15: areturn       
+
+  public perf.abs2.Index3i updateY$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: iload_1       
+       8: aload_0       
+       9: invokevirtual #146                // Method z:()I
+      12: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      15: areturn       
+
+  public perf.abs2.Index3i updateZ$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: aload_0       
+       8: invokevirtual #144                // Method y:()I
+      11: iload_1       
+      12: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      15: areturn       
+
+  public perf.abs2.Index3i $plus$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: iload_1       
+       8: iadd          
+       9: aload_0       
+      10: invokevirtual #144                // Method y:()I
+      13: iload_1       
+      14: iadd          
+      15: aload_0       
+      16: invokevirtual #146                // Method z:()I
+      19: iload_1       
+      20: iadd          
+      21: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      24: areturn       
+
+  public perf.abs2.Index3i $minus$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: iload_1       
+       8: isub          
+       9: aload_0       
+      10: invokevirtual #144                // Method y:()I
+      13: iload_1       
+      14: isub          
+      15: aload_0       
+      16: invokevirtual #146                // Method z:()I
+      19: iload_1       
+      20: isub          
+      21: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      24: areturn       
+
+  public perf.abs2.Index3i $times$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: iload_1       
+       8: imul          
+       9: aload_0       
+      10: invokevirtual #144                // Method y:()I
+      13: iload_1       
+      14: imul          
+      15: aload_0       
+      16: invokevirtual #146                // Method z:()I
+      19: iload_1       
+      20: imul          
+      21: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      24: areturn       
+
+  public perf.abs2.Index3i $div$mcI$sp(int);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_0       
+       4: invokevirtual #142                // Method x:()I
+       7: iload_1       
+       8: idiv          
+       9: aload_0       
+      10: invokevirtual #144                // Method y:()I
+      13: iload_1       
+      14: idiv          
+      15: aload_0       
+      16: invokevirtual #146                // Method z:()I
+      19: iload_1       
+      20: idiv          
+      21: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      24: areturn       
+
+  public perf.abs2.Index3i map$mcI$sp(scala.Function1<java.lang.Object, java.lang.Object>);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_1       
+       4: aload_0       
+       5: invokevirtual #142                // Method x:()I
+       8: invokeinterface #245,  2          // InterfaceMethod scala/Function1.apply$mcII$sp:(I)I
+      13: aload_1       
+      14: aload_0       
+      15: invokevirtual #144                // Method y:()I
+      18: invokeinterface #245,  2          // InterfaceMethod scala/Function1.apply$mcII$sp:(I)I
+      23: aload_1       
+      24: aload_0       
+      25: invokevirtual #146                // Method z:()I
+      28: invokeinterface #245,  2          // InterfaceMethod scala/Function1.apply$mcII$sp:(I)I
+      33: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      36: areturn       
+
+  public int reduce$mcI$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_1       
+       1: aload_0       
+       2: invokevirtual #142                // Method x:()I
+       5: aload_1       
+       6: aload_0       
+       7: invokevirtual #144                // Method y:()I
+      10: aload_0       
+      11: invokevirtual #146                // Method z:()I
+      14: invokeinterface #251,  3          // InterfaceMethod scala/Function2.apply$mcIII$sp:(II)I
+      19: invokeinterface #251,  3          // InterfaceMethod scala/Function2.apply$mcIII$sp:(II)I
+      24: ireturn       
+
+  public perf.abs2.Index3i compwise$mcI$sp(perf.abs2.Index3i, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: getstatic     #154                // Field perf/abs2/Index3i$.MODULE$:Lperf/abs2/Index3i$;
+       3: aload_2       
+       4: aload_0       
+       5: invokevirtual #142                // Method x:()I
+       8: aload_1       
+       9: invokevirtual #142                // Method x:()I
+      12: invokeinterface #251,  3          // InterfaceMethod scala/Function2.apply$mcIII$sp:(II)I
+      17: aload_2       
+      18: aload_0       
+      19: invokevirtual #144                // Method y:()I
+      22: aload_1       
+      23: invokevirtual #144                // Method y:()I
+      26: invokeinterface #251,  3          // InterfaceMethod scala/Function2.apply$mcIII$sp:(II)I
+      31: aload_2       
+      32: aload_0       
+      33: invokevirtual #146                // Method z:()I
+      36: aload_1       
+      37: invokevirtual #146                // Method z:()I
+      40: invokeinterface #251,  3          // InterfaceMethod scala/Function2.apply$mcIII$sp:(II)I
+      45: invokevirtual #157                // Method perf/abs2/Index3i$.apply:(III)Lperf/abs2/Index3i;
+      48: areturn       
+
+  public perf.abs2.Tuple compwise$mcI$sp(perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #109                // class perf/abs2/Index3i
+       5: aload_2       
+       6: invokevirtual #188                // Method compwise$mcI$sp:(Lperf/abs2/Index3i;Lscala/Function2;)Lperf/abs2/Index3i;
+       9: areturn       
+
+  public perf.abs2.Tuple map$mcI$sp(scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #177                // Method map$mcI$sp:(Lscala/Function1;)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $div$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #172                // Method $div$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $times$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #169                // Method $times$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $minus$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #166                // Method $minus$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $plus$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #163                // Method $plus$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object updateZ$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #138                // Method updateZ$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object updateY$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #134                // Method updateY$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object updateX$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #130                // Method updateX$mcI$sp:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object update$mcI$sp(int, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: iload_2       
+       3: invokevirtual #125                // Method update$mcI$sp:(II)Lperf/abs2/Index3i;
+       6: areturn       
+
+  public perf.abs2.Tuple compwise(perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #109                // class perf/abs2/Index3i
+       5: aload_2       
+       6: invokevirtual #256                // Method compwise:(Lperf/abs2/Index3i;Lscala/Function2;)Lperf/abs2/Index3i;
+       9: areturn       
+
+  public java.lang.Object reduce(scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #259                // Method reduce:(Lscala/Function2;)I
+       5: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       8: areturn       
+
+  public perf.abs2.Tuple map(scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #261                // Method map:(Lscala/Function1;)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $div(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #268                // Method $div:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $div(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #268                // Method $div:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $times(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #271                // Method $times:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $times(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #271                // Method $times:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $minus(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #273                // Method $minus:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $minus(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #273                // Method $minus:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $plus(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #275                // Method $plus:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $plus(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #275                // Method $plus:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public perf.abs2.Tuple $div(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #109                // class perf/abs2/Index3i
+       5: invokevirtual #278                // Method $div:(Lperf/abs2/Index3i;)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $times(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #109                // class perf/abs2/Index3i
+       5: invokevirtual #280                // Method $times:(Lperf/abs2/Index3i;)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $minus(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #109                // class perf/abs2/Index3i
+       5: invokevirtual #282                // Method $minus:(Lperf/abs2/Index3i;)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public perf.abs2.Tuple $plus(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #109                // class perf/abs2/Index3i
+       5: invokevirtual #284                // Method $plus:(Lperf/abs2/Index3i;)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public java.lang.Object updateZ(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #287                // Method updateZ:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public java.lang.Object updateZ(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #287                // Method updateZ:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object updateY(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #289                // Method updateY:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public java.lang.Object updateY(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #289                // Method updateY:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object updateX(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #291                // Method updateX:(I)Lperf/abs2/Index3i;
+       8: areturn       
+
+  public java.lang.Object updateX(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #291                // Method updateX:(I)Lperf/abs2/Index3i;
+       5: areturn       
+
+  public java.lang.Object update(int, java.lang.Object);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: aload_2       
+       3: invokestatic  #266                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       6: invokevirtual #294                // Method update:(II)Lperf/abs2/Index3i;
+       9: areturn       
+
+  public java.lang.Object update(int, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: iload_2       
+       3: invokevirtual #294                // Method update:(II)Lperf/abs2/Index3i;
+       6: areturn       
+
+  public java.lang.Object apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #296                // Method apply:(I)I
+       5: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       8: areturn       
+
+  public java.lang.Object z();
+    Code:
+       0: aload_0       
+       1: invokevirtual #146                // Method z:()I
+       4: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn       
+
+  public java.lang.Object y();
+    Code:
+       0: aload_0       
+       1: invokevirtual #144                // Method y:()I
+       4: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn       
+
+  public java.lang.Object x();
+    Code:
+       0: aload_0       
+       1: invokevirtual #142                // Method x:()I
+       4: invokestatic  #209                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn       
+
+  public perf.abs2.Index3i(int, int, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: putfield      #111                // Field x:I
+       5: aload_0       
+       6: iload_2       
+       7: putfield      #113                // Field y:I
+      10: aload_0       
+      11: iload_3       
+      12: putfield      #115                // Field z:I
+      15: aload_0       
+      16: invokespecial #299                // Method java/lang/Object."<init>":()V
+      19: aload_0       
+      20: invokestatic  #303                // Method perf/abs2/TupleAccess$class.$init$:(Lperf/abs2/TupleAccess;)V
+      23: aload_0       
+      24: invokestatic  #306                // Method perf/abs2/Tuple3$class.$init$:(Lperf/abs2/Tuple3;)V
+      27: aload_0       
+      28: invokestatic  #311                // Method perf/abs2/TupleAccess$mcI$sp$class.$init$:(Lperf/abs2/TupleAccess$mcI$sp;)V
+      31: aload_0       
+      32: invokestatic  #316                // Method perf/abs2/Tuple3$mcI$sp$class.$init$:(Lperf/abs2/Tuple3$mcI$sp;)V
+      35: aload_0       
+      36: invokestatic  #319                // Method perf/abs2/TupleOps$class.$init$:(Lperf/abs2/TupleOps;)V
+      39: aload_0       
+      40: invokestatic  #324                // Method perf/abs2/TupleOps$mcI$sp$class.$init$:(Lperf/abs2/TupleOps$mcI$sp;)V
+      43: return        
+}

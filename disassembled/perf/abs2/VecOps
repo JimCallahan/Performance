@@ -1,0 +1,22 @@
+Compiled from "VecOps.scala"
+public interface perf.abs2.VecOps<Elem, Repr extends perf.abs2.Tuple> extends perf.abs2.TupleOps<Elem, Repr, Repr> {
+  public abstract Elem dot(Repr);
+
+  public abstract Elem magSq();
+
+  public abstract Elem mag();
+
+  public abstract Repr normalized();
+
+  public abstract double dot$mcD$sp(Repr);
+
+  public abstract int dot$mcI$sp(Repr);
+
+  public abstract double magSq$mcD$sp();
+
+  public abstract int magSq$mcI$sp();
+
+  public abstract double mag$mcD$sp();
+
+  public abstract int mag$mcI$sp();
+}

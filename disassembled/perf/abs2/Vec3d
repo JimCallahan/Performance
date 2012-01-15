@@ -1,0 +1,1085 @@
+Compiled from "Vec3d.scala"
+public class perf.abs2.Vec3d implements perf.abs2.Tuple3$mcD$sp<perf.abs2.Vec3d>, perf.abs2.VecOps$mcD$sp<perf.abs2.Vec3d>, perf.abs2.Vector, scala.ScalaObject {
+  public static final perf.abs2.Vec3d randomUnit();
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: invokevirtual #13                 // Method perf/abs2/Vec3d$.randomUnit:()Lperf/abs2/Vec3d;
+       6: areturn       
+
+  public static final perf.abs2.Vec3d random();
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: invokevirtual #16                 // Method perf/abs2/Vec3d$.random:()Lperf/abs2/Vec3d;
+       6: areturn       
+
+  public int dot$mcI$sp(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #28                 // Method perf/abs2/VecOps$class.dot$mcI$sp:(Lperf/abs2/VecOps;Lperf/abs2/Tuple;)I
+       5: ireturn       
+
+  public int magSq$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #38                 // Method perf/abs2/VecOps$class.magSq$mcI$sp:(Lperf/abs2/VecOps;)I
+       4: ireturn       
+
+  public int mag$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #41                 // Method perf/abs2/VecOps$class.mag$mcI$sp:(Lperf/abs2/VecOps;)I
+       4: ireturn       
+
+  public perf.abs2.Tuple $plus$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #48                 // Method perf/abs2/TupleOps$class.$plus$mcI$sp:(Lperf/abs2/TupleOps;I)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Tuple $minus$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #53                 // Method perf/abs2/TupleOps$class.$minus$mcI$sp:(Lperf/abs2/TupleOps;I)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Tuple $times$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #56                 // Method perf/abs2/TupleOps$class.$times$mcI$sp:(Lperf/abs2/TupleOps;I)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Tuple $div$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #59                 // Method perf/abs2/TupleOps$class.$div$mcI$sp:(Lperf/abs2/TupleOps;I)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public perf.abs2.Vec3d map$mcI$sp(scala.Function1<java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #64                 // Method perf/abs2/TupleOps$class.map$mcI$sp:(Lperf/abs2/TupleOps;Lscala/Function1;)Lperf/abs2/Tuple;
+       5: areturn       
+
+  public int reduce$mcI$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #73                 // Method perf/abs2/TupleOps$class.reduce$mcI$sp:(Lperf/abs2/TupleOps;Lscala/Function2;)I
+       5: ireturn       
+
+  public perf.abs2.Vec3d compwise$mcI$sp(perf.abs2.Vec3d, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokestatic  #80                 // Method perf/abs2/TupleOps$class.compwise$mcI$sp:(Lperf/abs2/TupleOps;Lperf/abs2/Tuple;Lscala/Function2;)Lperf/abs2/Tuple;
+       6: areturn       
+
+  public double x$mcD$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #88                 // Method perf/abs2/Tuple3$class.x$mcD$sp:(Lperf/abs2/Tuple3;)D
+       4: dreturn       
+
+  public int x$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #92                 // Method perf/abs2/Tuple3$class.x$mcI$sp:(Lperf/abs2/Tuple3;)I
+       4: ireturn       
+
+  public double y$mcD$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #95                 // Method perf/abs2/Tuple3$class.y$mcD$sp:(Lperf/abs2/Tuple3;)D
+       4: dreturn       
+
+  public int y$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #98                 // Method perf/abs2/Tuple3$class.y$mcI$sp:(Lperf/abs2/Tuple3;)I
+       4: ireturn       
+
+  public double z$mcD$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #101                // Method perf/abs2/Tuple3$class.z$mcD$sp:(Lperf/abs2/Tuple3;)D
+       4: dreturn       
+
+  public int z$mcI$sp();
+    Code:
+       0: aload_0       
+       1: invokestatic  #104                // Method perf/abs2/Tuple3$class.z$mcI$sp:(Lperf/abs2/Tuple3;)I
+       4: ireturn       
+
+  public java.lang.Object updateX$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #109                // Method perf/abs2/Tuple3$class.updateX$mcI$sp:(Lperf/abs2/Tuple3;I)Ljava/lang/Object;
+       5: areturn       
+
+  public java.lang.Object updateY$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #113                // Method perf/abs2/Tuple3$class.updateY$mcI$sp:(Lperf/abs2/Tuple3;I)Ljava/lang/Object;
+       5: areturn       
+
+  public java.lang.Object updateZ$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #116                // Method perf/abs2/Tuple3$class.updateZ$mcI$sp:(Lperf/abs2/Tuple3;I)Ljava/lang/Object;
+       5: areturn       
+
+  public boolean specInstance$();
+    Code:
+       0: aload_0       
+       1: invokestatic  #121                // Method perf/abs2/Tuple3$class.specInstance$:(Lperf/abs2/Tuple3;)Z
+       4: ireturn       
+
+  public int apply$mcI$sp(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #128                // Method perf/abs2/TupleAccess$class.apply$mcI$sp:(Lperf/abs2/TupleAccess;I)I
+       5: ireturn       
+
+  public java.lang.Object update$mcI$sp(int, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: iload_2       
+       3: invokestatic  #134                // Method perf/abs2/TupleAccess$class.update$mcI$sp:(Lperf/abs2/TupleAccess;II)Ljava/lang/Object;
+       6: areturn       
+
+  public double x();
+    Code:
+       0: aload_0       
+       1: getfield      #138                // Field x:D
+       4: dreturn       
+
+  public double y();
+    Code:
+       0: aload_0       
+       1: getfield      #140                // Field y:D
+       4: dreturn       
+
+  public double z();
+    Code:
+       0: aload_0       
+       1: getfield      #142                // Field z:D
+       4: dreturn       
+
+  public double apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #147                // Method apply$mcD$sp:(I)D
+       5: dreturn       
+
+  public perf.abs2.Vec3d update(int, double);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: dload_2       
+       3: invokevirtual #152                // Method update$mcD$sp:(ID)Lperf/abs2/Vec3d;
+       6: areturn       
+
+  public perf.abs2.Vec3d updateX(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #157                // Method updateX$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Vec3d updateY(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #161                // Method updateY$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Vec3d updateZ(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #165                // Method updateZ$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public double magSq();
+    Code:
+       0: aload_0       
+       1: invokevirtual #169                // Method magSq$mcD$sp:()D
+       4: dreturn       
+
+  public double mag();
+    Code:
+       0: aload_0       
+       1: invokevirtual #173                // Method mag$mcD$sp:()D
+       4: dreturn       
+
+  public perf.abs2.Vec3d normalized();
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokevirtual #173                // Method mag$mcD$sp:()D
+       5: invokevirtual #177                // Method $div$mcD$sp:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public double dot(perf.abs2.Vec3d);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #182                // Method dot$mcD$sp:(Lperf/abs2/Vec3d;)D
+       5: dreturn       
+
+  public perf.abs2.Vec3d cross(perf.abs2.Vec3d);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #186                // Method y:()D
+       7: aload_1       
+       8: invokevirtual #188                // Method z:()D
+      11: dmul          
+      12: aload_0       
+      13: invokevirtual #188                // Method z:()D
+      16: aload_1       
+      17: invokevirtual #186                // Method y:()D
+      20: dmul          
+      21: dsub          
+      22: aload_0       
+      23: invokevirtual #188                // Method z:()D
+      26: aload_1       
+      27: invokevirtual #190                // Method x:()D
+      30: dmul          
+      31: aload_0       
+      32: invokevirtual #190                // Method x:()D
+      35: aload_1       
+      36: invokevirtual #188                // Method z:()D
+      39: dmul          
+      40: dsub          
+      41: aload_0       
+      42: invokevirtual #190                // Method x:()D
+      45: aload_1       
+      46: invokevirtual #186                // Method y:()D
+      49: dmul          
+      50: aload_0       
+      51: invokevirtual #186                // Method y:()D
+      54: aload_1       
+      55: invokevirtual #190                // Method x:()D
+      58: dmul          
+      59: dsub          
+      60: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      63: areturn       
+
+  public perf.abs2.Vec3d $plus(perf.abs2.Vec3d);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: aload_1       
+       8: invokevirtual #190                // Method x:()D
+      11: dadd          
+      12: aload_0       
+      13: invokevirtual #186                // Method y:()D
+      16: aload_1       
+      17: invokevirtual #186                // Method y:()D
+      20: dadd          
+      21: aload_0       
+      22: invokevirtual #188                // Method z:()D
+      25: aload_1       
+      26: invokevirtual #188                // Method z:()D
+      29: dadd          
+      30: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      33: areturn       
+
+  public perf.abs2.Vec3d $minus(perf.abs2.Vec3d);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: aload_1       
+       8: invokevirtual #190                // Method x:()D
+      11: dsub          
+      12: aload_0       
+      13: invokevirtual #186                // Method y:()D
+      16: aload_1       
+      17: invokevirtual #186                // Method y:()D
+      20: dsub          
+      21: aload_0       
+      22: invokevirtual #188                // Method z:()D
+      25: aload_1       
+      26: invokevirtual #188                // Method z:()D
+      29: dsub          
+      30: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      33: areturn       
+
+  public perf.abs2.Vec3d $times(perf.abs2.Vec3d);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: aload_1       
+       8: invokevirtual #190                // Method x:()D
+      11: dmul          
+      12: aload_0       
+      13: invokevirtual #186                // Method y:()D
+      16: aload_1       
+      17: invokevirtual #186                // Method y:()D
+      20: dmul          
+      21: aload_0       
+      22: invokevirtual #188                // Method z:()D
+      25: aload_1       
+      26: invokevirtual #188                // Method z:()D
+      29: dmul          
+      30: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      33: areturn       
+
+  public perf.abs2.Vec3d $div(perf.abs2.Vec3d);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: aload_1       
+       8: invokevirtual #190                // Method x:()D
+      11: ddiv          
+      12: aload_0       
+      13: invokevirtual #186                // Method y:()D
+      16: aload_1       
+      17: invokevirtual #186                // Method y:()D
+      20: ddiv          
+      21: aload_0       
+      22: invokevirtual #188                // Method z:()D
+      25: aload_1       
+      26: invokevirtual #188                // Method z:()D
+      29: ddiv          
+      30: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      33: areturn       
+
+  public perf.abs2.Vec3d $plus(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #200                // Method $plus$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Vec3d $minus(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #203                // Method $minus$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Vec3d $times(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #206                // Method $times$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Vec3d $div(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #177                // Method $div$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Vec3d map(scala.Function1<java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #211                // Method map$mcD$sp:(Lscala/Function1;)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public double reduce(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #216                // Method reduce$mcD$sp:(Lscala/Function2;)D
+       5: dreturn       
+
+  public perf.abs2.Vec3d compwise(perf.abs2.Vec3d, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokevirtual #222                // Method compwise$mcD$sp:(Lperf/abs2/Vec3d;Lscala/Function2;)Lperf/abs2/Vec3d;
+       6: areturn       
+
+  public java.lang.String toString();
+    Code:
+       0: getstatic     #229                // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: ldc           #231                // String Vec3d(%.2f, %.2f, %.2f)
+       5: invokevirtual #235                // Method scala/Predef$.augmentString:(Ljava/lang/String;)Lscala/collection/immutable/StringOps;
+       8: getstatic     #229                // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      11: iconst_3      
+      12: anewarray     #237                // class java/lang/Object
+      15: dup           
+      16: iconst_0      
+      17: aload_0       
+      18: invokevirtual #190                // Method x:()D
+      21: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+      24: aastore       
+      25: dup           
+      26: iconst_1      
+      27: aload_0       
+      28: invokevirtual #186                // Method y:()D
+      31: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+      34: aastore       
+      35: dup           
+      36: iconst_2      
+      37: aload_0       
+      38: invokevirtual #188                // Method z:()D
+      41: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+      44: aastore       
+      45: invokevirtual #247                // Method scala/Predef$.genericWrapArray:(Ljava/lang/Object;)Lscala/collection/mutable/WrappedArray;
+      48: invokeinterface #253,  2          // InterfaceMethod scala/collection/immutable/StringLike.format:(Lscala/collection/Seq;)Ljava/lang/String;
+      53: areturn       
+
+  public double apply$mcD$sp(int);
+    Code:
+       0: iload_1       
+       1: istore_2      
+       2: iload_2       
+       3: tableswitch   { // 0 to 2
+                     0: 65
+                     1: 79
+                     2: 72
+               default: 28
+          }
+      28: new           #255                // class java/lang/IllegalArgumentException
+      31: dup           
+      32: new           #257                // class scala/collection/mutable/StringBuilder
+      35: dup           
+      36: invokespecial #261                // Method scala/collection/mutable/StringBuilder."<init>":()V
+      39: ldc_w         #263                // String Invalid index (
+      42: invokevirtual #267                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      45: iload_1       
+      46: invokestatic  #271                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      49: invokevirtual #267                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      52: ldc_w         #273                // String )!
+      55: invokevirtual #267                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      58: invokevirtual #275                // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+      61: invokespecial #278                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      64: athrow        
+      65: aload_0       
+      66: invokevirtual #190                // Method x:()D
+      69: goto          83
+      72: aload_0       
+      73: invokevirtual #188                // Method z:()D
+      76: goto          83
+      79: aload_0       
+      80: invokevirtual #186                // Method y:()D
+      83: dreturn       
+
+  public perf.abs2.Vec3d update$mcD$sp(int, double);
+    Code:
+       0: iload_1       
+       1: istore        4
+       3: iload         4
+       5: tableswitch   { // 0 to 2
+                     0: 69
+                     1: 105
+                     2: 87
+               default: 32
+          }
+      32: new           #255                // class java/lang/IllegalArgumentException
+      35: dup           
+      36: new           #257                // class scala/collection/mutable/StringBuilder
+      39: dup           
+      40: invokespecial #261                // Method scala/collection/mutable/StringBuilder."<init>":()V
+      43: ldc_w         #263                // String Invalid index (
+      46: invokevirtual #267                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      49: iload_1       
+      50: invokestatic  #271                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      53: invokevirtual #267                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      56: ldc_w         #273                // String )!
+      59: invokevirtual #267                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+      62: invokevirtual #275                // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+      65: invokespecial #278                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      68: athrow        
+      69: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+      72: dload_2       
+      73: aload_0       
+      74: invokevirtual #186                // Method y:()D
+      77: aload_0       
+      78: invokevirtual #188                // Method z:()D
+      81: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      84: goto          120
+      87: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+      90: aload_0       
+      91: invokevirtual #190                // Method x:()D
+      94: aload_0       
+      95: invokevirtual #186                // Method y:()D
+      98: dload_2       
+      99: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+     102: goto          120
+     105: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+     108: aload_0       
+     109: invokevirtual #190                // Method x:()D
+     112: dload_2       
+     113: aload_0       
+     114: invokevirtual #188                // Method z:()D
+     117: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+     120: areturn       
+
+  public perf.abs2.Vec3d updateX$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: dload_1       
+       4: aload_0       
+       5: invokevirtual #186                // Method y:()D
+       8: aload_0       
+       9: invokevirtual #188                // Method z:()D
+      12: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      15: areturn       
+
+  public perf.abs2.Vec3d updateY$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: dload_1       
+       8: aload_0       
+       9: invokevirtual #188                // Method z:()D
+      12: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      15: areturn       
+
+  public perf.abs2.Vec3d updateZ$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: aload_0       
+       8: invokevirtual #186                // Method y:()D
+      11: dload_1       
+      12: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      15: areturn       
+
+  public double magSq$mcD$sp();
+    Code:
+       0: aload_0       
+       1: aload_0       
+       2: invokevirtual #182                // Method dot$mcD$sp:(Lperf/abs2/Vec3d;)D
+       5: dreturn       
+
+  public double mag$mcD$sp();
+    Code:
+       0: getstatic     #283                // Field scala/math/package$.MODULE$:Lscala/math/package$;
+       3: aload_0       
+       4: invokevirtual #169                // Method magSq$mcD$sp:()D
+       7: invokevirtual #287                // Method scala/math/package$.sqrt:(D)D
+      10: dreturn       
+
+  public double dot$mcD$sp(perf.abs2.Vec3d);
+    Code:
+       0: aload_0       
+       1: invokevirtual #190                // Method x:()D
+       4: aload_1       
+       5: invokevirtual #190                // Method x:()D
+       8: dmul          
+       9: aload_0       
+      10: invokevirtual #186                // Method y:()D
+      13: aload_1       
+      14: invokevirtual #186                // Method y:()D
+      17: dmul          
+      18: dadd          
+      19: aload_0       
+      20: invokevirtual #188                // Method z:()D
+      23: dadd          
+      24: aload_1       
+      25: invokevirtual #188                // Method z:()D
+      28: dadd          
+      29: dreturn       
+
+  public perf.abs2.Vec3d $plus$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: dload_1       
+       8: dadd          
+       9: aload_0       
+      10: invokevirtual #186                // Method y:()D
+      13: dload_1       
+      14: dadd          
+      15: aload_0       
+      16: invokevirtual #188                // Method z:()D
+      19: dload_1       
+      20: dadd          
+      21: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      24: areturn       
+
+  public perf.abs2.Vec3d $minus$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: dload_1       
+       8: dsub          
+       9: aload_0       
+      10: invokevirtual #186                // Method y:()D
+      13: dload_1       
+      14: dsub          
+      15: aload_0       
+      16: invokevirtual #188                // Method z:()D
+      19: dload_1       
+      20: dsub          
+      21: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      24: areturn       
+
+  public perf.abs2.Vec3d $times$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: dload_1       
+       8: dmul          
+       9: aload_0       
+      10: invokevirtual #186                // Method y:()D
+      13: dload_1       
+      14: dmul          
+      15: aload_0       
+      16: invokevirtual #188                // Method z:()D
+      19: dload_1       
+      20: dmul          
+      21: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      24: areturn       
+
+  public perf.abs2.Vec3d $div$mcD$sp(double);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_0       
+       4: invokevirtual #190                // Method x:()D
+       7: dload_1       
+       8: ddiv          
+       9: aload_0       
+      10: invokevirtual #186                // Method y:()D
+      13: dload_1       
+      14: ddiv          
+      15: aload_0       
+      16: invokevirtual #188                // Method z:()D
+      19: dload_1       
+      20: ddiv          
+      21: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      24: areturn       
+
+  public perf.abs2.Vec3d map$mcD$sp(scala.Function1<java.lang.Object, java.lang.Object>);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_1       
+       4: aload_0       
+       5: invokevirtual #190                // Method x:()D
+       8: invokeinterface #292,  3          // InterfaceMethod scala/Function1.apply$mcDD$sp:(D)D
+      13: aload_1       
+      14: aload_0       
+      15: invokevirtual #186                // Method y:()D
+      18: invokeinterface #292,  3          // InterfaceMethod scala/Function1.apply$mcDD$sp:(D)D
+      23: aload_1       
+      24: aload_0       
+      25: invokevirtual #188                // Method z:()D
+      28: invokeinterface #292,  3          // InterfaceMethod scala/Function1.apply$mcDD$sp:(D)D
+      33: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      36: areturn       
+
+  public double reduce$mcD$sp(scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: aload_1       
+       1: aload_0       
+       2: invokevirtual #190                // Method x:()D
+       5: aload_1       
+       6: aload_0       
+       7: invokevirtual #186                // Method y:()D
+      10: aload_0       
+      11: invokevirtual #188                // Method z:()D
+      14: invokeinterface #298,  5          // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      19: invokeinterface #298,  5          // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      24: dreturn       
+
+  public perf.abs2.Vec3d compwise$mcD$sp(perf.abs2.Vec3d, scala.Function2<java.lang.Object, java.lang.Object, java.lang.Object>);
+    Code:
+       0: getstatic     #11                 // Field perf/abs2/Vec3d$.MODULE$:Lperf/abs2/Vec3d$;
+       3: aload_2       
+       4: aload_0       
+       5: invokevirtual #190                // Method x:()D
+       8: aload_1       
+       9: invokevirtual #190                // Method x:()D
+      12: invokeinterface #298,  5          // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      17: aload_2       
+      18: aload_0       
+      19: invokevirtual #186                // Method y:()D
+      22: aload_1       
+      23: invokevirtual #186                // Method y:()D
+      26: invokeinterface #298,  5          // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      31: aload_2       
+      32: aload_0       
+      33: invokevirtual #188                // Method z:()D
+      36: aload_1       
+      37: invokevirtual #188                // Method z:()D
+      40: invokeinterface #298,  5          // InterfaceMethod scala/Function2.apply$mcDDD$sp:(DD)D
+      45: invokevirtual #193                // Method perf/abs2/Vec3d$.apply:(DDD)Lperf/abs2/Vec3d;
+      48: areturn       
+
+  public perf.abs2.Tuple compwise$mcD$sp(perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: aload_2       
+       6: invokevirtual #222                // Method compwise$mcD$sp:(Lperf/abs2/Vec3d;Lscala/Function2;)Lperf/abs2/Vec3d;
+       9: areturn       
+
+  public perf.abs2.Tuple map$mcD$sp(scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #211                // Method map$mcD$sp:(Lscala/Function1;)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $div$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #177                // Method $div$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $times$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #206                // Method $times$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $minus$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #203                // Method $minus$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $plus$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #200                // Method $plus$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public double dot$mcD$sp(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #182                // Method dot$mcD$sp:(Lperf/abs2/Vec3d;)D
+       8: dreturn       
+
+  public java.lang.Object updateZ$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #165                // Method updateZ$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public java.lang.Object updateY$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #161                // Method updateY$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public java.lang.Object updateX$mcD$sp(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #157                // Method updateX$mcD$sp:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public java.lang.Object update$mcD$sp(int, double);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: dload_2       
+       3: invokevirtual #152                // Method update$mcD$sp:(ID)Lperf/abs2/Vec3d;
+       6: areturn       
+
+  public perf.abs2.Tuple compwise(perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: aload_2       
+       6: invokevirtual #304                // Method compwise:(Lperf/abs2/Vec3d;Lscala/Function2;)Lperf/abs2/Vec3d;
+       9: areturn       
+
+  public java.lang.Object reduce(scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #307                // Method reduce:(Lscala/Function2;)D
+       5: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       8: areturn       
+
+  public perf.abs2.Tuple map(scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokevirtual #309                // Method map:(Lscala/Function1;)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $div(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #316                // Method $div:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $div(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #316                // Method $div:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $times(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #319                // Method $times:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $times(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #319                // Method $times:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $minus(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #321                // Method $minus:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $minus(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #321                // Method $minus:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $plus(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #323                // Method $plus:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $plus(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #323                // Method $plus:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public perf.abs2.Tuple $div(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #326                // Method $div:(Lperf/abs2/Vec3d;)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $times(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #328                // Method $times:(Lperf/abs2/Vec3d;)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $minus(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #330                // Method $minus:(Lperf/abs2/Vec3d;)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public perf.abs2.Tuple $plus(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #332                // Method $plus:(Lperf/abs2/Vec3d;)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public java.lang.Object dot(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #335                // Method dot:(Lperf/abs2/Vec3d;)D
+       8: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+      11: areturn       
+
+  public double dot(perf.abs2.Tuple);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: checkcast     #136                // class perf/abs2/Vec3d
+       5: invokevirtual #335                // Method dot:(Lperf/abs2/Vec3d;)D
+       8: dreturn       
+
+  public perf.abs2.Tuple normalized();
+    Code:
+       0: aload_0       
+       1: invokevirtual #338                // Method normalized:()Lperf/abs2/Vec3d;
+       4: areturn       
+
+  public java.lang.Object mag();
+    Code:
+       0: aload_0       
+       1: invokevirtual #341                // Method mag:()D
+       4: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public java.lang.Object magSq();
+    Code:
+       0: aload_0       
+       1: invokevirtual #343                // Method magSq:()D
+       4: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public java.lang.Object updateZ(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #346                // Method updateZ:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public java.lang.Object updateZ(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #346                // Method updateZ:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public java.lang.Object updateY(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #348                // Method updateY:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public java.lang.Object updateY(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #348                // Method updateY:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public java.lang.Object updateX(java.lang.Object);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       5: invokevirtual #350                // Method updateX:(D)Lperf/abs2/Vec3d;
+       8: areturn       
+
+  public java.lang.Object updateX(double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokevirtual #350                // Method updateX:(D)Lperf/abs2/Vec3d;
+       5: areturn       
+
+  public java.lang.Object update(int, java.lang.Object);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: aload_2       
+       3: invokestatic  #314                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       6: invokevirtual #353                // Method update:(ID)Lperf/abs2/Vec3d;
+       9: areturn       
+
+  public java.lang.Object update(int, double);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: dload_2       
+       3: invokevirtual #353                // Method update:(ID)Lperf/abs2/Vec3d;
+       6: areturn       
+
+  public java.lang.Object apply(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #355                // Method apply:(I)D
+       5: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       8: areturn       
+
+  public java.lang.Object z();
+    Code:
+       0: aload_0       
+       1: invokevirtual #188                // Method z:()D
+       4: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public java.lang.Object y();
+    Code:
+       0: aload_0       
+       1: invokevirtual #186                // Method y:()D
+       4: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public java.lang.Object x();
+    Code:
+       0: aload_0       
+       1: invokevirtual #190                // Method x:()D
+       4: invokestatic  #243                // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public perf.abs2.Vec3d(double, double, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: putfield      #138                // Field x:D
+       5: aload_0       
+       6: dload_3       
+       7: putfield      #140                // Field y:D
+      10: aload_0       
+      11: dload         5
+      13: putfield      #142                // Field z:D
+      16: aload_0       
+      17: invokespecial #357                // Method java/lang/Object."<init>":()V
+      20: aload_0       
+      21: invokestatic  #361                // Method perf/abs2/TupleAccess$class.$init$:(Lperf/abs2/TupleAccess;)V
+      24: aload_0       
+      25: invokestatic  #364                // Method perf/abs2/Tuple3$class.$init$:(Lperf/abs2/Tuple3;)V
+      28: aload_0       
+      29: invokestatic  #369                // Method perf/abs2/TupleAccess$mcD$sp$class.$init$:(Lperf/abs2/TupleAccess$mcD$sp;)V
+      32: aload_0       
+      33: invokestatic  #374                // Method perf/abs2/Tuple3$mcD$sp$class.$init$:(Lperf/abs2/Tuple3$mcD$sp;)V
+      36: aload_0       
+      37: invokestatic  #377                // Method perf/abs2/TupleOps$class.$init$:(Lperf/abs2/TupleOps;)V
+      40: aload_0       
+      41: invokestatic  #380                // Method perf/abs2/VecOps$class.$init$:(Lperf/abs2/VecOps;)V
+      44: aload_0       
+      45: invokestatic  #385                // Method perf/abs2/TupleOps$mcD$sp$class.$init$:(Lperf/abs2/TupleOps$mcD$sp;)V
+      48: aload_0       
+      49: invokestatic  #390                // Method perf/abs2/VecOps$mcD$sp$class.$init$:(Lperf/abs2/VecOps$mcD$sp;)V
+      52: return        
+}

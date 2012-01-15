@@ -1,0 +1,84 @@
+Compiled from "Vec3d.scala"
+public abstract class perf.abs.TupleOps3$class {
+  public static perf.abs.Tuple3 $plus$mcD$sp(perf.abs.TupleOps3, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #18,  2           // InterfaceMethod perf/abs/TupleOps3.$plus:(Ljava/lang/Object;)Lperf/abs/Tuple3;
+      10: areturn       
+
+  public static perf.abs.Tuple3 $minus$mcD$sp(perf.abs.TupleOps3, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #27,  2           // InterfaceMethod perf/abs/TupleOps3.$minus:(Ljava/lang/Object;)Lperf/abs/Tuple3;
+      10: areturn       
+
+  public static perf.abs.Tuple3 $times$mcD$sp(perf.abs.TupleOps3, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #31,  2           // InterfaceMethod perf/abs/TupleOps3.$times:(Ljava/lang/Object;)Lperf/abs/Tuple3;
+      10: areturn       
+
+  public static perf.abs.Tuple3 $div$mcD$sp(perf.abs.TupleOps3, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #35,  2           // InterfaceMethod perf/abs/TupleOps3.$div:(Ljava/lang/Object;)Lperf/abs/Tuple3;
+      10: areturn       
+
+  public static double magSq$mcD$sp(perf.abs.TupleOps3);
+    Code:
+       0: aload_0       
+       1: invokeinterface #41,  1           // InterfaceMethod perf/abs/TupleOps3.magSq:()Ljava/lang/Object;
+       6: invokestatic  #45                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static double mag$mcD$sp(perf.abs.TupleOps3);
+    Code:
+       0: aload_0       
+       1: invokeinterface #49,  1           // InterfaceMethod perf/abs/TupleOps3.mag:()Ljava/lang/Object;
+       6: invokestatic  #45                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static double dot$mcD$sp(perf.abs.TupleOps3, perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #55,  2           // InterfaceMethod perf/abs/TupleOps3.dot:(Lperf/abs/Tuple3;)Ljava/lang/Object;
+       7: invokestatic  #45                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+      10: dreturn       
+
+  public static perf.abs.Tuple3 map$mcD$sp(perf.abs.TupleOps3, perf.abs.Tuple3, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #63,  3           // InterfaceMethod perf/abs/TupleOps3.map:(Lperf/abs/Tuple3;Lscala/Function1;)Lperf/abs/Tuple3;
+       8: areturn       
+
+  public static double reduce$mcD$sp(perf.abs.TupleOps3, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #71,  2           // InterfaceMethod perf/abs/TupleOps3.reduce:(Lscala/Function2;)Ljava/lang/Object;
+       7: invokestatic  #45                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+      10: dreturn       
+
+  public static perf.abs.Tuple3 compwise$mcD$sp(perf.abs.TupleOps3, perf.abs.Tuple3, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #78,  3           // InterfaceMethod perf/abs/TupleOps3.compwise:(Lperf/abs/Tuple3;Lscala/Function2;)Lperf/abs/Tuple3;
+       8: areturn       
+
+  public static void $init$(perf.abs.TupleOps3);
+    Code:
+       0: return        
+}

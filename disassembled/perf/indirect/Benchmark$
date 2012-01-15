@@ -72,261 +72,266 @@ public final class perf.indirect.Benchmark$ implements perf.BenchUtil,scala.Scal
       57: ldc           #69                 // String Benchmark of Indirect Vectors.
       59: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
       62: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-      65: invokevirtual #75                 // Method scala/Predef$.println:()V
-      68: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-      71: ldc           #77                 // String Generating Test Data: 
-      73: invokevirtual #80                 // Method scala/Predef$.print:(Ljava/lang/Object;)V
-      76: getstatic     #85                 // Field scala/Array$.MODULE$:Lscala/Array$;
-      79: aload_0       
-      80: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-      85: new           #91                 // class perf/indirect/Benchmark$$anonfun$8
-      88: dup           
-      89: invokespecial #92                 // Method perf/indirect/Benchmark$$anonfun$8."<init>":()V
-      92: getstatic     #97                 // Field scala/reflect/ClassManifest$.MODULE$:Lscala/reflect/ClassManifest$;
-      95: ldc           #99                 // class perf/indirect/Vec3d
-      97: invokevirtual #103                // Method scala/reflect/ClassManifest$.classType:(Ljava/lang/Class;)Lscala/reflect/ClassManifest;
-     100: invokevirtual #107                // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
-     103: checkcast     #109                // class "[Lperf/indirect/Vec3d;"
-     106: astore        5
-     108: getstatic     #85                 // Field scala/Array$.MODULE$:Lscala/Array$;
-     111: aload_0       
-     112: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     117: new           #111                // class perf/indirect/Benchmark$$anonfun$9
-     120: dup           
-     121: invokespecial #112                // Method perf/indirect/Benchmark$$anonfun$9."<init>":()V
-     124: getstatic     #97                 // Field scala/reflect/ClassManifest$.MODULE$:Lscala/reflect/ClassManifest$;
-     127: ldc           #99                 // class perf/indirect/Vec3d
-     129: invokevirtual #103                // Method scala/reflect/ClassManifest$.classType:(Ljava/lang/Class;)Lscala/reflect/ClassManifest;
-     132: invokevirtual #107                // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
-     135: checkcast     #109                // class "[Lperf/indirect/Vec3d;"
-     138: astore        6
-     140: getstatic     #85                 // Field scala/Array$.MODULE$:Lscala/Array$;
-     143: aload_0       
-     144: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     149: new           #114                // class perf/indirect/Benchmark$$anonfun$10
-     152: dup           
-     153: invokespecial #115                // Method perf/indirect/Benchmark$$anonfun$10."<init>":()V
-     156: getstatic     #97                 // Field scala/reflect/ClassManifest$.MODULE$:Lscala/reflect/ClassManifest$;
-     159: ldc           #99                 // class perf/indirect/Vec3d
-     161: invokevirtual #103                // Method scala/reflect/ClassManifest$.classType:(Ljava/lang/Class;)Lscala/reflect/ClassManifest;
-     164: invokevirtual #107                // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
-     167: checkcast     #109                // class "[Lperf/indirect/Vec3d;"
-     170: astore        7
-     172: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-     175: ldc           #117                // String  Done.
-     177: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-     180: aload_0       
-     181: ldc           #119                // String Warmup
-     183: aload_0       
-     184: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     189: iconst_2      
-     190: idiv          
-     191: aload_0       
-     192: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     197: iconst_3      
-     198: imul          
-     199: i2l           
-     200: new           #123                // class perf/indirect/Benchmark$$anonfun$main$1
-     203: dup           
-     204: aload         5
-     206: aload         6
-     208: aload         7
-     210: invokespecial #126                // Method perf/indirect/Benchmark$$anonfun$main$1."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     213: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     218: pop           
-     219: aload_0       
-     220: ldc           #130                // String Add
-     222: aload_0       
-     223: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     228: aload_0       
-     229: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     234: iconst_3      
-     235: imul          
-     236: i2l           
-     237: new           #132                // class perf/indirect/Benchmark$$anonfun$1
-     240: dup           
-     241: aload         5
-     243: aload         6
-     245: aload         7
-     247: invokespecial #133                // Method perf/indirect/Benchmark$$anonfun$1."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     250: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     255: astore        8
-     257: aload_0       
-     258: ldc           #135                // String Subtract
-     260: aload_0       
-     261: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     266: aload_0       
-     267: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     272: iconst_3      
-     273: imul          
-     274: i2l           
-     275: new           #137                // class perf/indirect/Benchmark$$anonfun$2
-     278: dup           
-     279: aload         5
-     281: aload         6
-     283: aload         7
-     285: invokespecial #138                // Method perf/indirect/Benchmark$$anonfun$2."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     288: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     293: astore        9
-     295: aload_0       
-     296: ldc           #140                // String Multiply
-     298: aload_0       
-     299: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     304: aload_0       
-     305: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     310: iconst_3      
-     311: imul          
-     312: i2l           
-     313: new           #142                // class perf/indirect/Benchmark$$anonfun$3
-     316: dup           
-     317: aload         5
-     319: aload         6
-     321: aload         7
-     323: invokespecial #143                // Method perf/indirect/Benchmark$$anonfun$3."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     326: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     331: astore        10
-     333: aload_0       
-     334: ldc           #145                // String Divide
-     336: aload_0       
-     337: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     342: aload_0       
-     343: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     348: iconst_3      
-     349: imul          
-     350: i2l           
-     351: new           #147                // class perf/indirect/Benchmark$$anonfun$4
-     354: dup           
-     355: aload         5
-     357: aload         6
-     359: aload         7
-     361: invokespecial #148                // Method perf/indirect/Benchmark$$anonfun$4."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     364: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     369: astore        11
-     371: aload_0       
-     372: ldc           #150                // String Dot
-     374: aload_0       
-     375: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     380: aload_0       
-     381: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     386: iconst_3      
-     387: imul          
-     388: i2l           
-     389: new           #152                // class perf/indirect/Benchmark$$anonfun$5
-     392: dup           
-     393: aload         5
-     395: aload         6
-     397: aload         7
-     399: invokespecial #153                // Method perf/indirect/Benchmark$$anonfun$5."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     402: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     407: astore        12
-     409: aload_0       
-     410: ldc           #155                // String Cross
-     412: aload_0       
-     413: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     418: aload_0       
-     419: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     424: iconst_3      
-     425: imul          
-     426: i2l           
-     427: new           #157                // class perf/indirect/Benchmark$$anonfun$6
-     430: dup           
-     431: aload         5
-     433: aload         6
-     435: aload         7
-     437: invokespecial #158                // Method perf/indirect/Benchmark$$anonfun$6."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     440: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     445: astore        13
-     447: aload_0       
-     448: ldc           #160                // String Mag
-     450: aload_0       
-     451: invokeinterface #121,  1          // InterfaceMethod perf/BenchUtil.iters:()I
-     456: aload_0       
-     457: invokeinterface #89,  1           // InterfaceMethod perf/BenchUtil.size:()I
-     462: iconst_2      
-     463: imul          
-     464: i2l           
-     465: new           #162                // class perf/indirect/Benchmark$$anonfun$7
-     468: dup           
-     469: aload         5
-     471: aload         6
-     473: aload         7
-     475: invokespecial #163                // Method perf/indirect/Benchmark$$anonfun$7."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
-     478: invokeinterface #128,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
-     483: astore        14
-     485: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-     488: ldc           #165                // String ----------------------------------------------
-     490: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-     493: aload         8
-     495: ldc           #167                // String      Add
-     497: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     500: aload         9
-     502: ldc           #174                // String  Subract
-     504: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     507: aload         10
-     509: ldc           #140                // String Multiply
-     511: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     514: aload         11
-     516: ldc           #176                // String   Divide
-     518: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     521: aload         12
-     523: ldc           #178                // String      Dot
-     525: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     528: aload         13
-     530: ldc           #180                // String    Cross
-     532: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     535: aload         14
-     537: ldc           #182                // String      Mag
-     539: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     542: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-     545: invokevirtual #75                 // Method scala/Predef$.println:()V
-     548: aload         8
-     550: aload         9
-     552: invokevirtual #186                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
-     555: aload         10
-     557: invokevirtual #186                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
-     560: aload         11
-     562: invokevirtual #186                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
-     565: aload         12
-     567: invokevirtual #186                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
-     570: aload         13
-     572: invokevirtual #186                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
-     575: aload         14
-     577: invokevirtual #186                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
-     580: ldc           #188                // String    TOTAL
-     582: invokevirtual #172                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
-     585: getstatic     #193                // Field scala/sys/package$.MODULE$:Lscala/sys/package$;
-     588: invokevirtual #197                // Method scala/sys/package$.exit:()Lscala/runtime/Nothing$;
-     591: athrow        
-     592: astore_2      
-     593: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-     596: new           #199                // class scala/collection/mutable/StringBuilder
-     599: dup           
-     600: invokespecial #200                // Method scala/collection/mutable/StringBuilder."<init>":()V
-     603: ldc           #202                // String Uncaught Exception: 
-     605: invokevirtual #206                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
-     608: aload_2       
-     609: invokevirtual #212                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
-     612: invokevirtual #206                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
-     615: ldc           #214                // String \n
-     617: invokevirtual #206                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
-     620: ldc           #216                // String Stack Trace:\n
-     622: invokevirtual #206                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
-     625: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-     628: aload_2       
-     629: invokevirtual #220                // Method scala/Predef$.exceptionWrapper:(Ljava/lang/Throwable;)Lscala/runtime/RichException;
-     632: invokevirtual #225                // Method scala/runtime/RichException.getStackTraceString:()Ljava/lang/String;
-     635: invokevirtual #206                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
-     638: invokevirtual #228                // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
-     641: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-     644: goto          658
-     647: astore_3      
-     648: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
-     651: aload_3       
-     652: invokevirtual #229                // Method java/lang/IllegalArgumentException.getMessage:()Ljava/lang/String;
-     655: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
-     658: return        
+      65: new           #75                 // class java/util/Date
+      68: dup           
+      69: invokespecial #76                 // Method java/util/Date."<init>":()V
+      72: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      75: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      78: invokevirtual #78                 // Method scala/Predef$.println:()V
+      81: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      84: ldc           #80                 // String Generating Test Data: 
+      86: invokevirtual #83                 // Method scala/Predef$.print:(Ljava/lang/Object;)V
+      89: getstatic     #88                 // Field scala/Array$.MODULE$:Lscala/Array$;
+      92: aload_0       
+      93: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+      98: new           #94                 // class perf/indirect/Benchmark$$anonfun$8
+     101: dup           
+     102: invokespecial #95                 // Method perf/indirect/Benchmark$$anonfun$8."<init>":()V
+     105: getstatic     #100                // Field scala/reflect/ClassManifest$.MODULE$:Lscala/reflect/ClassManifest$;
+     108: ldc           #102                // class perf/indirect/Vec3d
+     110: invokevirtual #106                // Method scala/reflect/ClassManifest$.classType:(Ljava/lang/Class;)Lscala/reflect/ClassManifest;
+     113: invokevirtual #110                // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
+     116: checkcast     #112                // class "[Lperf/indirect/Vec3d;"
+     119: astore        5
+     121: getstatic     #88                 // Field scala/Array$.MODULE$:Lscala/Array$;
+     124: aload_0       
+     125: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     130: new           #114                // class perf/indirect/Benchmark$$anonfun$9
+     133: dup           
+     134: invokespecial #115                // Method perf/indirect/Benchmark$$anonfun$9."<init>":()V
+     137: getstatic     #100                // Field scala/reflect/ClassManifest$.MODULE$:Lscala/reflect/ClassManifest$;
+     140: ldc           #102                // class perf/indirect/Vec3d
+     142: invokevirtual #106                // Method scala/reflect/ClassManifest$.classType:(Ljava/lang/Class;)Lscala/reflect/ClassManifest;
+     145: invokevirtual #110                // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
+     148: checkcast     #112                // class "[Lperf/indirect/Vec3d;"
+     151: astore        6
+     153: getstatic     #88                 // Field scala/Array$.MODULE$:Lscala/Array$;
+     156: aload_0       
+     157: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     162: new           #117                // class perf/indirect/Benchmark$$anonfun$10
+     165: dup           
+     166: invokespecial #118                // Method perf/indirect/Benchmark$$anonfun$10."<init>":()V
+     169: getstatic     #100                // Field scala/reflect/ClassManifest$.MODULE$:Lscala/reflect/ClassManifest$;
+     172: ldc           #102                // class perf/indirect/Vec3d
+     174: invokevirtual #106                // Method scala/reflect/ClassManifest$.classType:(Ljava/lang/Class;)Lscala/reflect/ClassManifest;
+     177: invokevirtual #110                // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
+     180: checkcast     #112                // class "[Lperf/indirect/Vec3d;"
+     183: astore        7
+     185: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     188: ldc           #120                // String  Done.
+     190: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+     193: aload_0       
+     194: ldc           #122                // String Warmup
+     196: aload_0       
+     197: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     202: iconst_2      
+     203: idiv          
+     204: aload_0       
+     205: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     210: iconst_3      
+     211: imul          
+     212: i2l           
+     213: new           #126                // class perf/indirect/Benchmark$$anonfun$main$1
+     216: dup           
+     217: aload         5
+     219: aload         6
+     221: aload         7
+     223: invokespecial #129                // Method perf/indirect/Benchmark$$anonfun$main$1."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     226: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     231: pop           
+     232: aload_0       
+     233: ldc           #133                // String Add
+     235: aload_0       
+     236: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     241: aload_0       
+     242: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     247: iconst_3      
+     248: imul          
+     249: i2l           
+     250: new           #135                // class perf/indirect/Benchmark$$anonfun$1
+     253: dup           
+     254: aload         5
+     256: aload         6
+     258: aload         7
+     260: invokespecial #136                // Method perf/indirect/Benchmark$$anonfun$1."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     263: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     268: astore        8
+     270: aload_0       
+     271: ldc           #138                // String Subtract
+     273: aload_0       
+     274: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     279: aload_0       
+     280: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     285: iconst_3      
+     286: imul          
+     287: i2l           
+     288: new           #140                // class perf/indirect/Benchmark$$anonfun$2
+     291: dup           
+     292: aload         5
+     294: aload         6
+     296: aload         7
+     298: invokespecial #141                // Method perf/indirect/Benchmark$$anonfun$2."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     301: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     306: astore        9
+     308: aload_0       
+     309: ldc           #143                // String Multiply
+     311: aload_0       
+     312: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     317: aload_0       
+     318: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     323: iconst_3      
+     324: imul          
+     325: i2l           
+     326: new           #145                // class perf/indirect/Benchmark$$anonfun$3
+     329: dup           
+     330: aload         5
+     332: aload         6
+     334: aload         7
+     336: invokespecial #146                // Method perf/indirect/Benchmark$$anonfun$3."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     339: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     344: astore        10
+     346: aload_0       
+     347: ldc           #148                // String Divide
+     349: aload_0       
+     350: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     355: aload_0       
+     356: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     361: iconst_3      
+     362: imul          
+     363: i2l           
+     364: new           #150                // class perf/indirect/Benchmark$$anonfun$4
+     367: dup           
+     368: aload         5
+     370: aload         6
+     372: aload         7
+     374: invokespecial #151                // Method perf/indirect/Benchmark$$anonfun$4."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     377: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     382: astore        11
+     384: aload_0       
+     385: ldc           #153                // String Dot
+     387: aload_0       
+     388: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     393: aload_0       
+     394: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     399: iconst_3      
+     400: imul          
+     401: i2l           
+     402: new           #155                // class perf/indirect/Benchmark$$anonfun$5
+     405: dup           
+     406: aload         5
+     408: aload         6
+     410: aload         7
+     412: invokespecial #156                // Method perf/indirect/Benchmark$$anonfun$5."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     415: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     420: astore        12
+     422: aload_0       
+     423: ldc           #158                // String Cross
+     425: aload_0       
+     426: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     431: aload_0       
+     432: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     437: iconst_3      
+     438: imul          
+     439: i2l           
+     440: new           #160                // class perf/indirect/Benchmark$$anonfun$6
+     443: dup           
+     444: aload         5
+     446: aload         6
+     448: aload         7
+     450: invokespecial #161                // Method perf/indirect/Benchmark$$anonfun$6."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     453: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     458: astore        13
+     460: aload_0       
+     461: ldc           #163                // String Mag
+     463: aload_0       
+     464: invokeinterface #124,  1          // InterfaceMethod perf/BenchUtil.iters:()I
+     469: aload_0       
+     470: invokeinterface #92,  1           // InterfaceMethod perf/BenchUtil.size:()I
+     475: iconst_2      
+     476: imul          
+     477: i2l           
+     478: new           #165                // class perf/indirect/Benchmark$$anonfun$7
+     481: dup           
+     482: aload         5
+     484: aload         6
+     486: aload         7
+     488: invokespecial #166                // Method perf/indirect/Benchmark$$anonfun$7."<init>":([Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;[Lperf/indirect/Vec3d;)V
+     491: invokeinterface #131,  6          // InterfaceMethod perf/BenchUtil.timeTest:(Ljava/lang/String;IJLscala/Function0;)Lperf/BenchUtil$Stats;
+     496: astore        14
+     498: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     501: ldc           #168                // String ----------------------------------------------
+     503: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+     506: aload         8
+     508: ldc           #170                // String      Add
+     510: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     513: aload         9
+     515: ldc           #177                // String  Subract
+     517: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     520: aload         10
+     522: ldc           #143                // String Multiply
+     524: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     527: aload         11
+     529: ldc           #179                // String   Divide
+     531: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     534: aload         12
+     536: ldc           #181                // String      Dot
+     538: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     541: aload         13
+     543: ldc           #183                // String    Cross
+     545: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     548: aload         14
+     550: ldc           #185                // String      Mag
+     552: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     555: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     558: invokevirtual #78                 // Method scala/Predef$.println:()V
+     561: aload         8
+     563: aload         9
+     565: invokevirtual #189                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
+     568: aload         10
+     570: invokevirtual #189                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
+     573: aload         11
+     575: invokevirtual #189                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
+     578: aload         12
+     580: invokevirtual #189                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
+     583: aload         13
+     585: invokevirtual #189                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
+     588: aload         14
+     590: invokevirtual #189                // Method perf/BenchUtil$Stats.$plus:(Lperf/BenchUtil$Stats;)Lperf/BenchUtil$Stats;
+     593: ldc           #191                // String    TOTAL
+     595: invokevirtual #175                // Method perf/BenchUtil$Stats.summary:(Ljava/lang/String;)V
+     598: getstatic     #196                // Field scala/sys/package$.MODULE$:Lscala/sys/package$;
+     601: invokevirtual #200                // Method scala/sys/package$.exit:()Lscala/runtime/Nothing$;
+     604: athrow        
+     605: astore_2      
+     606: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     609: new           #202                // class scala/collection/mutable/StringBuilder
+     612: dup           
+     613: invokespecial #203                // Method scala/collection/mutable/StringBuilder."<init>":()V
+     616: ldc           #205                // String Uncaught Exception: 
+     618: invokevirtual #209                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+     621: aload_2       
+     622: invokevirtual #215                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+     625: invokevirtual #209                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+     628: ldc           #217                // String \n
+     630: invokevirtual #209                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+     633: ldc           #219                // String Stack Trace:\n
+     635: invokevirtual #209                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+     638: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     641: aload_2       
+     642: invokevirtual #223                // Method scala/Predef$.exceptionWrapper:(Ljava/lang/Throwable;)Lscala/runtime/RichException;
+     645: invokevirtual #228                // Method scala/runtime/RichException.getStackTraceString:()Ljava/lang/String;
+     648: invokevirtual #209                // Method scala/collection/mutable/StringBuilder.append:(Ljava/lang/Object;)Lscala/collection/mutable/StringBuilder;
+     651: invokevirtual #231                // Method scala/collection/mutable/StringBuilder.toString:()Ljava/lang/String;
+     654: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+     657: goto          671
+     660: astore_3      
+     661: getstatic     #67                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     664: aload_3       
+     665: invokevirtual #232                // Method java/lang/IllegalArgumentException.getMessage:()Ljava/lang/String;
+     668: invokevirtual #73                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+     671: return        
     Exception table:
        from    to  target type
-           0   592   647   Class java/lang/IllegalArgumentException
-           0   592   592   any
+           0   605   660   Class java/lang/IllegalArgumentException
+           0   605   605   any
 }

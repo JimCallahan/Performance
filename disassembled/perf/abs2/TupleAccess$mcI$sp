@@ -1,0 +1,6 @@
+Compiled from "Tuple.scala"
+public interface perf.abs2.TupleAccess$mcI$sp<Repr> extends perf.abs2.TupleAccess<java.lang.Object, Repr> {
+  public abstract int apply(int);
+
+  public abstract Repr update(int, int);
+}

@@ -9,6 +9,52 @@ public abstract class perf.abs.Tuple3$class {
        4: invokeinterface #12,  4           // InterfaceMethod perf/abs/Tuple3.fromComps:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
        9: areturn       
 
+  public static double x$mcD$sp(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: invokeinterface #23,  1           // InterfaceMethod perf/abs/Tuple3.x:()Ljava/lang/Object;
+       6: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static double y$mcD$sp(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: invokeinterface #33,  1           // InterfaceMethod perf/abs/Tuple3.y:()Ljava/lang/Object;
+       6: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static double z$mcD$sp(perf.abs.Tuple3);
+    Code:
+       0: aload_0       
+       1: invokeinterface #37,  1           // InterfaceMethod perf/abs/Tuple3.z:()Ljava/lang/Object;
+       6: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       9: dreturn       
+
+  public static java.lang.Object fromScalar$mcD$sp(perf.abs.Tuple3, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #43                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #46,  2           // InterfaceMethod perf/abs/Tuple3.fromScalar:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: areturn       
+
+  public static java.lang.Object fromComps$mcD$sp(perf.abs.Tuple3, double, double, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #43                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: dload_3       
+       6: invokestatic  #43                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       9: dload         5
+      11: invokestatic  #43                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+      14: invokeinterface #12,  4           // InterfaceMethod perf/abs/Tuple3.fromComps:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      19: areturn       
+
+  public static boolean specInstance$(perf.abs.Tuple3);
+    Code:
+       0: iconst_0      
+       1: ireturn       
+
   public static void $init$(perf.abs.Tuple3);
     Code:
        0: return        

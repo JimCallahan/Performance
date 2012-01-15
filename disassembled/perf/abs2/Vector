@@ -1,0 +1,3 @@
+Compiled from "Tuple.scala"
+public interface perf.abs2.Vector extends perf.abs2.Tuple {
+}

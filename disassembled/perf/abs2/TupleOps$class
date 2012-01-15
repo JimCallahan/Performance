@@ -1,0 +1,116 @@
+Compiled from "TupleOps.scala"
+public abstract class perf.abs2.TupleOps$class {
+  public static perf.abs2.Tuple $plus$mcD$sp(perf.abs2.TupleOps, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #18,  2           // InterfaceMethod perf/abs2/TupleOps.$plus:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $plus$mcI$sp(perf.abs2.TupleOps, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #18,  2           // InterfaceMethod perf/abs2/TupleOps.$plus:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $minus$mcD$sp(perf.abs2.TupleOps, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #34,  2           // InterfaceMethod perf/abs2/TupleOps.$minus:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $minus$mcI$sp(perf.abs2.TupleOps, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #34,  2           // InterfaceMethod perf/abs2/TupleOps.$minus:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $times$mcD$sp(perf.abs2.TupleOps, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #39,  2           // InterfaceMethod perf/abs2/TupleOps.$times:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $times$mcI$sp(perf.abs2.TupleOps, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #39,  2           // InterfaceMethod perf/abs2/TupleOps.$times:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $div$mcD$sp(perf.abs2.TupleOps, double);
+    Code:
+       0: aload_0       
+       1: dload_1       
+       2: invokestatic  #12                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       5: invokeinterface #44,  2           // InterfaceMethod perf/abs2/TupleOps.$div:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple $div$mcI$sp(perf.abs2.TupleOps, int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokestatic  #29                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokeinterface #44,  2           // InterfaceMethod perf/abs2/TupleOps.$div:(Ljava/lang/Object;)Lperf/abs2/Tuple;
+      10: areturn       
+
+  public static perf.abs2.Tuple map$mcD$sp(perf.abs2.TupleOps, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #51,  2           // InterfaceMethod perf/abs2/TupleOps.map:(Lscala/Function1;)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static perf.abs2.Tuple map$mcI$sp(perf.abs2.TupleOps, scala.Function1);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #51,  2           // InterfaceMethod perf/abs2/TupleOps.map:(Lscala/Function1;)Lperf/abs2/Tuple;
+       7: areturn       
+
+  public static double reduce$mcD$sp(perf.abs2.TupleOps, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #60,  2           // InterfaceMethod perf/abs2/TupleOps.reduce:(Lscala/Function2;)Ljava/lang/Object;
+       7: invokestatic  #64                 // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+      10: dreturn       
+
+  public static int reduce$mcI$sp(perf.abs2.TupleOps, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: invokeinterface #60,  2           // InterfaceMethod perf/abs2/TupleOps.reduce:(Lscala/Function2;)Ljava/lang/Object;
+       7: invokestatic  #71                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      10: ireturn       
+
+  public static perf.abs2.Tuple compwise$mcD$sp(perf.abs2.TupleOps, perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #77,  3           // InterfaceMethod perf/abs2/TupleOps.compwise:(Lperf/abs2/Tuple;Lscala/Function2;)Lperf/abs2/Tuple;
+       8: areturn       
+
+  public static perf.abs2.Tuple compwise$mcI$sp(perf.abs2.TupleOps, perf.abs2.Tuple, scala.Function2);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: aload_2       
+       3: invokeinterface #77,  3           // InterfaceMethod perf/abs2/TupleOps.compwise:(Lperf/abs2/Tuple;Lscala/Function2;)Lperf/abs2/Tuple;
+       8: areturn       
+
+  public static void $init$(perf.abs2.TupleOps);
+    Code:
+       0: return        
+}

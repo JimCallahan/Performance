@@ -1,0 +1,84 @@
+Compiled from "VecNd.scala"
+public final class perf.abs2.VecNd$ implements scala.ScalaObject {
+  public static final perf.abs2.VecNd$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #9                  // class perf/abs2/VecNd$
+       3: invokespecial #12                 // Method "<init>":()V
+       6: return        
+
+  public perf.abs2.VecNd apply(int, double);
+    Code:
+       0: new           #16                 // class perf/abs2/VecNd
+       3: dup           
+       4: getstatic     #22                 // Field scala/Array$.MODULE$:Lscala/Array$;
+       7: iload_1       
+       8: new           #24                 // class perf/abs2/VecNd$$anonfun$apply$1
+      11: dup           
+      12: dload_2       
+      13: invokespecial #27                 // Method perf/abs2/VecNd$$anonfun$apply$1."<init>":(D)V
+      16: getstatic     #32                 // Field scala/reflect/Manifest$.MODULE$:Lscala/reflect/Manifest$;
+      19: invokevirtual #36                 // Method scala/reflect/Manifest$.Double:()Lscala/reflect/AnyValManifest;
+      22: invokevirtual #40                 // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
+      25: checkcast     #42                 // class "[D"
+      28: invokespecial #45                 // Method perf/abs2/VecNd."<init>":([D)V
+      31: areturn       
+
+  public perf.abs2.VecNd apply(scala.collection.Seq<java.lang.Object>);
+    Code:
+       0: new           #16                 // class perf/abs2/VecNd
+       3: dup           
+       4: aload_1       
+       5: getstatic     #32                 // Field scala/reflect/Manifest$.MODULE$:Lscala/reflect/Manifest$;
+       8: invokevirtual #36                 // Method scala/reflect/Manifest$.Double:()Lscala/reflect/AnyValManifest;
+      11: invokeinterface #58,  2           // InterfaceMethod scala/collection/TraversableOnce.toArray:(Lscala/reflect/ClassManifest;)Ljava/lang/Object;
+      16: checkcast     #42                 // class "[D"
+      19: invokespecial #45                 // Method perf/abs2/VecNd."<init>":([D)V
+      22: areturn       
+
+  public perf.abs2.VecNd random(int);
+    Code:
+       0: new           #16                 // class perf/abs2/VecNd
+       3: dup           
+       4: getstatic     #22                 // Field scala/Array$.MODULE$:Lscala/Array$;
+       7: iload_1       
+       8: new           #66                 // class perf/abs2/VecNd$$anonfun$random$1
+      11: dup           
+      12: invokespecial #67                 // Method perf/abs2/VecNd$$anonfun$random$1."<init>":()V
+      15: getstatic     #32                 // Field scala/reflect/Manifest$.MODULE$:Lscala/reflect/Manifest$;
+      18: invokevirtual #36                 // Method scala/reflect/Manifest$.Double:()Lscala/reflect/AnyValManifest;
+      21: invokevirtual #40                 // Method scala/Array$.fill:(ILscala/Function0;Lscala/reflect/ClassManifest;)Ljava/lang/Object;
+      24: checkcast     #42                 // class "[D"
+      27: invokespecial #45                 // Method perf/abs2/VecNd."<init>":([D)V
+      30: areturn       
+
+  public perf.abs2.VecNd randomUnit(int);
+    Code:
+       0: aload_0       
+       1: iload_1       
+       2: invokevirtual #70                 // Method random:(I)Lperf/abs2/VecNd;
+       5: aload_0       
+       6: iload_1       
+       7: ldc2_w        #71                 // double 0.5d
+      10: invokevirtual #74                 // Method apply:(ID)Lperf/abs2/VecNd;
+      13: invokevirtual #78                 // Method perf/abs2/VecNd.$minus:(Lperf/abs2/VecNd;)Lperf/abs2/VecNd;
+      16: astore_3      
+      17: aload_3       
+      18: invokevirtual #82                 // Method perf/abs2/VecNd.magSq$mcD$sp:()D
+      21: dstore        4
+      23: dload         4
+      25: ldc2_w        #83                 // double 0.25d
+      28: dcmpg         
+      29: ifge          0
+      32: dload         4
+      34: ldc2_w        #85                 // double 0.05d
+      37: dcmpl         
+      38: ifle          0
+      41: aload_3       
+      42: getstatic     #91                 // Field scala/math/package$.MODULE$:Lscala/math/package$;
+      45: dload         4
+      47: invokevirtual #95                 // Method scala/math/package$.sqrt:(D)D
+      50: invokevirtual #99                 // Method perf/abs2/VecNd.$div$mcD$sp:(D)Lperf/abs2/VecNd;
+      53: areturn       
+}

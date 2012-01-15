@@ -1,0 +1,3 @@
+Compiled from "PosOps.scala"
+public interface perf.abs2.PosOps$mcD$sp<Pos extends perf.abs2.Position, Vec extends perf.abs2.Vector> extends perf.abs2.PosOps<java.lang.Object, Pos, Vec>, perf.abs2.TupleOps$mcD$sp<Pos, Vec> {
+}

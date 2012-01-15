@@ -12,6 +12,7 @@
 			<arg value="docs" />
 			<arg value="src/perf/*.scala" />
 			<arg value="src/perf/abs/*.scala" />
+			<arg value="src/perf/abs2/*.scala" />
 			<arg value="src/perf/concrete/*.scala" />
 			<arg value="src/perf/indirect/*.scala" />
 		</exec>
@@ -39,6 +40,17 @@
 			<arg value="target/Performance.jar" />
 			<arg value="perf.abs.Benchmark" />
 			<arg value="results/perf-abs.txt" />
+		</exec>
+	</target>
+	<target name="Abs2Benchmark">
+		<exec executable="cmd">
+			<arg value="/c" />
+			<arg value="scala" />
+			<arg value="-J-Xmx1024M" />
+			<arg value="-classpath" />
+			<arg value="target/Performance.jar" />
+			<arg value="perf.abs2.Benchmark" />
+			<arg value="results/perf-abs2.txt" />
 		</exec>
 	</target>
 	<target name="IndirectBenchmark">

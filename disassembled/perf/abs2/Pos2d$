@@ -1,0 +1,28 @@
+Compiled from "Pos2d.scala"
+public final class perf.abs2.Pos2d$ implements scala.ScalaObject {
+  public static final perf.abs2.Pos2d$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #9                  // class perf/abs2/Pos2d$
+       3: invokespecial #12                 // Method "<init>":()V
+       6: return        
+
+  public perf.abs2.Pos2d apply(double);
+    Code:
+       0: new           #16                 // class perf/abs2/Pos2d
+       3: dup           
+       4: dload_1       
+       5: dload_1       
+       6: invokespecial #20                 // Method perf/abs2/Pos2d."<init>":(DD)V
+       9: areturn       
+
+  public perf.abs2.Pos2d apply(double, double);
+    Code:
+       0: new           #16                 // class perf/abs2/Pos2d
+       3: dup           
+       4: dload_1       
+       5: dload_3       
+       6: invokespecial #20                 // Method perf/abs2/Pos2d."<init>":(DD)V
+       9: areturn       
+}

@@ -1,0 +1,68 @@
+Compiled from "Benchmark.scala"
+public final class perf.abs2.Benchmark$$anonfun$7 extends scala.runtime.AbstractFunction0$mcD$sp implements scala.Serializable {
+  public static final long serialVersionUID;
+
+  public final perf.abs2.Vec3d[] vecA$1;
+
+  public final perf.abs2.Vec3d[] vecB$1;
+
+  public final perf.abs2.Vec3d[] vecC$1;
+
+  public static {};
+    Code:
+       0: lconst_0      
+       1: lconst_0      
+       2: putstatic     #11                 // Field serialVersionUID:J
+       5: return        
+
+  public final double apply();
+    Code:
+       0: aload_0       
+       1: invokevirtual #21                 // Method apply$mcD$sp:()D
+       4: dreturn       
+
+  public double apply$mcD$sp();
+    Code:
+       0: new           #23                 // class scala/runtime/DoubleRef
+       3: dup           
+       4: dconst_0      
+       5: invokespecial #27                 // Method scala/runtime/DoubleRef."<init>":(D)V
+       8: astore_1      
+       9: getstatic     #33                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      12: iconst_0      
+      13: invokevirtual #37                 // Method scala/Predef$.intWrapper:(I)Lscala/runtime/RichInt;
+      16: getstatic     #42                 // Field perf/abs2/Benchmark$.MODULE$:Lperf/abs2/Benchmark$;
+      19: invokeinterface #48,  1           // InterfaceMethod perf/BenchUtil.size:()I
+      24: invokevirtual #54                 // Method scala/runtime/RichInt.until:(I)Lscala/collection/immutable/Range;
+      27: new           #56                 // class perf/abs2/Benchmark$$anonfun$7$$anonfun$apply$mcD$sp$8
+      30: dup           
+      31: aload_0       
+      32: aload_1       
+      33: invokespecial #59                 // Method perf/abs2/Benchmark$$anonfun$7$$anonfun$apply$mcD$sp$8."<init>":(Lperf/abs2/Benchmark$$anonfun$7;Lscala/runtime/DoubleRef;)V
+      36: invokevirtual #65                 // Method scala/collection/immutable/Range.foreach$mVc$sp:(Lscala/Function1;)V
+      39: aload_1       
+      40: getfield      #69                 // Field scala/runtime/DoubleRef.elem:D
+      43: dreturn       
+
+  public final java.lang.Object apply();
+    Code:
+       0: aload_0       
+       1: invokevirtual #77                 // Method apply:()D
+       4: invokestatic  #83                 // Method scala/runtime/BoxesRunTime.boxToDouble:(D)Ljava/lang/Double;
+       7: areturn       
+
+  public perf.abs2.Benchmark$$anonfun$7(perf.abs2.Vec3d[], perf.abs2.Vec3d[], perf.abs2.Vec3d[]);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: putfield      #86                 // Field vecA$1:[Lperf/abs2/Vec3d;
+       5: aload_0       
+       6: aload_2       
+       7: putfield      #88                 // Field vecB$1:[Lperf/abs2/Vec3d;
+      10: aload_0       
+      11: aload_3       
+      12: putfield      #90                 // Field vecC$1:[Lperf/abs2/Vec3d;
+      15: aload_0       
+      16: invokespecial #94                 // Method scala/runtime/AbstractFunction0$mcD$sp."<init>":()V
+      19: return        
+}
