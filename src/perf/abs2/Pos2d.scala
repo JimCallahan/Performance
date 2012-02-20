@@ -73,16 +73,16 @@ class Pos2d private (val x: Double, val y: Double)
   def min: Double = reduce(_ min _)
   def max: Double = reduce(_ max _)
 
-  def compwise(that: Pos2d, p: (Double, Double) => Double): Pos2d =
+  def compwise(that: Pos2d)(p: (Double, Double) => Double): Pos2d =
     Pos2d(p(x, that.x), p(y, that.y))
-  def min(that: Pos2d): Pos2d = compwise(that, _ min _)
-  def max(that: Pos2d): Pos2d = compwise(that, _ max _)
-  def lerp(that: Pos2d, t: Double): Pos2d = compwise(that, Scalar.lerp(_, _, t))
-  def smoothlerp(that: Pos2d, t: Double): Pos2d = compwise(that, Scalar.smoothlerp(_, _, t))
+  def min(that: Pos2d): Pos2d = compwise(that)(_ min _)
+  def max(that: Pos2d): Pos2d = compwise(that)(_ max _)
+  def lerp(that: Pos2d, t: Double): Pos2d = compwise(that)(Scalar.lerp(_, _, t))
+  def smoothlerp(that: Pos2d, t: Double): Pos2d = compwise(that)(Scalar.smoothlerp(_, _, t))
   
-  def compwise(a: Pos2d, b: Pos2d, p: (Double, Double, Double) => Double): Pos2d =
+  def compwise(a: Pos2d, b: Pos2d)(p: (Double, Double, Double) => Double): Pos2d =
     Pos2d(p(x, a.x, b.x), p(y, a.y, b.y))
-  def clamp(lower: Pos2d, upper: Pos2d): Pos2d = compwise(lower, upper, Scalar.clamp(_, _, _))
+  def clamp(lower: Pos2d, upper: Pos2d): Pos2d = compwise(lower, upper)(Scalar.clamp)
   
   /** Convert to a String representation */
   override def toString() = "Pos2d(%.2f, %.2f)".format(x, y)

@@ -83,16 +83,16 @@ class Vec3d private (val x: Double, val y: Double, val z: Double)
   def min: Double = reduce(_ min _)
   def max: Double = reduce(_ max _)
 
-  def compwise(that: Vec3d, p: (Double, Double) => Double): Vec3d =
+  def compwise(that: Vec3d)(p: (Double, Double) => Double): Vec3d =
     Vec3d(p(x, that.x), p(y, that.y), p(z, that.z))
-  def min(that: Vec3d): Vec3d = compwise(that, _ min _)
-  def max(that: Vec3d): Vec3d = compwise(that, _ max _)
-  def lerp(that: Vec3d, t: Double): Vec3d = compwise(that, Scalar.lerp(_, _, t))
-  def smoothlerp(that: Vec3d, t: Double): Vec3d = compwise(that, Scalar.smoothlerp(_, _, t))
+  def min(that: Vec3d): Vec3d = compwise(that)(_ min _)
+  def max(that: Vec3d): Vec3d = compwise(that)(_ max _)
+  def lerp(that: Vec3d, t: Double): Vec3d = compwise(that)(Scalar.lerp(_, _, t))
+  def smoothlerp(that: Vec3d, t: Double): Vec3d = compwise(that)(Scalar.smoothlerp(_, _, t))
   
-  def compwise(a: Vec3d, b: Vec3d, p: (Double, Double, Double) => Double): Vec3d =
+  def compwise(a: Vec3d, b: Vec3d)(p: (Double, Double, Double) => Double): Vec3d =
     Vec3d(p(x, a.x, b.x), p(y, a.y, b.y), p(z, a.z, b.z))
-  def clamp(lower: Vec3d, upper: Vec3d): Vec3d = compwise(lower, upper, Scalar.clamp(_, _, _))
+  def clamp(lower: Vec3d, upper: Vec3d): Vec3d = compwise(lower, upper)(Scalar.clamp)
 
   /** Convert to a String representation */
   override def toString() = "Vec3d(%.2f, %.2f, %.2f)".format(x, y, z)

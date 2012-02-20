@@ -72,14 +72,14 @@ class Index2i private (val x: Int, val y: Int)
   def min: Int = reduce(_ min _)
   def max: Int = reduce(_ max _)
 
-  def compwise(that: Index2i, p: (Int, Int) => Int): Index2i =
+  def compwise(that: Index2i)(p: (Int, Int) => Int): Index2i =
     Index2i(p(x, that.x), p(y, that.y))
-  def min(that: Index2i): Index2i = compwise(that, _ min _)
-  def max(that: Index2i): Index2i = compwise(that, _ max _)
+  def min(that: Index2i): Index2i = compwise(that)(_ min _)
+  def max(that: Index2i): Index2i = compwise(that)(_ max _)
 
-  def compwise(a: Index2i, b: Index2i, p: (Int, Int, Int) => Int): Index2i =
+  def compwise(a: Index2i, b: Index2i)(p: (Int, Int, Int) => Int): Index2i =
     Index2i(p(x, a.x, b.x), p(y, a.y, b.y))
-  def clamp(lower: Index2i, upper: Index2i): Index2i = compwise(lower, upper, Scalar.clamp(_, _, _))
+  def clamp(lower: Index2i, upper: Index2i): Index2i = compwise(lower, upper)(Scalar.clamp)
 
   /** Convert to a String representation */
   override def toString() = "Index2i(%d, %d)".format(x, y)

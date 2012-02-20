@@ -76,16 +76,16 @@ class Pos3d private (val x: Double, val y: Double, val z: Double)
   def min: Double = reduce(_ min _)
   def max: Double = reduce(_ max _)
 
-  def compwise(that: Pos3d, p: (Double, Double) => Double): Pos3d =
+  def compwise(that: Pos3d)(p: (Double, Double) => Double): Pos3d =
     Pos3d(p(x, that.x), p(y, that.y), p(z, that.z))
-  def min(that: Pos3d): Pos3d = compwise(that, _ min _)
-  def max(that: Pos3d): Pos3d = compwise(that, _ max _)
-  def lerp(that: Pos3d, t: Double): Pos3d = compwise(that, Scalar.lerp(_, _, t))
-  def smoothlerp(that: Pos3d, t: Double): Pos3d = compwise(that, Scalar.smoothlerp(_, _, t))
+  def min(that: Pos3d): Pos3d = compwise(that)(_ min _)
+  def max(that: Pos3d): Pos3d = compwise(that)(_ max _)
+  def lerp(that: Pos3d, t: Double): Pos3d = compwise(that)(Scalar.lerp(_, _, t))
+  def smoothlerp(that: Pos3d, t: Double): Pos3d = compwise(that)(Scalar.smoothlerp(_, _, t))
   
-  def compwise(a: Pos3d, b: Pos3d, p: (Double, Double, Double) => Double): Pos3d =
+  def compwise(a: Pos3d, b: Pos3d)(p: (Double, Double, Double) => Double): Pos3d =
     Pos3d(p(x, a.x, b.x), p(y, a.y, b.y), p(z, a.z, b.z))
-  def clamp(lower: Pos3d, upper: Pos3d): Pos3d = compwise(lower, upper, Scalar.clamp(_, _, _))
+  def clamp(lower: Pos3d, upper: Pos3d): Pos3d = compwise(lower, upper)(Scalar.clamp)
 
   /** Convert to a String representation */
   override def toString() = "Pos3d(%.2f, %.2f, %.2f)".format(x, y, z)

@@ -88,10 +88,10 @@ trait TupleOps[@specialized(Double, Int) Elem, Repr <: Tuple, Alt <: Tuple] {
   def reduce(p: (Elem, Elem) => Elem): Elem
 
   /** Builds a new vector by apply a function to the corresponding elements of this and another vector. */
-  def compwise(that: Repr, p: (Elem, Elem) => Elem): Repr
+  def compwise(that: Repr)(p: (Elem, Elem) => Elem): Repr
 
   /** Builds a new vector by apply a function to the corresponding elements of this and two other vectors. */
-  def compwise(a: Repr, b: Repr, p: (Elem, Elem, Elem) => Elem): Repr
+  def compwise(a: Repr, b: Repr)(p: (Elem, Elem, Elem) => Elem): Repr
 
   /** Builds a new vector who's components are the minimum of the corresponding components of this and another vector. */
   def min(that: Repr): Repr

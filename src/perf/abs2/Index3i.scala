@@ -75,14 +75,14 @@ class Index3i private (val x: Int, val y: Int, val z: Int)
   def min: Int = reduce(_ min _)
   def max: Int = reduce(_ max _)
 
-  def compwise(that: Index3i, p: (Int, Int) => Int): Index3i =
+  def compwise(that: Index3i)(p: (Int, Int) => Int): Index3i =
     Index3i(p(x, that.x), p(y, that.y), p(z, that.z))
-  def min(that: Index3i): Index3i = compwise(that, _ min _)
-  def max(that: Index3i): Index3i = compwise(that, _ max _)
+  def min(that: Index3i): Index3i = compwise(that)(_ min _)
+  def max(that: Index3i): Index3i = compwise(that)(_ max _)
 
-  def compwise(a: Index3i, b: Index3i, p: (Int, Int, Int) => Int): Index3i =
+  def compwise(a: Index3i, b: Index3i)(p: (Int, Int, Int) => Int): Index3i =
     Index3i(p(x, a.x, b.x), p(y, a.y, b.y), p(z, a.z, b.z))
-  def clamp(lower: Index3i, upper: Index3i): Index3i = compwise(lower, upper, Scalar.clamp(_, _, _))
+  def clamp(lower: Index3i, upper: Index3i): Index3i = compwise(lower, upper)(Scalar.clamp)
 
   /** Convert to a String representation */
   override def toString() = "Index3i(%d, %d, %d)".format(x, y, z)

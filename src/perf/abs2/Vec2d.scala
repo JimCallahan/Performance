@@ -78,16 +78,16 @@ class Vec2d private (val x: Double, val y: Double)
   def min: Double = reduce(_ min _)
   def max: Double = reduce(_ max _)
 
-  def compwise(that: Vec2d, p: (Double, Double) => Double): Vec2d =
+  def compwise(that: Vec2d)(p: (Double, Double) => Double): Vec2d =
     Vec2d(p(x, that.x), p(y, that.y))
-  def min(that: Vec2d): Vec2d = compwise(that, _ min _)
-  def max(that: Vec2d): Vec2d = compwise(that, _ max _)
-  def lerp(that: Vec2d, t: Double): Vec2d = compwise(that, Scalar.lerp(_, _, t))
-  def smoothlerp(that: Vec2d, t: Double): Vec2d = compwise(that, Scalar.smoothlerp(_, _, t))
+  def min(that: Vec2d): Vec2d = compwise(that)(_ min _)
+  def max(that: Vec2d): Vec2d = compwise(that)(_ max _)
+  def lerp(that: Vec2d, t: Double): Vec2d = compwise(that)(Scalar.lerp(_, _, t))
+  def smoothlerp(that: Vec2d, t: Double): Vec2d = compwise(that)(Scalar.smoothlerp(_, _, t))
   
-  def compwise(a: Vec2d, b: Vec2d, p: (Double, Double, Double) => Double): Vec2d =
+  def compwise(a: Vec2d, b: Vec2d)(p: (Double, Double, Double) => Double): Vec2d =
     Vec2d(p(x, a.x, b.x), p(y, a.y, b.y))
-  def clamp(lower: Vec2d, upper: Vec2d): Vec2d = compwise(lower, upper, Scalar.clamp(_, _, _))
+  def clamp(lower: Vec2d, upper: Vec2d): Vec2d = compwise(lower, upper)(Scalar.clamp)
 
   /** Convert to a String representation */
   override def toString() = "Vec2d(%.2f, %.2f)".format(x, y)
