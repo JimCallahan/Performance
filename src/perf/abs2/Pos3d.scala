@@ -4,8 +4,23 @@ import java.nio.{ CharBuffer, ShortBuffer, IntBuffer, LongBuffer, FloatBuffer, D
 
 class Pos3d private (val x: Double, val y: Double, val z: Double)
   extends Tuple3[Double, Pos3d]
+  with DoubleTupleOps[Pos3d]
   with PosOps[Double, Pos3d, Vec3d]
   with Position {
+  
+  /** Compares this vector to the specified value for equality. */
+  override def equals(that: Any): Boolean =
+    that match {
+      case that: Pos3d =>
+        (that canEqual this) && (x == that.x) && (y == that.y) && (z == that.z)
+      case _ => false
+    }
+
+  def canEqual(that: Any): Boolean = that.isInstanceOf[Pos3d]
+
+  /** Returns a hash code value for the object. */
+  override def hashCode: Int = 47 * (43 * (41 + x.##) + y.##) + z.##
+    
   def apply(i: Int): Double =
     i match {
       case 0 => x
@@ -41,6 +56,8 @@ class Pos3d private (val x: Double, val y: Double, val z: Double)
 
   def forall(p: (Double) => Boolean): Boolean = p(x) && p(y) && p(z)
   def forall(that: Pos3d)(p: (Double, Double) => Boolean): Boolean = p(x, that.x) && p(y, that.y) && p(z, that.z)
+  def equiv(that: Pos3d, epsilon: Double): Boolean = forall(that)(Scalar.equiv(_, _, epsilon)) 
+  def equiv(that: Pos3d): Boolean = forall(that)(Scalar.equiv(_, _)) 
 
   def forany(p: (Double) => Boolean): Boolean = p(x) || p(y) || p(z)
   def forany(that: Pos3d)(p: (Double, Double) => Boolean): Boolean = p(x, that.x) || p(y, that.y) || p(z, that.z)
@@ -63,7 +80,14 @@ class Pos3d private (val x: Double, val y: Double, val z: Double)
     Pos3d(p(x, that.x), p(y, that.y), p(z, that.z))
   def min(that: Pos3d): Pos3d = compwise(that, _ min _)
   def max(that: Pos3d): Pos3d = compwise(that, _ max _)
+  def lerp(that: Pos3d, t: Double): Pos3d = compwise(that, Scalar.lerp(_, _, t))
+  def smoothlerp(that: Pos3d, t: Double): Pos3d = compwise(that, Scalar.smoothlerp(_, _, t))
+  
+  def compwise(a: Pos3d, b: Pos3d, p: (Double, Double, Double) => Double): Pos3d =
+    Pos3d(p(x, a.x, b.x), p(y, a.y, b.y), p(z, a.z, b.z))
+  def clamp(lower: Pos3d, upper: Pos3d): Pos3d = compwise(lower, upper, Scalar.clamp(_, _, _))
 
+  /** Convert to a String representation */
   override def toString() = "Pos3d(%.2f, %.2f, %.2f)".format(x, y, z)
 
   def toList: List[Double] = List(x, y, z)

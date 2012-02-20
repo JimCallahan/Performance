@@ -5,6 +5,20 @@ import java.nio.{ CharBuffer, ShortBuffer, IntBuffer, LongBuffer, FloatBuffer, D
 class Index3i private (val x: Int, val y: Int, val z: Int)
   extends Tuple3[Int, Index3i]
   with TupleOps[Int, Index3i, Index3i] {
+
+  /** Compares this vector to the specified value for equality. */
+  override def equals(that: Any): Boolean =
+    that match {
+      case that: Index3i =>
+        (that canEqual this) && (x == that.x) && (y == that.y) && (z == that.z)
+      case _ => false
+    }
+
+  def canEqual(that: Any): Boolean = that.isInstanceOf[Index3i]
+
+  /** Returns a hash code value for the object. */
+  override def hashCode: Int = 47 * (43 * (41 + x.##) + y.##) + z.##
+
   def apply(i: Int): Int =
     i match {
       case 0 => x
@@ -41,6 +55,8 @@ class Index3i private (val x: Int, val y: Int, val z: Int)
 
   def forall(p: (Int) => Boolean): Boolean = p(x) && p(y) && p(z)
   def forall(that: Index3i)(p: (Int, Int) => Boolean): Boolean = p(x, that.x) && p(y, that.y) && p(z, that.z)
+  def equiv(that: Index3i, epsilon: Int): Boolean = forall(that)(Scalar.equiv(_, _, epsilon)) 
+  def equiv(that: Index3i): Boolean = forall(that)(Scalar.equiv(_, _)) 
 
   def forany(p: (Int) => Boolean): Boolean = p(x) || p(y) || p(z)
   def forany(that: Index3i)(p: (Int, Int) => Boolean): Boolean = p(x, that.x) || p(y, that.y) || p(z, that.z)
@@ -64,6 +80,11 @@ class Index3i private (val x: Int, val y: Int, val z: Int)
   def min(that: Index3i): Index3i = compwise(that, _ min _)
   def max(that: Index3i): Index3i = compwise(that, _ max _)
 
+  def compwise(a: Index3i, b: Index3i, p: (Int, Int, Int) => Int): Index3i =
+    Index3i(p(x, a.x, b.x), p(y, a.y, b.y), p(z, a.z, b.z))
+  def clamp(lower: Index3i, upper: Index3i): Index3i = compwise(lower, upper, Scalar.clamp(_, _, _))
+
+  /** Convert to a String representation */
   override def toString() = "Index3i(%d, %d, %d)".format(x, y, z)
 
   def toList: List[Int] = List(x, y, z)

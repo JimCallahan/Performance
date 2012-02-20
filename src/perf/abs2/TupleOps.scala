@@ -2,7 +2,17 @@ package perf.abs2
 
 import java.nio.{ CharBuffer, ShortBuffer, IntBuffer, LongBuffer, FloatBuffer, DoubleBuffer }
 
-trait TupleOps[@specialized(Double, Int) Elem, Repr <: Tuple, Alt <: Tuple] {
+trait TupleOps[@specialized(Double, Int) Elem, Repr <: Tuple, Alt <: Tuple] {  
+  /** A method that should be called from every well-designed equals method that is open
+    * to be overridden in a subclass. */
+  def canEqual(that: Any): Boolean  
+  
+  /** Whether another vector is within a given epsilon of this vector. */ 
+  def equiv(that: Repr, epsilon: Elem): Boolean
+
+  /** Whether another vector is within a the standard epsilon of this vector. */ 
+  def equiv(that: Repr): Boolean
+    
   /** Negate all components. */
   def - : Repr
 
@@ -80,6 +90,9 @@ trait TupleOps[@specialized(Double, Int) Elem, Repr <: Tuple, Alt <: Tuple] {
   /** Builds a new vector by apply a function to the corresponding elements of this and another vector. */
   def compwise(that: Repr, p: (Elem, Elem) => Elem): Repr
 
+  /** Builds a new vector by apply a function to the corresponding elements of this and two other vectors. */
+  def compwise(a: Repr, b: Repr, p: (Elem, Elem, Elem) => Elem): Repr
+
   /** Builds a new vector who's components are the minimum of the corresponding components of this and another vector. */
   def min(that: Repr): Repr
 
@@ -92,6 +105,9 @@ trait TupleOps[@specialized(Double, Int) Elem, Repr <: Tuple, Alt <: Tuple] {
   /** The maximum valued component of this vector. */
   def max: Elem
 
+  /** Builds a new vector who's components are clamped to be between the given upper and lower bounds. */
+  def clamp(lower: Repr, upper: Repr): Repr
+  
   /** Convert to a list of components. */
   def toList: List[Elem]
 
