@@ -1,5 +1,9 @@
 .cache
-bin
-docs
-target
-
+.classpath
+.project
+.settings/
+.tmpBin/
+project/project/
+project/target/
+target/
+/bin/
